@@ -1,0 +1,265 @@
+/* === Shared login/landing page container === */
+.login-page {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 24px;
+}
+
+/* subtle background circles */
+.login-circle {
+  position: absolute;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.login-circle--left {
+  width: 420px;
+  height: 420px;
+  left: 5%;
+  top: 10%;
+}
+
+.login-circle--right {
+  width: 520px;
+  height: 520px;
+  right: 3%;
+  bottom: 5%;
+}
+
+/* === Card === */
+.login-card {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 480px;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 36px 36px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.18);
+  text-align: center;
+}
+
+/* Icon above title */
+.login-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 16px;
+  border-radius: 20px;
+  background: #f1592a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  color: #fff;
+}
+
+/* Softer variant when you don't want it super highlighted */
+.login-icon--soft {
+  background: rgba(241, 89, 42, 0.12);
+  color: #f1592a;
+  box-shadow: none;
+}
+
+/* Text inside card */
+.login-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 8px;
+}
+
+.login-subtitle {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 20px;
+}
+
+.login-university {
+  margin-top: 18px;
+  font-size: 13px;
+  color: #9ca3af;
+}
+
+.login-tagline {
+  margin-top: 6px;
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+/* === Landing main orange button (UIUC Semester Planner) === */
+.landing-main-button {
+  width: 100%;
+  background: #f1592a;
+  border: none;
+  border-radius: 14px;
+  padding: 14px 22px;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+  transition: background 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.landing-main-button:hover {
+  background: #e24b1e;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(241, 89, 42, 0.35);
+}
+
+.landing-main-button:disabled {
+  opacity: 0.7;
+  cursor: default;
+}
+
+.landing-button-icon {
+  width: 26px;
+  height: 26px;
+}
+
+/* Secondary "Create Account" button on landing */
+.landing-create-button {
+  margin-top: 10px;
+  width: 100%;
+  border-radius: 999px;
+  padding: 10px 16px;
+  border: 1px solid #d1d5db;
+  background: #ffffff;
+  color: #374151;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
+}
+
+.landing-create-button:hover {
+  background: #f9fafb;
+  border-color: #9ca3af;
+  transform: translateY(-1px);
+}
+
+/* === Divider & section label (used on login page if needed) === */
+.login-divider {
+  margin: 22px 0 16px;
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(209, 213, 219, 0.9), transparent);
+}
+
+.login-email-label {
+  font-size: 12px;
+  font-weight: 500;
+  color: #6b7280;
+  margin-bottom: 10px;
+}
+
+/* === Email/password form styles (login page) === */
+.login-field-group {
+  text-align: left;
+  margin-bottom: 16px;
+}
+
+.login-label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 8px;
+}
+
+.login-input {
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  padding: 12px 14px;
+  font-size: 14px;
+  color: #000;
+  background: #ffffff;
+  box-sizing: border-box;
+}
+
+.login-input:focus {
+  outline: none;
+  border-color: #f1592a;
+  box-shadow: 0 0 0 1px rgba(241, 89, 42, 0.25);
+}
+
+/* Error text */
+.login-error {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font-size: 13px;
+  color: #b91c1c;
+  text-align: left;
+}
+
+/* Buttons in login form */
+.login-email-buttons {
+  margin-top: 16px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.login-secondary-button,
+.login-outline-button {
+  flex: 1;
+  border-radius: 10px;
+  padding: 12px 14px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease,
+    transform 0.12s ease;
+}
+
+.login-secondary-button {
+  background: #f1592a;
+  color: #ffffff;
+}
+
+.login-secondary-button:hover {
+  background: #e14e20;
+  box-shadow: 0 10px 22px rgba(225, 78, 32, 0.16);
+  transform: translateY(-2px);
+}
+
+.login-outline-button {
+  background: #ffffff;
+  color: #111827;
+  border-color: #d1d5db;
+}
+
+.login-outline-button:hover {
+  background: #f9fafb;
+  border-color: #6b7280;
+}
+
+/* Responsive tweaks */
+@media (max-width: 480px) {
+  .login-card {
+    padding: 24px;
+    border-radius: 16px;
+  }
+
+  .login-input {
+    padding: 12px 10px;
+  }
+
+  .login-email-buttons {
+    flex-direction: column;
+  }
+
+  .login-email-buttons button {
+    width: 100%;
+  }
+}

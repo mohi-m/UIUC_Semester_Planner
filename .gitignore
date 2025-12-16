@@ -1,0 +1,107 @@
+# macOS
+.DS_Store
+/.DS_Store?
+Icon\r
+
+# Node / JavaScript
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+/.pnp
+.pnp.js
+
+# Vite / build outputs
+/dist/
+/build/
+/.vite/
+*.tsbuildinfo
+
+# Environment files
+.env
+.env.*
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+
+# TypeScript
+*.tsbuildinfo
+
+# Coverage reports
+coverage/
+.nyc_output/
+
+# Editor directories and files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+env/
+ENV/
+pip-wheel-metadata/
+*.egg-info/
+build/
+dist/
+.coverage
+htmlcov/
+
+# Jupyter
+.ipynb_checkpoints
+
+# Database
+*.sqlite3
+*.db
+
+# Firebase
+.firebase/
+firebase-debug.log
+
+# Data (raw/large files)
+# Keep processed data tracked, but ignore raw/unprocessed large datasets
+data/raw/*
+data/raw/**
+!data/raw/.gitkeep
+
+# Scrapers / cache
+.cache/
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# IDE/Tooling
+.history/
+.sass-cache/
+.eslintcache
+
+# Local secrets
+secrets.env
+*.key
+*.pem
+
+# mac-specific
+._*
+
+# Optional: Ignore package manager lock files only if you use other lockfiles
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+

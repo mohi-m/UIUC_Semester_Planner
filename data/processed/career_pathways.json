@@ -1,0 +1,250 @@
+[
+  {
+    "name": "Machine Learning Engineer",
+    "description": "Builds ML models for production systems",
+    "required_skills": [
+      "deep learning",
+      "statistics",
+      "python"
+    ],
+    "core_courses": [
+      "CS 446",
+      "CS 441",
+      "CS 440",
+      "CS 307",
+      "CS 412",
+      "CS 361",
+      "CS 361",
+      "CS 444"
+    ],
+    "recommended_courses": [
+      "CS 540",
+      "CS 542",
+      "CS 448",
+      "CS 473",
+      "CS 582"
+    ],
+    "optional_courses": [
+      "CS 598",
+      "CS 546",
+      "CS 583"
+    ]
+  },
+  {
+    "name": "Data Scientist",
+    "description": "Analyzes and interprets complex data to help organizations make decisions.",
+    "required_skills": [
+      "data analysis",
+      "statistics",
+      "machine learning"
+    ],
+    "core_courses": [
+      "CS 361",
+      "CS 412",
+      "IS 407",
+      "CS 307",
+      "IS 445",
+      "CS 107",
+      "CS 205",
+      "CS 497"
+    ],
+    "recommended_courses": [
+      "CS 467",
+      "CS 512",
+      "CS 444",
+      "CS 440",
+      "IS 517"
+    ],
+    "optional_courses": [
+      "CS 598",
+      "CS 583",
+      "CS 582"
+    ]
+  },
+  {
+    "name": "Software Engineer",
+    "description": "Designs and develops software applications.",
+    "required_skills": [
+      "programming",
+      "software design",
+      "problem solving"
+    ],
+    "core_courses": [
+      "CS 225",
+      "CS 222",
+      "CS 233",
+      "CS 341",
+      "CS 374",
+      "CS 402",
+      "CS 403",
+      "CS 409"
+    ],
+    "recommended_courses": [
+      "CS 410",
+      "CS 415",
+      "CS 427",
+      "CS 493",
+      "CS 492"
+    ],
+    "optional_courses": [
+      "CS 598",
+      "CS 583",
+      "CS 521"
+    ]
+  },
+  {
+    "name": "Cybersecurity Analyst",
+    "description": "Protects systems and networks from cyber threats.",
+    "required_skills": [
+      "network security",
+      "cryptography",
+      "risk assessment"
+    ],
+    "core_courses": [
+      "CS 341",
+      "CS 407",
+      "CS 461",
+      "CS 463",
+      "CS 460",
+      "CS 507",
+      "IS 234",
+      "IS 467"
+    ],
+    "recommended_courses": [
+      "CS 562",
+      "CS 563",
+      "CS 564",
+      "CS 567",
+      "CS 580"
+    ],
+    "optional_courses": [
+      "CS 598",
+      "CS 583",
+      "CS 582"
+    ]
+  },
+  {
+    "name": "Web Developer",
+    "description": "Creates and maintains websites and web applications.",
+    "required_skills": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "core_courses": [
+      "CS 409",
+      "IS 439",
+      "CS 225",
+      "CS 222",
+      "CS 341",
+      "CS 374",
+      "CS 402",
+      "IS 205"
+    ],
+    "recommended_courses": [
+      "CS 410",
+      "IS 312",
+      "IS 230",
+      "IS 340",
+      "IS 419"
+    ],
+    "optional_courses": [
+      "CS 598",
+      "CS 583",
+      "CS 582"
+    ]
+  },
+  {
+    "name": "AI Researcher",
+    "description": "Conducts research to advance the field of artificial intelligence.",
+    "required_skills": [
+      "machine learning",
+      "algorithm design",
+      "data analysis"
+    ],
+    "core_courses": [
+      "CS 440",
+      "CS 441",
+      "CS 446",
+      "CS 540",
+      "CS 542",
+      "CS 543",
+      "CS 582",
+      "CS 582"
+    ],
+    "recommended_courses": [
+      "CS 546",
+      "CS 584",
+      "CS 583",
+      "CS 598",
+      "CS 599"
+    ],
+    "optional_courses": [
+      "CS 598",
+      "CS 583",
+      "CS 582"
+    ]
+  },
+  {
+    "name": "Systems Architect",
+    "description": "Designs and manages complex systems and infrastructure.",
+    "required_skills": [
+      "system design",
+      "network protocols",
+      "project management"
+    ],
+    "core_courses": [
+      "CS 340",
+      "CS 341",
+      "CS 425",
+      "CS 523",
+      "CS 534",
+      "CS 525",
+      "CS 427",
+      "CS 439"
+    ],
+    "recommended_courses": [
+      "CS 583",
+      "CS 598",
+      "CS 582",
+      "CS 540",
+      "CS 580"
+    ],
+    "optional_courses": [
+      "CS 598",
+      "CS 583",
+      "CS 582"
+    ]
+  },
+  {
+    "name": "Data Engineer",
+    "description": "Builds and maintains the architecture for data generation and processing.",
+    "required_skills": [
+      "data modeling",
+      "database design",
+      "ETL processes"
+    ],
+    "core_courses": [
+      "CS 411",
+      "CS 512",
+      "IS 206",
+      "CS 513",
+      "CS 425",
+      "CS 511",
+      "CS 412",
+      "CS 307"
+    ],
+    "recommended_courses": [
+      "CS 583",
+      "CS 598",
+      "CS 582",
+      "CS 540",
+      "IS 445"
+    ],
+    "optional_courses": [
+      "CS 598",
+      "CS 583",
+      "CS 582"
+    ]
+  }
+]

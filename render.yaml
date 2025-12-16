@@ -1,0 +1,42 @@
+services:
+  - type: web
+    name: semester-planner-api
+    env: python
+    region: oregon
+    plan: free
+    pythonVersion: 3.13
+    buildCommand: bash build.sh
+    startCommand: bash start.sh
+    envVars:
+      - key: MONGODB_URL
+        value: ${MONGODB_URL}
+      - key: MONGODB_DB_NAME
+        value: uiuc
+      - key: CORS_ORIGINS
+        value: ${CORS_ORIGINS}
+      - key: DEBUG
+        value: false
+      - key: PYTHONUNBUFFERED
+        value: "true"
+  - type: web
+    name: semester-planner-frontend
+    env: static
+    region: oregon
+    plan: free
+    buildCommand: bash -lc "cd front-end && npm ci && npm run build"
+    publishPath: front-end/dist
+    envVars:
+      - key: VITE_FIREBASE_API_KEY
+        value: ${VITE_FIREBASE_API_KEY}
+      - key: VITE_FIREBASE_AUTH_DOMAIN
+        value: ${VITE_FIREBASE_AUTH_DOMAIN}
+      - key: VITE_FIREBASE_PROJECT_ID
+        value: ${VITE_FIREBASE_PROJECT_ID}
+      - key: VITE_FIREBASE_STORAGE_BUCKET
+        value: ${VITE_FIREBASE_STORAGE_BUCKET}
+      - key: VITE_FIREBASE_MESSAGING_SENDER_ID
+        value: ${VITE_FIREBASE_MESSAGING_SENDER_ID}
+      - key: VITE_FIREBASE_APP_ID
+        value: ${VITE_FIREBASE_APP_ID}
+      - key: VITE_FIREBASE_MEASUREMENT_ID
+        value: ${VITE_FIREBASE_MEASUREMENT_ID}

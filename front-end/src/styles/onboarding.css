@@ -1,0 +1,476 @@
+/* ===========================
+   Onboarding Wizard (Steps 1–3)
+   =========================== */
+
+.wizard-page {
+  min-height: 100vh;
+  width: 100vw;
+  background: #f5f5f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 72px;
+  padding-bottom: 72px;
+}
+
+/* Stepper */
+.wizard-stepper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.wizard-steps {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.wizard-step {
+  width: 32px;
+  height: 32px;
+  border-radius: 999px;
+  border: 2px solid #d1d5db;
+  background: #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: #6b7280;
+}
+
+.wizard-step--active {
+  background: #f1592a;
+  border-color: #f1592a;
+  color: #ffffff;
+}
+
+.wizard-step--completed {
+  background: #111827;     /* dark circle for completed steps */
+  border-color: #111827;
+  color: #ffffff;
+}
+
+.wizard-step-line {
+  width: 56px;
+  height: 2px;
+  border-radius: 999px;
+  background: #e5e7eb;
+}
+
+.wizard-step-line--active {
+  background: #f97316;
+}
+
+.wizard-step-line--completed {
+  background: #0f172a;
+}
+
+.wizard-step-label {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #6b7280;
+}
+
+/* Card */
+.wizard-card {
+  width: 960px;
+  max-width: 95vw;
+  background: #ffffff;
+  border-radius: 28px;
+  box-shadow: 0 18px 55px rgba(15, 23, 42, 0.15);
+  padding: 32px 40px 28px;
+}
+
+/* Card header */
+.wizard-card-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.wizard-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 18px;
+  background: #f1592a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wizard-icon-img {
+  width: 32px;
+  height: 32px;
+}
+
+.wizard-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 2px;
+}
+
+.wizard-subtitle {
+  margin-top: 6px;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* Body + select (Step 1 + Step 3 dropdowns) */
+.wizard-body {
+  margin-top: 8px;
+  margin-bottom: 40px;
+}
+
+.wizard-select-wrapper {
+  position: relative;
+  max-width: 420px;
+  margin: 0;
+}
+
+wizard-select-wrapper.wizard-select-wrapper--left {
+  margin-left: 0;
+  margin-right: 0;
+}
+.wizard-select-wrapper::after {
+  content: "▾";
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 25px;
+  color: #6b7280;
+  pointer-events: none;
+}
+
+.wizard-select {
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  background: #eef0f2;
+  padding: 12px 16px;
+  padding-right: 40px;
+  font-size: 15px;
+  color: #111827;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.wizard-select:hover {
+  border-color: #f1592a;
+  background: #f8f8f8;
+  box-shadow: 0 0 0 1px rgba(241, 89, 42, 0.25);
+  cursor: pointer;
+}
+
+.wizard-select:focus {
+  outline: none;
+  border-color: #f1592a;
+  box-shadow: 0 0 0 1px rgba(241, 89, 42, 0.35);
+  background: #ffffff;
+}
+
+.wizard-select option[disabled] {
+  color: #9ca3af;
+}
+
+/* Footer buttons */
+.wizard-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.wizard-back-button {
+  border-radius: 999px;
+  padding: 10px 20px;
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
+  color: #6b7280;
+  font-size: 14px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  cursor: default;
+}
+
+.wizard-back-button:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.wizard-back-arrow {
+  font-size: 16px;
+}
+
+/* Next button */
+.wizard-next-button {
+  border-radius: 999px;
+  padding: 10px 26px;
+  border: none;
+  background: #f97316;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(248, 113, 113, 0.35);
+  transition: background 0.15s ease, transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.wizard-next-button:hover:enabled {
+  background: #ea580c;
+  transform: translateY(-1px);
+  box-shadow: 0 14px 30px rgba(248, 113, 113, 0.4);
+}
+
+.wizard-next-button:disabled {
+  opacity: 0.6;
+  cursor: default;
+  box-shadow: none;
+}
+
+.wizard-next-arrow {
+  font-size: 16px;
+}
+
+/* Make "Generate My Plan" feel more primary if you want */
+.wizard-next-button--primary {
+  background: #4b5563;
+}
+
+.wizard-next-button--primary:hover:enabled {
+  background: #374151;
+}
+
+/* ===== Step 2 – Career Path Grid ===== */
+
+.wizard-career-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px 24px;
+  padding: 10px 0;
+}
+
+.wizard-career-card {
+  border-radius: 20px;
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
+  padding: 22px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  cursor: pointer;
+  transition: border-color 0.15s ease,
+              box-shadow 0.15s ease,
+              transform 0.15s ease,
+              background 0.15s ease;
+}
+
+.wizard-career-card:hover {
+  border-color: #f97316;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
+  transform: translateY(-2px);
+  background: #f9fafb;
+}
+
+.wizard-career-card--selected {
+  border-color: #f97316;
+  box-shadow: 0 14px 30px rgba(248, 113, 113, 0.35);
+  background: #fff7ed;
+}
+
+.wizard-career-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 28px;
+}
+
+.wizard-career-label {
+  font-size: 15px;
+  font-weight: 500;
+  color: #111827;
+}
+
+/* Step 2 – career icon styling */
+
+.wizard-career-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wizard-career-icon-img {
+  width: 32px;
+  height: 32px;
+  color: #ffffff;
+}
+
+
+/* ====== Step 3 helpers (current semester + courses) ====== */
+
+.wizard-field-optional {
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+.wizard-field-group {
+  margin-bottom: 24px;
+}
+
+.wizard-field-label {
+  display: block;
+  font-size: 16px;       
+  font-weight: 600;     
+  color: #111827;
+  margin-bottom: 8px;
+}
+
+
+.wizard-helper-text {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.wizard-error-text {
+  font-size: 13px;
+  color: #b91c1c;
+}
+
+/* Grid of completed-course checkboxes */
+.wizard-course-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px 40px;
+  margin-top: 8px;
+  max-height: 320px;      
+  overflow-y: auto;       
+  padding-right: 8px;    
+}
+
+.wizard-course-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 8px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  transition: background 0.12s ease, border-color 0.12s ease;
+}
+
+.wizard-course-item input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: #111827;
+}
+
+.wizard-course-item--checked {
+  background: #fef3c7;
+  border-color: #f97316;
+}
+
+.wizard-course-code {
+  font-weight: 600;
+  font-size: 13px;
+  color: #111827;
+}
+
+.wizard-course-title {
+  font-size: 13px;
+  color: #4b5563;
+}
+
+/* Search bar above completed-courses list */
+.wizard-course-search-wrapper {
+  margin-top: 8px;
+  margin-bottom: 10px;
+  max-width: 420px;
+}
+
+.wizard-course-search {
+  width: 100%;
+  border-radius: 999px;
+  border: 1px solid #e5e7eb;
+  padding: 8px 14px;
+  font-size: 13px;
+  color: #111827;
+  background: #ffffff;
+}
+
+.wizard-course-search::placeholder {
+  color: #9ca3af;
+}
+
+.wizard-course-search:focus {
+  outline: none;
+  border-color: #f1592a;
+  box-shadow: 0 0 0 1px rgba(241, 89, 42, 0.25);
+}
+
+
+/* Selected Courses Chips */
+.wizard-selected-courses {
+  margin-bottom: 12px;
+}
+
+.wizard-selected-label {
+  font-size: 13px;
+  font-weight: 500;
+  color: #6b7280;
+  margin-bottom: 8px;
+}
+
+.wizard-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.wizard-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  background: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  border-radius: 999px;
+  font-size: 13px;
+  color: #334155;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.wizard-chip:hover {
+  background: #e2e8f0;
+  border-color: #cbd5e1;
+}
+
+.wizard-chip-remove {
+  font-size: 14px;
+  line-height: 1;
+  color: #94a3b8;
+}
+
+.wizard-chip:hover .wizard-chip-remove {
+  color: #64748b;
+}

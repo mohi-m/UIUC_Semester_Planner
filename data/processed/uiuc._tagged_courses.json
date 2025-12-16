@@ -1,0 +1,10996 @@
+[{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24369"
+  },
+  "course_id": "CS 101",
+  "skills": [
+    "programming",
+    "algorithms",
+    "problem solving",
+    "data structures",
+    "applications"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2436a"
+  },
+  "course_id": "CS 102",
+  "skills": [
+    "creativity",
+    "design thinking",
+    "prototyping",
+    "collaboration"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2436b"
+  },
+  "course_id": "CS 105",
+  "skills": [
+    "basic computing",
+    "application software",
+    "problem solving",
+    "programming basics"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2436c"
+  },
+  "course_id": "CS 107",
+  "skills": [
+    "data analysis",
+    "data visualization",
+    "statistics",
+    "programming"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2436d"
+  },
+  "course_id": "CS 124",
+  "skills": [
+    "computational thinking",
+    "programming fundamentals",
+    "problem solving",
+    "algorithm design"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2436e"
+  },
+  "course_id": "CS 128",
+  "skills": [
+    "advanced programming",
+    "data structures",
+    "algorithm analysis",
+    "software design"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2436f"
+  },
+  "course_id": "CS 173",
+  "skills": [
+    "discrete mathematics",
+    "logic",
+    "proof techniques",
+    "graph theory"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24370"
+  },
+  "course_id": "CS 199",
+  "skills": [
+    "topic exploration",
+    "research skills",
+    "presentation skills"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24371"
+  },
+  "course_id": "CS 210",
+  "skills": [
+    "ethics",
+    "professionalism",
+    "decision making",
+    "intellectual property"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24372"
+  },
+  "course_id": "CS 211",
+  "skills": [
+    "ethical analysis",
+    "writing skills",
+    "critical thinking",
+    "communication"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24373"
+  },
+  "course_id": "CS 222",
+  "skills": [
+    "software design",
+    "implementation",
+    "project management",
+    "teamwork"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24374"
+  },
+  "course_id": "CS 225",
+  "skills": [
+    "data structures",
+    "algorithm design",
+    "object-oriented programming",
+    "problem solving"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24375"
+  },
+  "course_id": "CS 233",
+  "skills": [
+    "computer architecture",
+    "machine-level programming",
+    "performance optimization"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24376"
+  },
+  "course_id": "CS 277",
+  "skills": [
+    "algorithm analysis",
+    "data structures",
+    "optimization",
+    "problem solving"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24377"
+  },
+  "course_id": "CS 307",
+  "skills": [
+    "data modeling",
+    "machine learning",
+    "Python programming",
+    "data-centric problem solving"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24378"
+  },
+  "course_id": "CS 340",
+  "skills": [
+    "system basics",
+    "number representation",
+    "file I/O",
+    "network programming"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24379"
+  },
+  "course_id": "CS 341",
+  "skills": [
+    "system programming",
+    "inter-process communication",
+    "security",
+    "debugging"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2437a"
+  },
+  "course_id": "CS 357",
+  "skills": [
+    "numerical methods",
+    "floating-point computation",
+    "programming",
+    "applications"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2437b"
+  },
+  "course_id": "CS 361",
+  "skills": [
+    "probability",
+    "statistics",
+    "data visualization",
+    "hypothesis testing"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2437c"
+  },
+  "course_id": "CS 374",
+  "skills": [
+    "algorithm design",
+    "complexity theory",
+    "recursive algorithms",
+    "graph algorithms"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2437d"
+  },
+  "course_id": "CS 397",
+  "skills": [
+    "self-directed study",
+    "research",
+    "critical thinking"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2437e"
+  },
+  "course_id": "CS 402",
+  "skills": [
+    "object-oriented design",
+    "abstraction",
+    "exception handling",
+    "database programming",
+    "concurrent programming"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2437f"
+  },
+  "course_id": "CS 403",
+  "skills": [
+    "algorithm design",
+    "graph algorithms",
+    "recursion",
+    "dynamic programming",
+    "formal models"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24380"
+  },
+  "course_id": "CS 407",
+  "skills": [
+    "cryptography",
+    "security protocols",
+    "data protection"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24381"
+  },
+  "course_id": "CS 410",
+  "skills": [
+    "text analysis",
+    "information retrieval",
+    "text categorization",
+    "clustering"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24382"
+  },
+  "course_id": "CS 411",
+  "skills": [
+    "database design",
+    "query optimization",
+    "data models",
+    "security"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24383"
+  },
+  "course_id": "CS 412",
+  "skills": [
+    "data mining",
+    "data warehousing",
+    "OLAP",
+    "data analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24384"
+  },
+  "course_id": "CS 413",
+  "skills": [
+    "combinatorial analysis",
+    "problem solving"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24385"
+  },
+  "course_id": "CS 415",
+  "skills": [
+    "game development",
+    "software engineering",
+    "AI in games",
+    "real-time rendering"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24386"
+  },
+  "course_id": "CS 421",
+  "skills": [
+    "language design",
+    "compilation",
+    "syntax analysis",
+    "semantic analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24387"
+  },
+  "course_id": "CS 425",
+  "skills": [
+    "distributed systems",
+    "protocol design",
+    "transaction management"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24388"
+  },
+  "course_id": "CS 431",
+  "skills": [
+    "embedded systems",
+    "real-time software",
+    "signal processing"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24389"
+  },
+  "course_id": "CS 433",
+  "skills": [
+    "hardware design",
+    "memory hierarchy",
+    "processor design"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2438a"
+  },
+  "course_id": "CS 434",
+  "skills": [
+    "IoT systems",
+    "data processing",
+    "network protocols"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2438b"
+  },
+  "course_id": "CS 435",
+  "skills": [
+    "cloud networking",
+    "big data transfer",
+    "network protocols"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2438c"
+  },
+  "course_id": "CS 437",
+  "skills": [
+    "IoT applications",
+    "data collection",
+    "networked systems"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2438d"
+  },
+  "course_id": "CS 438",
+  "skills": [
+    "network architecture",
+    "protocol design",
+    "communication software"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2438e"
+  },
+  "course_id": "CS 440",
+  "skills": [
+    "AI techniques",
+    "machine learning",
+    "natural language processing"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2438f"
+  },
+  "course_id": "CS 441",
+  "skills": [
+    "machine learning",
+    "regression techniques",
+    "classification methods",
+    "neural networks"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24390"
+  },
+  "course_id": "CS 443",
+  "skills": [
+    "reinforcement learning",
+    "decision-making",
+    "algorithm evaluation"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24391"
+  },
+  "course_id": "CS 444",
+  "skills": [
+    "deep learning",
+    "neural networks",
+    "computer vision",
+    "programming",
+    "image processing"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24392"
+  },
+  "course_id": "CS 445",
+  "skills": [
+    "photo manipulation",
+    "3D reconstruction",
+    "media creation",
+    "computer vision",
+    "image stitching"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24393"
+  },
+  "course_id": "CS 446",
+  "skills": [
+    "machine learning",
+    "regression",
+    "classification",
+    "data mining",
+    "reinforcement learning"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24394"
+  },
+  "course_id": "CS 448",
+  "skills": [
+    "audio processing",
+    "speech recognition",
+    "audio classification",
+    "machine learning",
+    "denoising"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24395"
+  },
+  "course_id": "CS 450",
+  "skills": [
+    "numerical methods",
+    "optimization",
+    "interpolation",
+    "differential equations",
+    "linear algebra"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24396"
+  },
+  "course_id": "CS 461",
+  "skills": [
+    "security principles",
+    "cryptography",
+    "network security",
+    "risk assessment",
+    "access control"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24397"
+  },
+  "course_id": "CS 463",
+  "skills": [
+    "program security",
+    "forensics",
+    "intrusion detection",
+    "privacy",
+    "cryptography"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24398"
+  },
+  "course_id": "CS 467",
+  "skills": [
+    "data visualization",
+    "social networks",
+    "communication patterns",
+    "network theory",
+    "data analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24399"
+  },
+  "course_id": "CS 468",
+  "skills": [
+    "advertising",
+    "campaign strategies",
+    "media analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2439a"
+  },
+  "course_id": "CS 473",
+  "skills": [
+    "algorithm design",
+    "data structures",
+    "optimization",
+    "randomized algorithms",
+    "network flow"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2439b"
+  },
+  "course_id": "CS 477",
+  "skills": [
+    "software specification",
+    "verification methods",
+    "mathematical modeling",
+    "software development"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2439c"
+  },
+  "course_id": "CS 482",
+  "skills": [
+    "simulation techniques",
+    "modeling",
+    "statistical analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2439d"
+  },
+  "course_id": "CS 483",
+  "skills": [
+    "parallel programming",
+    "performance tuning",
+    "algorithm design"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2439e"
+  },
+  "course_id": "CS 484",
+  "skills": [
+    "parallel computing",
+    "synchronization",
+    "load balancing",
+    "programming techniques"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2439f"
+  },
+  "course_id": "CS 491",
+  "skills": [
+    "research methods",
+    "presentation skills",
+    "topic analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243a0"
+  },
+  "course_id": "CS 493",
+  "skills": [
+    "project management",
+    "team collaboration",
+    "writing skills"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243a1"
+  },
+  "course_id": "CS 494",
+  "skills": [
+    "project development",
+    "teamwork",
+    "technical writing"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243a2"
+  },
+  "course_id": "CS 497",
+  "skills": [
+    "project planning",
+    "team collaboration",
+    "advanced CS principles"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243a3"
+  },
+  "course_id": "CS 498",
+  "skills": [
+    "topic research",
+    "curriculum development",
+    "flexible learning"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243a4"
+  },
+  "course_id": "CS 499",
+  "skills": [
+    "research skills",
+    "thesis writing",
+    "presentation skills",
+    "analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243a5"
+  },
+  "course_id": "CS 500",
+  "skills": [
+    "research methods",
+    "learning theories",
+    "proposal writing",
+    "data analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243a6"
+  },
+  "course_id": "CS 510",
+  "skills": [
+    "information retrieval",
+    "evaluation methods",
+    "text analytics",
+    "probabilistic models"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243a7"
+  },
+  "course_id": "CS 511",
+  "skills": [
+    "data management",
+    "query processing",
+    "transaction processing",
+    "data indexing"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243a8"
+  },
+  "course_id": "CS 512",
+  "skills": [
+    "data mining",
+    "pattern recognition",
+    "clustering",
+    "fraud detection"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243a9"
+  },
+  "course_id": "CS 521",
+  "skills": [
+    "software verification",
+    "automated testing",
+    "program synthesis",
+    "machine learning"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243aa"
+  },
+  "course_id": "CS 522",
+  "skills": [
+    "programming semantics",
+    "functional programming",
+    "lambda calculus",
+    "type systems"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243ab"
+  },
+  "course_id": "CS 523",
+  "skills": [
+    "operating systems",
+    "resource management",
+    "process management",
+    "security"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243ac"
+  },
+  "course_id": "CS 524",
+  "skills": [
+    "concurrency theory",
+    "programming languages",
+    "process algebras",
+    "correctness reasoning"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243ad"
+  },
+  "course_id": "CS 525",
+  "skills": [
+    "distributed systems",
+    "protocol design",
+    "peer-to-peer systems",
+    "networking"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243ae"
+  },
+  "course_id": "CS 526",
+  "skills": [
+    "compiler construction",
+    "code optimization",
+    "error correction",
+    "code generation"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243af"
+  },
+  "course_id": "CS 527",
+  "skills": [
+    "software architecture",
+    "fault tolerance",
+    "case studies",
+    "software patterns"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243b0"
+  },
+  "course_id": "CS 533",
+  "skills": [
+    "parallel computing",
+    "pipeline computation",
+    "data alignment",
+    "system design"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243b1"
+  },
+  "course_id": "CS 534",
+  "skills": [
+    "computer architecture",
+    "energy efficiency",
+    "cloud computing",
+    "security"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243b2"
+  },
+  "course_id": "CS 536",
+  "skills": [
+    "fault tolerance",
+    "system design",
+    "error detection",
+    "reliability"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243b3"
+  },
+  "course_id": "CS 543",
+  "skills": [
+    "computer vision",
+    "image processing",
+    "pattern recognition",
+    "machine learning"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243b4"
+  },
+  "course_id": "CS 544",
+  "skills": [
+    "optimization techniques",
+    "machine learning",
+    "algorithm design",
+    "large-scale algorithms"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243b5"
+  },
+  "course_id": "CS 555",
+  "skills": [
+    "numerical methods",
+    "partial differential equations",
+    "programming techniques",
+    "software usage"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243b6"
+  },
+  "course_id": "CS 562",
+  "skills": [
+    "security",
+    "privacy",
+    "machine learning",
+    "adversarial methods"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243b7"
+  },
+  "course_id": "CS 565",
+  "skills": [
+    "human-computer interaction",
+    "usability evaluation",
+    "design tools",
+    "research project"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243b8"
+  },
+  "course_id": "CS 568",
+  "skills": [
+    "user experience",
+    "machine learning",
+    "product design",
+    "data-driven design"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243b9"
+  },
+  "course_id": "CS 571",
+  "skills": [
+    "combinatorics",
+    "mathematics",
+    "proof techniques",
+    "problem solving"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243ba"
+  },
+  "course_id": "CS 574",
+  "skills": [
+    "randomized algorithms",
+    "probability",
+    "graph theory",
+    "complexity analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243bb"
+  },
+  "course_id": "CS 576",
+  "skills": [
+    "automated deduction",
+    "theorem proving",
+    "logic programming",
+    "formal methods"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243bc"
+  },
+  "course_id": "CS 584",
+  "skills": [
+    "system verification",
+    "embedded systems",
+    "formal methods",
+    "testing techniques"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243bd"
+  },
+  "course_id": "CS 586",
+  "skills": [
+    "optimization",
+    "algorithm design",
+    "problem modeling",
+    "heuristics"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243be"
+  },
+  "course_id": "CS 588",
+  "skills": [
+    "autonomous systems",
+    "sensor integration",
+    "control algorithms",
+    "machine learning"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243bf"
+  },
+  "course_id": "CS 591",
+  "skills": [
+    "research methods",
+    "seminar skills",
+    "topic analysis",
+    "presentation skills"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243c0"
+  },
+  "course_id": "CS 597",
+  "skills": [
+    "independent research",
+    "self-directed learning",
+    "critical thinking",
+    "topic exploration"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243c1"
+  },
+  "course_id": "CS 598",
+  "skills": [
+    "topic exploration",
+    "current trends",
+    "research skills",
+    "presentation skills"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243c2"
+  },
+  "course_id": "CS 599",
+  "skills": [
+    "thesis writing",
+    "research methodology",
+    "data analysis",
+    "academic writing"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243c3"
+  },
+  "course_id": "CS 416",
+  "skills": [
+    "data visualization",
+    "chart design",
+    "user engagement",
+    "dashboard creation"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243c4"
+  },
+  "course_id": "CS 513",
+  "skills": [
+    "data cleaning",
+    "data preprocessing",
+    "data quality",
+    "data management"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243c5"
+  },
+  "course_id": "CS 519",
+  "skills": [
+    "scientific visualization",
+    "data representation",
+    "computational methods",
+    "interactive visualization"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243c6"
+  },
+  "course_id": "CS 100",
+  "skills": [
+    "computer science overview",
+    "problem solving",
+    "career exploration",
+    "field introduction"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243c7"
+  },
+  "course_id": "CS 400",
+  "skills": [
+    "programming basics",
+    "data structures",
+    "algorithm fundamentals",
+    "problem solving"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243c8"
+  },
+  "course_id": "CS 401",
+  "skills": [
+    "algorithm theory",
+    "graph theory",
+    "complexity analysis",
+    "recursion"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243c9"
+  },
+  "course_id": "CS 409",
+  "skills": [
+    "web development",
+    "full-stack programming",
+    "JavaScript",
+    "REST APIs"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243ca"
+  },
+  "course_id": "CS 418",
+  "skills": [
+    "3D modeling",
+    "rendering techniques",
+    "animation",
+    "graphics programming"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243cb"
+  },
+  "course_id": "CS 422",
+  "skills": [
+    "language design",
+    "compiler construction",
+    "functional programming",
+    "imperative programming"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243cc"
+  },
+  "course_id": "CS 423",
+  "skills": [
+    "operating systems",
+    "concurrent programming",
+    "system performance",
+    "security concepts"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243cd"
+  },
+  "course_id": "CS 424",
+  "skills": [
+    "reliability",
+    "scheduling",
+    "control systems",
+    "networking",
+    "robotics"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243ce"
+  },
+  "course_id": "CS 426",
+  "skills": [
+    "syntax analysis",
+    "code generation",
+    "optimization",
+    "semantic analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243cf"
+  },
+  "course_id": "CS 427",
+  "skills": [
+    "software design",
+    "system engineering",
+    "team projects",
+    "analysis techniques"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243d0"
+  },
+  "course_id": "CS 439",
+  "skills": [
+    "network protocols",
+    "wireless communication",
+    "network design"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243d1"
+  },
+  "course_id": "CS 447",
+  "skills": [
+    "NLP techniques",
+    "parsing",
+    "semantic analysis",
+    "machine translation"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243d2"
+  },
+  "course_id": "CS 460",
+  "skills": [
+    "security protocols",
+    "malware analysis",
+    "network security",
+    "forensics"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243d3"
+  },
+  "course_id": "CS 465",
+  "skills": [
+    "UI design",
+    "prototyping",
+    "usability testing",
+    "user analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243d4"
+  },
+  "course_id": "CS 466",
+  "skills": [
+    "bioinformatics",
+    "algorithm design",
+    "data analysis",
+    "computational biology"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243d5"
+  },
+  "course_id": "CS 470",
+  "skills": [
+    "network science",
+    "game theory",
+    "algorithm development",
+    "social dynamics"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243d6"
+  },
+  "course_id": "CS 476",
+  "skills": [
+    "program correctness",
+    "formal methods",
+    "data structures",
+    "induction proofs"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243d7"
+  },
+  "course_id": "CS 481",
+  "skills": [
+    "stochastic processes",
+    "advanced algorithms"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243d8"
+  },
+  "course_id": "CS 492",
+  "skills": [
+    "project management",
+    "team collaboration",
+    "problem solving",
+    "design implementation"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243d9"
+  },
+  "course_id": "CS 514",
+  "skills": [
+    "network analysis",
+    "game theory",
+    "mechanism design",
+    "behavior diffusion"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243da"
+  },
+  "course_id": "CS 537",
+  "skills": [
+    "IoT systems",
+    "data analytics",
+    "resource optimization",
+    "protocol design"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243db"
+  },
+  "course_id": "CS 538",
+  "skills": [
+    "network architecture",
+    "routing protocols",
+    "congestion control",
+    "security measures"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243dc"
+  },
+  "course_id": "CS 539",
+  "skills": [
+    "distributed systems",
+    "algorithm design"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243dd"
+  },
+  "course_id": "CS 542",
+  "skills": [
+    "reinforcement learning",
+    "sample complexity",
+    "policy evaluation",
+    "statistical analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243de"
+  },
+  "course_id": "CS 545",
+  "skills": [
+    "signal processing",
+    "machine learning",
+    "data classification",
+    "pattern recognition"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243df"
+  },
+  "course_id": "CS 546",
+  "skills": [
+    "deep learning",
+    "information extraction",
+    "dialogue systems",
+    "language generation"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243e0"
+  },
+  "course_id": "CS 547",
+  "skills": [
+    "deep learning techniques",
+    "neural networks"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243e1"
+  },
+  "course_id": "CS 549",
+  "skills": [
+    "cognitive science",
+    "research methods",
+    "seminar skills"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243e2"
+  },
+  "course_id": "CS 556",
+  "skills": [
+    "iterative methods",
+    "linear equations",
+    "numerical analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243e3"
+  },
+  "course_id": "CS 567",
+  "skills": [
+    "social media",
+    "algorithmic design",
+    "ethics",
+    "social dynamics"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243e4"
+  },
+  "course_id": "CS 579",
+  "skills": [
+    "complexity theory",
+    "Turing machines",
+    "computational classes"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243e5"
+  },
+  "course_id": "CS 582",
+  "skills": [
+    "bioinformatics",
+    "machine learning",
+    "data analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243e6"
+  },
+  "course_id": "CS 266",
+  "skills": [
+    "community engagement",
+    "innovation",
+    "collaboration"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243e7"
+  },
+  "course_id": "CS 442",
+  "skills": [
+    "machine learning",
+    "security",
+    "privacy",
+    "defense strategies"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243e8"
+  },
+  "course_id": "CS 464",
+  "skills": [
+    "ethical analysis",
+    "social impact",
+    "technology policy"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243e9"
+  },
+  "course_id": "CS 563",
+  "skills": [
+    "computer security",
+    "network security",
+    "research collaboration"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243ea"
+  },
+  "course_id": "CS 581",
+  "skills": [
+    "genomic analysis",
+    "phylogenetics",
+    "algorithm design"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243eb"
+  },
+  "course_id": "CS 475",
+  "skills": [
+    "computation models",
+    "automata theory",
+    "complexity analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243ec"
+  },
+  "course_id": "CS 507",
+  "skills": [
+    "cryptography",
+    "security protocols",
+    "mathematical foundations"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243ed"
+  },
+  "course_id": "CS 508",
+  "skills": [
+    "parallel algorithms",
+    "manycore systems",
+    "performance optimization"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243ee"
+  },
+  "course_id": "CS 540",
+  "skills": [
+    "deep learning",
+    "mathematical analysis",
+    "optimization"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243ef"
+  },
+  "course_id": "CS 580",
+  "skills": [
+    "game theory",
+    "algorithm design",
+    "strategic analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243f0"
+  },
+  "course_id": "IS 100",
+  "skills": [
+    "human-centered design",
+    "leadership",
+    "collaboration"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243f1"
+  },
+  "course_id": "IS 101",
+  "skills": [
+    "information analysis",
+    "critical thinking",
+    "information distribution"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243f2"
+  },
+  "course_id": "IS 107",
+  "skills": [
+    "data science",
+    "statistical analysis",
+    "problem solving"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243f3"
+  },
+  "course_id": "IS 142",
+  "skills": [
+    "gaming history",
+    "cultural impact",
+    "social analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243f4"
+  },
+  "course_id": "IS 189",
+  "skills": [
+    "independent research",
+    "self-directed learning",
+    "subject expertise"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243f5"
+  },
+  "course_id": "IS 200",
+  "skills": [
+    "career skills",
+    "networking",
+    "communication"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243f6"
+  },
+  "course_id": "IS 202",
+  "skills": [
+    "social impact",
+    "technology trends",
+    "critical thinking"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243f7"
+  },
+  "course_id": "IS 203",
+  "skills": [
+    "mathematics",
+    "logic",
+    "data representation"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243f8"
+  },
+  "course_id": "IS 204",
+  "skills": [
+    "research methods",
+    "data analysis",
+    "ethical research"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243f9"
+  },
+  "course_id": "IS 205",
+  "skills": [
+    "python programming",
+    "data processing",
+    "computing concepts"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243fa"
+  },
+  "course_id": "IS 206",
+  "skills": [
+    "database design",
+    "SQL",
+    "data ethics"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243fb"
+  },
+  "course_id": "IS 226",
+  "skills": [
+    "HCI principles",
+    "user interface design",
+    "prototyping"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243fc"
+  },
+  "course_id": "IS 234",
+  "skills": [
+    "cybersecurity basics",
+    "risk assessment",
+    "threat awareness"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243fd"
+  },
+  "course_id": "IS 236",
+  "skills": [
+    "user research",
+    "evaluation methods",
+    "design suggestions"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243fe"
+  },
+  "course_id": "IS 249",
+  "skills": [
+    "professional experience",
+    "application of theory",
+    "workplace skills"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf243ff"
+  },
+  "course_id": "IS 269",
+  "skills": [
+    "internship experience",
+    "reflective practice",
+    "career development"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24400"
+  },
+  "course_id": "IS 299",
+  "skills": [
+    "cultural awareness",
+    "global perspective",
+    "academic credit"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24401"
+  },
+  "course_id": "IS 305",
+  "skills": [
+    "advanced python",
+    "data processing",
+    "version control"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24402"
+  },
+  "course_id": "IS 308",
+  "skills": [
+    "social analysis",
+    "identity studies",
+    "ICT impact"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24403"
+  },
+  "course_id": "IS 309",
+  "skills": [
+    "cultural analysis",
+    "media studies",
+    "subculture exploration"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24404"
+  },
+  "course_id": "IS 310",
+  "skills": [
+    "technology application",
+    "multimedia projects",
+    "scholarly activity"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24405"
+  },
+  "course_id": "IS 312",
+  "skills": [
+    "data storytelling",
+    "digital media",
+    "argumentation"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24406"
+  },
+  "course_id": "IS 316",
+  "skills": [
+    "interface design",
+    "HCI issues",
+    "usability principles"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24407"
+  },
+  "course_id": "IS 324",
+  "skills": [
+    "network theory",
+    "data analysis",
+    "community insights"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24408"
+  },
+  "course_id": "IS 327",
+  "skills": [
+    "machine learning",
+    "data modeling",
+    "python proficiency"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24409"
+  },
+  "course_id": "IS 340",
+  "skills": [
+    "project management",
+    "strategic planning",
+    "team leadership",
+    "communication"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2440a"
+  },
+  "course_id": "IS 357",
+  "skills": [
+    "storytelling",
+    "audience analysis",
+    "communication design",
+    "dialogue facilitation"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2440b"
+  },
+  "course_id": "IS 380",
+  "skills": [
+    "consulting",
+    "data analysis",
+    "problem framing",
+    "presentation skills"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2440c"
+  },
+  "course_id": "IS 381",
+  "skills": [
+    "literacy education",
+    "cognitive processes",
+    "censorship awareness",
+    "cultural studies"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2440d"
+  },
+  "course_id": "IS 389",
+  "skills": [
+    "independent research",
+    "self-directed learning",
+    "critical thinking"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2440e"
+  },
+  "course_id": "IS 390",
+  "skills": [
+    "topic investigation",
+    "research methods",
+    "academic writing"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2440f"
+  },
+  "course_id": "IS 400",
+  "skills": [
+    "presentation skills",
+    "research discussion",
+    "networking"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24410"
+  },
+  "course_id": "IS 401",
+  "skills": [
+    "network systems",
+    "sociotechnical analysis",
+    "research methods"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24411"
+  },
+  "course_id": "IS 403",
+  "skills": [
+    "material evaluation",
+    "resource selection",
+    "child development"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24412"
+  },
+  "course_id": "IS 407",
+  "skills": [
+    "data collection",
+    "statistical analysis",
+    "data visualization",
+    "R programming"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24413"
+  },
+  "course_id": "IS 410",
+  "skills": [
+    "storytelling techniques",
+    "presentation skills",
+    "media adaptation"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24414"
+  },
+  "course_id": "IS 413",
+  "skills": [
+    "resource evaluation",
+    "selection criteria",
+    "youth engagement"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24415"
+  },
+  "course_id": "IS 419",
+  "skills": [
+    "prototyping",
+    "design thinking",
+    "entrepreneurial skills"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24416"
+  },
+  "course_id": "IS 420",
+  "skills": [
+    "community engagement",
+    "technology integration",
+    "information technology"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24417"
+  },
+  "course_id": "IS 423",
+  "skills": [
+    "literacy development",
+    "instructional support",
+    "technology integration"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24418"
+  },
+  "course_id": "IS 430",
+  "skills": [
+    "data processing",
+    "programming",
+    "problem solving"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24419"
+  },
+  "course_id": "IS 439",
+  "skills": [
+    "web development",
+    "HTML",
+    "CSS",
+    "application frameworks"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2441a"
+  },
+  "course_id": "IS 445",
+  "skills": [
+    "data visualization",
+    "statistical techniques",
+    "Python programming"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2441b"
+  },
+  "course_id": "IS 451",
+  "skills": [
+    "research techniques",
+    "source evaluation",
+    "library skills"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2441c"
+  },
+  "course_id": "IS 453",
+  "skills": [
+    "resource evaluation",
+    "selection criteria",
+    "youth needs assessment"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2441d"
+  },
+  "course_id": "IS 455",
+  "skills": [
+    "database design",
+    "SQL",
+    "data modeling",
+    "normalization",
+    "data integrity"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2441e"
+  },
+  "course_id": "IS 457",
+  "skills": [
+    "data analysis",
+    "storytelling",
+    "data visualization",
+    "collaboration",
+    "narrative techniques"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2441f"
+  },
+  "course_id": "IS 461",
+  "skills": [
+    "bibliography",
+    "research methods",
+    "information access",
+    "cultural studies"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24420"
+  },
+  "course_id": "IS 467",
+  "skills": [
+    "ethics",
+    "data privacy",
+    "policy analysis",
+    "decision-making",
+    "stakeholder management"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24421"
+  },
+  "course_id": "IS 471",
+  "skills": [
+    "instructional design",
+    "learning theories",
+    "presentation skills",
+    "research methods"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24422"
+  },
+  "course_id": "IS 477",
+  "skills": [
+    "data management",
+    "curation",
+    "reproducibility",
+    "metadata",
+    "data lifecycle"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24423"
+  },
+  "course_id": "IS 490",
+  "skills": [
+    "research topics",
+    "information policy",
+    "community systems",
+    "knowledge evaluation"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24424"
+  },
+  "course_id": "IS 494",
+  "skills": [
+    "management ethics",
+    "policy analysis",
+    "current topics",
+    "critical thinking"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24425"
+  },
+  "course_id": "IS 496",
+  "skills": [
+    "human-centered design",
+    "systems thinking",
+    "design principles",
+    "user experience"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24426"
+  },
+  "course_id": "IS 497",
+  "skills": [
+    "data analytics",
+    "data science",
+    "current topics",
+    "critical thinking"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24427"
+  },
+  "course_id": "IS 501",
+  "skills": [
+    "reference services",
+    "information retrieval",
+    "search strategies",
+    "question negotiation"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24428"
+  },
+  "course_id": "IS 504",
+  "skills": [
+    "socio-technical systems",
+    "IT design",
+    "analytical tools",
+    "system integration"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24429"
+  },
+  "course_id": "IS 505",
+  "skills": [
+    "information organization",
+    "access methods",
+    "retrieval systems",
+    "user needs"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2442a"
+  },
+  "course_id": "IS 507",
+  "skills": [
+    "statistical models",
+    "information quality",
+    "decision making",
+    "predictive modeling"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2442b"
+  },
+  "course_id": "IS 510",
+  "skills": [
+    "library issues",
+    "community analysis",
+    "intellectual freedom",
+    "professional ethics"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2442c"
+  },
+  "course_id": "IS 514",
+  "skills": [
+    "business research",
+    "client engagement",
+    "professional deliverables",
+    "research portfolio"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2442d"
+  },
+  "course_id": "IS 515",
+  "skills": [
+    "information modeling",
+    "frameworks",
+    "database design",
+    "semantic technologies"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2442e"
+  },
+  "course_id": "IS 517",
+  "skills": [
+    "data science methods",
+    "predictive learning",
+    "regression techniques",
+    "neural networks"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2442f"
+  },
+  "course_id": "IS 519",
+  "skills": [
+    "research design",
+    "philosophical foundations",
+    "method selection",
+    "hands-on exercises"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24430"
+  },
+  "course_id": "IS 523",
+  "skills": [
+    "preservation techniques",
+    "collection management",
+    "library services",
+    "conservation methods"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24431"
+  },
+  "course_id": "IS 525",
+  "skills": [
+    "data warehousing",
+    "business intelligence",
+    "data modeling",
+    "Power BI",
+    "Tableau"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24432"
+  },
+  "course_id": "IS 527",
+  "skills": [
+    "network analysis",
+    "data visualization",
+    "data collection",
+    "social networks"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24433"
+  },
+  "course_id": "IS 529",
+  "skills": [
+    "academic writing",
+    "research methods",
+    "presentation skills",
+    "peer feedback"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24434"
+  },
+  "course_id": "IS 530",
+  "skills": [
+    "collection management",
+    "budgeting",
+    "policy development",
+    "collaboration"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24435"
+  },
+  "course_id": "IS 532",
+  "skills": [
+    "curriculum design",
+    "information literacy",
+    "collaboration",
+    "teaching strategies"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24436"
+  },
+  "course_id": "IS 534",
+  "skills": [
+    "research consulting",
+    "data analysis",
+    "problem framing",
+    "presentation skills"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24437"
+  },
+  "course_id": "IS 537",
+  "skills": [
+    "data cleaning",
+    "data quality",
+    "data lifecycle",
+    "data curation"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24438"
+  },
+  "course_id": "IS 540",
+  "skills": [
+    "social justice",
+    "advocacy",
+    "library outreach",
+    "critical theories"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24439"
+  },
+  "course_id": "IS 541",
+  "skills": [
+    "copyright law",
+    "fair use",
+    "licensing",
+    "educational issues"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2443a"
+  },
+  "course_id": "IS 542",
+  "skills": [
+    "instructional leadership",
+    "curriculum support",
+    "research strategies",
+    "guided inquiry"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2443b"
+  },
+  "course_id": "IS 544",
+  "skills": [
+    "management principles",
+    "organizational theory",
+    "administration",
+    "library operations"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2443c"
+  },
+  "course_id": "IS 547",
+  "skills": [
+    "data curation",
+    "metadata",
+    "data management",
+    "research lifecycle"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2443d"
+  },
+  "course_id": "IS 549",
+  "skills": [
+    "field experience",
+    "professional duties",
+    "practicum skills"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2443e"
+  },
+  "course_id": "IS 551",
+  "skills": [
+    "program planning",
+    "evaluation techniques",
+    "youth services",
+    "information literacy"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2443f"
+  },
+  "course_id": "IS 556",
+  "skills": [
+    "IoT concepts",
+    "data analytics",
+    "business models",
+    "IT innovation"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24440"
+  },
+  "course_id": "IS 557",
+  "skills": [
+    "machine learning",
+    "project management",
+    "team collaboration",
+    "data analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24441"
+  },
+  "course_id": "IS 559",
+  "skills": [
+    "independent research",
+    "problem solving",
+    "project management"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24442"
+  },
+  "course_id": "IS 561",
+  "skills": [
+    "information needs",
+    "user-centered design",
+    "information behavior",
+    "digital libraries"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24443"
+  },
+  "course_id": "IS 562",
+  "skills": [
+    "archival practices",
+    "records management",
+    "preservation",
+    "ethical issues"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24444"
+  },
+  "course_id": "IS 563",
+  "skills": [
+    "advanced topics",
+    "literature analysis",
+    "media studies",
+    "curriculum enhancement"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24445"
+  },
+  "course_id": "IS 565",
+  "skills": [
+    "cataloging",
+    "metadata",
+    "library systems",
+    "Dewey Decimal",
+    "subject access"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24446"
+  },
+  "course_id": "IS 567",
+  "skills": [
+    "text mining",
+    "data transformation",
+    "NLP",
+    "project management"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24447"
+  },
+  "course_id": "IS 569",
+  "skills": [
+    "field experience",
+    "professional duties",
+    "internship skills"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24448"
+  },
+  "course_id": "IS 571",
+  "skills": [
+    "information use",
+    "user studies",
+    "research methods"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24449"
+  },
+  "course_id": "IS 573",
+  "skills": [
+    "collection management",
+    "advanced topics",
+    "information curation"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2444a"
+  },
+  "course_id": "IS 577",
+  "skills": [
+    "data mining",
+    "pattern recognition",
+    "statistical modeling",
+    "algorithm design"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2444b"
+  },
+  "course_id": "IS 579",
+  "skills": [
+    "research participation",
+    "project assistance",
+    "supervised research"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2444c"
+  },
+  "course_id": "IS 580",
+  "skills": [
+    "historical analysis",
+    "information systems",
+    "research methods"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2444d"
+  },
+  "course_id": "IS 581",
+  "skills": [
+    "youth services",
+    "advanced topics",
+    "program development"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2444e"
+  },
+  "course_id": "IS 582",
+  "skills": [
+    "librarianship",
+    "advanced topics",
+    "service development"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2444f"
+  },
+  "course_id": "IS 583",
+  "skills": [
+    "book history",
+    "advanced topics",
+    "historical research"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24450"
+  },
+  "course_id": "IS 585",
+  "skills": [
+    "bibliographic metadata",
+    "cataloging principles",
+    "subject analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24451"
+  },
+  "course_id": "IS 586",
+  "skills": [
+    "usability engineering",
+    "interface design",
+    "HCI principles"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24452"
+  },
+  "course_id": "IS 589",
+  "skills": [
+    "independent study",
+    "self-directed learning",
+    "topic exploration"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24453"
+  },
+  "course_id": "IS 590",
+  "skills": [
+    "information foundations",
+    "advanced topics",
+    "curriculum development"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24454"
+  },
+  "course_id": "IS 591",
+  "skills": [
+    "information services",
+    "advanced topics",
+    "service delivery"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24455"
+  },
+  "course_id": "IS 592",
+  "skills": [
+    "information organization",
+    "advanced topics",
+    "curriculum enhancement"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24456"
+  },
+  "course_id": "IS 593",
+  "skills": [
+    "preservation techniques",
+    "tech services",
+    "advanced topics"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24457"
+  },
+  "course_id": "IS 594",
+  "skills": [
+    "management principles",
+    "policy development",
+    "advanced topics"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24458"
+  },
+  "course_id": "IS 595",
+  "skills": [
+    "organization skills",
+    "representation techniques",
+    "advanced topics"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24459"
+  },
+  "course_id": "IS 596",
+  "skills": [
+    "design thinking",
+    "user research",
+    "prototyping",
+    "system evaluation"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2445a"
+  },
+  "course_id": "IS 597",
+  "skills": [
+    "data analysis",
+    "statistical methods",
+    "data visualization",
+    "machine learning"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2445b"
+  },
+  "course_id": "IS 599",
+  "skills": [
+    "research methods",
+    "thesis writing",
+    "data collection",
+    "critical analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2445c"
+  },
+  "course_id": "IS 409",
+  "skills": [
+    "web design",
+    "HTML",
+    "CSS",
+    "usability testing"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2445d"
+  },
+  "course_id": "IS 493",
+  "skills": [
+    "collection management",
+    "preservation techniques",
+    "cultural heritage",
+    "research skills"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2445e"
+  },
+  "course_id": "IS 521",
+  "skills": [
+    "digital libraries",
+    "information retrieval",
+    "software tools",
+    "literature review"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2445f"
+  },
+  "course_id": "IS 145",
+  "skills": [
+    "data mapping",
+    "quantitative analysis",
+    "community engagement",
+    "field research"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24460"
+  },
+  "course_id": "IS 229",
+  "skills": [
+    "web development",
+    "design principles",
+    "accessibility",
+    "critical thinking"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24461"
+  },
+  "course_id": "IS 311",
+  "skills": [
+    "historical analysis",
+    "information theory",
+    "social impact",
+    "critical frameworks"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24462"
+  },
+  "course_id": "IS 370",
+  "skills": [
+    "information behavior",
+    "user needs",
+    "research methods",
+    "theoretical models"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24463"
+  },
+  "course_id": "IS 418",
+  "skills": [
+    "community outreach",
+    "service learning",
+    "collaboration",
+    "theory application"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24464"
+  },
+  "course_id": "IS 429",
+  "skills": [
+    "content strategy",
+    "website management",
+    "HTML",
+    "user experience"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24465"
+  },
+  "course_id": "IS 446",
+  "skills": [
+    "systems analysis",
+    "information management",
+    "workflow design",
+    "usability assessment"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24466"
+  },
+  "course_id": "IS 509",
+  "skills": [
+    "historical context",
+    "socio-cultural analysis",
+    "theoretical foundations",
+    "research exploration"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24467"
+  },
+  "course_id": "IS 543",
+  "skills": [
+    "digital preservation",
+    "risk assessment",
+    "quality control",
+    "management strategies"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24468"
+  },
+  "course_id": "IS 550",
+  "skills": [
+    "information theory",
+    "conceptual analysis",
+    "formal methods",
+    "logic application"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24469"
+  },
+  "course_id": "IS 578",
+  "skills": [
+    "research methods",
+    "advanced analysis",
+    "guest lectures",
+    "topic exploration"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2446a"
+  },
+  "course_id": "IS 584",
+  "skills": [
+    "ethics",
+    "privacy issues",
+    "critical thinking",
+    "topic exploration"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2446b"
+  },
+  "course_id": "IS 266",
+  "skills": [
+    "community engagement",
+    "innovation theory",
+    "collaboration",
+    "historical analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2446c"
+  },
+  "course_id": "IS 304",
+  "skills": [
+    "research design",
+    "qualitative methods",
+    "quantitative methods",
+    "data collection"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2446d"
+  },
+  "course_id": "IS 364",
+  "skills": [
+    "data privacy",
+    "privacy theories",
+    "digital protections",
+    "privacy threats"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2446e"
+  },
+  "course_id": "IS 426",
+  "skills": [
+    "museum tech",
+    "design thinking",
+    "interactive exhibits",
+    "digital collections"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2446f"
+  },
+  "course_id": "IS 464",
+  "skills": [
+    "information security",
+    "privacy policies",
+    "ethical issues",
+    "organizational concerns"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24470"
+  },
+  "course_id": "IS 491",
+  "skills": [
+    "information services",
+    "current topics",
+    "research skills"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24471"
+  },
+  "course_id": "IS 524",
+  "skills": [
+    "data governance",
+    "data ethics",
+    "policy design",
+    "data quality"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24472"
+  },
+  "course_id": "IS 568",
+  "skills": [
+    "human-centered design",
+    "research methods",
+    "discussion skills"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24473"
+  },
+  "course_id": "IS 492",
+  "skills": [
+    "information organizations",
+    "social contexts",
+    "current topics"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24474"
+  },
+  "course_id": "STAT 100",
+  "skills": [
+    "descriptive stats",
+    "probability",
+    "hypothesis testing",
+    "data estimation"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24475"
+  },
+  "course_id": "STAT 107",
+  "skills": [
+    "data analysis",
+    "real-world datasets",
+    "social issues",
+    "hands-on projects"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24476"
+  },
+  "course_id": "STAT 200",
+  "skills": [
+    "data analysis",
+    "statistical models",
+    "data visualization",
+    "study design"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24477"
+  },
+  "course_id": "STAT 207",
+  "skills": [
+    "data pipeline",
+    "data management",
+    "hypothesis testing",
+    "machine learning"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24478"
+  },
+  "course_id": "STAT 212",
+  "skills": [
+    "biostatistics",
+    "experimental design",
+    "statistical inference",
+    "data computing"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24479"
+  },
+  "course_id": "STAT 361",
+  "skills": [
+    "probability",
+    "statistics",
+    "computer science"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2447a"
+  },
+  "course_id": "STAT 385",
+  "skills": [
+    "programming methods",
+    "statistical algorithms",
+    "dynamic reports"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2447b"
+  },
+  "course_id": "STAT 400",
+  "skills": [
+    "mathematical statistics",
+    "probability theory",
+    "hypothesis testing"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2447c"
+  },
+  "course_id": "STAT 408",
+  "skills": [
+    "probability theory",
+    "random variables",
+    "sampling theory"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2447d"
+  },
+  "course_id": "STAT 410",
+  "skills": [
+    "normal theory",
+    "maximum likelihood",
+    "confidence intervals"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2447e"
+  },
+  "course_id": "STAT 420",
+  "skills": [
+    "applied statistics",
+    "regression",
+    "ANOVA",
+    "nonparametric tests"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2447f"
+  },
+  "course_id": "STAT 424",
+  "skills": [
+    "experimental design",
+    "data analysis",
+    "ANOVA",
+    "randomization"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24480"
+  },
+  "course_id": "STAT 425",
+  "skills": [
+    "linear regression",
+    "model building",
+    "ANOVA",
+    "PCA",
+    "statistical computing"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24481"
+  },
+  "course_id": "STAT 426",
+  "skills": [
+    "logistic regression",
+    "GLMs",
+    "model diagnostics",
+    "categorical data"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24482"
+  },
+  "course_id": "STAT 427",
+  "skills": [
+    "consulting",
+    "teamwork",
+    "statistical analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24483"
+  },
+  "course_id": "STAT 428",
+  "skills": [
+    "statistical computing",
+    "data visualization",
+    "Monte Carlo methods"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24484"
+  },
+  "course_id": "STAT 429",
+  "skills": [
+    "time series",
+    "ARIMA models",
+    "spectral analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24485"
+  },
+  "course_id": "STAT 430",
+  "skills": [
+    "data modeling",
+    "real data analysis",
+    "statistical techniques"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24486"
+  },
+  "course_id": "STAT 431",
+  "skills": [
+    "Bayesian methods",
+    "Markov chains",
+    "hypothesis testing"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24487"
+  },
+  "course_id": "STAT 432",
+  "skills": [
+    "supervised learning",
+    "unsupervised learning",
+    "model selection"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24488"
+  },
+  "course_id": "STAT 433",
+  "skills": [
+    "Markov chains",
+    "stochastic processes",
+    "Brownian motion"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24489"
+  },
+  "course_id": "STAT 437",
+  "skills": [
+    "clustering",
+    "dimensionality reduction",
+    "data patterns"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2448a"
+  },
+  "course_id": "STAT 440",
+  "skills": [
+    "data management",
+    "data cleaning",
+    "database querying"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2448b"
+  },
+  "course_id": "STAT 443",
+  "skills": [
+    "communication",
+    "statistical consulting",
+    "project management"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2448c"
+  },
+  "course_id": "STAT 447",
+  "skills": [
+    "data science",
+    "programming",
+    "SQL",
+    "version control"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2448d"
+  },
+  "course_id": "STAT 448",
+  "skills": [
+    "data analysis",
+    "data mining",
+    "regression techniques"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2448e"
+  },
+  "course_id": "STAT 510",
+  "skills": [
+    "mathematical statistics",
+    "hypothesis testing",
+    "Bayesian methods"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2448f"
+  },
+  "course_id": "STAT 525",
+  "skills": [
+    "computational statistics",
+    "Monte Carlo",
+    "optimization"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24490"
+  },
+  "course_id": "STAT 528",
+  "skills": [
+    "generalized linear models",
+    "categorical data",
+    "data analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24491"
+  },
+  "course_id": "STAT 530",
+  "skills": [
+    "bioinformatics",
+    "data analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24492"
+  },
+  "course_id": "STAT 533",
+  "skills": [
+    "stochastic processes",
+    "queueing theory",
+    "probability theory"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24493"
+  },
+  "course_id": "STAT 541",
+  "skills": [
+    "analytics",
+    "data interpretation",
+    "modeling",
+    "statistics"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24494"
+  },
+  "course_id": "STAT 542",
+  "skills": [
+    "predictive modeling",
+    "classification",
+    "clustering",
+    "regression",
+    "neural networks"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24495"
+  },
+  "course_id": "STAT 543",
+  "skills": [
+    "multivariate analysis",
+    "data visualization",
+    "statistical methods"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24496"
+  },
+  "course_id": "STAT 546",
+  "skills": [
+    "data analysis",
+    "machine learning",
+    "deep learning",
+    "text mining",
+    "data mining"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24497"
+  },
+  "course_id": "STAT 551",
+  "skills": [
+    "probability theory",
+    "statistical inference",
+    "theoretical statistics"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24498"
+  },
+  "course_id": "STAT 575",
+  "skills": [
+    "asymptotic theory",
+    "likelihood methods",
+    "nonparametric statistics"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24499"
+  },
+  "course_id": "STAT 578",
+  "skills": [
+    "statistical topics",
+    "research methods",
+    "data analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2449a"
+  },
+  "course_id": "STAT 587",
+  "skills": [
+    "hierarchical models",
+    "linear modeling",
+    "statistical analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2449b"
+  },
+  "course_id": "STAT 590",
+  "skills": [
+    "research skills",
+    "independent study",
+    "data collection"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2449c"
+  },
+  "course_id": "STAT 593",
+  "skills": [
+    "internship experience",
+    "applied statistics",
+    "professional skills"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2449d"
+  },
+  "course_id": "STAT 599",
+  "skills": [
+    "thesis writing",
+    "research methodology",
+    "data analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2449e"
+  },
+  "course_id": "ECE 101",
+  "skills": [
+    "digital technology",
+    "data compression",
+    "information security"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2449f"
+  },
+  "course_id": "ECE 110",
+  "skills": [
+    "circuit analysis",
+    "electronic principles",
+    "measurement techniques"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244a0"
+  },
+  "course_id": "ECE 120",
+  "skills": [
+    "digital logic",
+    "computer systems",
+    "programming basics"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244a1"
+  },
+  "course_id": "ECE 198",
+  "skills": [
+    "special topics",
+    "current trends",
+    "discussion skills"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244a2"
+  },
+  "course_id": "ECE 199",
+  "skills": [
+    "seminar skills",
+    "presentation skills",
+    "collaboration"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244a3"
+  },
+  "course_id": "ECE 200",
+  "skills": [
+    "career planning",
+    "educational discussions",
+    "networking"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244a4"
+  },
+  "course_id": "ECE 205",
+  "skills": [
+    "circuit design",
+    "AC analysis",
+    "DC circuits"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244a5"
+  },
+  "course_id": "ECE 206",
+  "skills": [
+    "lab skills",
+    "circuit experiments",
+    "feedback control"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244a6"
+  },
+  "course_id": "ECE 210",
+  "skills": [
+    "signal processing",
+    "circuit analysis",
+    "Fourier transform"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244a7"
+  },
+  "course_id": "ECE 211",
+  "skills": [
+    "circuit analysis",
+    "op amps",
+    "transient analysis",
+    "Laplace transform"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244a8"
+  },
+  "course_id": "ECE 220",
+  "skills": [
+    "assembly language",
+    "C programming",
+    "data structures",
+    "algorithms"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244a9"
+  },
+  "course_id": "ECE 298",
+  "skills": [
+    "topic exploration",
+    "research skills",
+    "discussion"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244aa"
+  },
+  "course_id": "ECE 310",
+  "skills": [
+    "signal processing",
+    "Fourier transforms",
+    "filter design",
+    "stability analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244ab"
+  },
+  "course_id": "ECE 311",
+  "skills": [
+    "lab techniques",
+    "signal analysis",
+    "data collection"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244ac"
+  },
+  "course_id": "ECE 313",
+  "skills": [
+    "probability theory",
+    "statistical methods",
+    "decision making"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244ad"
+  },
+  "course_id": "ECE 314",
+  "skills": [
+    "computer simulation",
+    "Python programming",
+    "data analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244ae"
+  },
+  "course_id": "ECE 316",
+  "skills": [
+    "ethical analysis",
+    "case studies",
+    "professional responsibility"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244af"
+  },
+  "course_id": "ECE 317",
+  "skills": [
+    "technology management",
+    "circuit fundamentals",
+    "device fabrication"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244b0"
+  },
+  "course_id": "ECE 329",
+  "skills": [
+    "electromagnetic theory",
+    "Maxwell's equations",
+    "wave analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244b1"
+  },
+  "course_id": "ECE 330",
+  "skills": [
+    "power fundamentals",
+    "energy conversion",
+    "circuit analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244b2"
+  },
+  "course_id": "ECE 333",
+  "skills": [
+    "green energy",
+    "energy analysis",
+    "project presentation"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244b3"
+  },
+  "course_id": "ECE 340",
+  "skills": [
+    "semiconductor physics",
+    "device electronics",
+    "circuit design"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244b4"
+  },
+  "course_id": "ECE 342",
+  "skills": [
+    "circuit design",
+    "MOSFET analysis",
+    "amplifier design"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244b5"
+  },
+  "course_id": "ECE 343",
+  "skills": [
+    "lab techniques",
+    "circuit testing",
+    "data collection"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244b6"
+  },
+  "course_id": "ECE 350",
+  "skills": [
+    "radiation theory",
+    "antenna design",
+    "wave propagation"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244b7"
+  },
+  "course_id": "ECE 374",
+  "skills": [
+    "algorithm design",
+    "computational models",
+    "problem solving"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244b8"
+  },
+  "course_id": "ECE 385",
+  "skills": [
+    "digital design",
+    "system testing",
+    "FPGA programming"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244b9"
+  },
+  "course_id": "ECE 391",
+  "skills": [
+    "systems software",
+    "multitasking",
+    "virtualization"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244ba"
+  },
+  "course_id": "ECE 395",
+  "skills": [
+    "project planning",
+    "microcomputer design",
+    "documentation"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244bb"
+  },
+  "course_id": "ECE 396",
+  "skills": [
+    "project management",
+    "research",
+    "collaboration"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244bc"
+  },
+  "course_id": "ECE 397",
+  "skills": [
+    "independent study",
+    "problem solving",
+    "self-motivation"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244bd"
+  },
+  "course_id": "ECE 398",
+  "skills": [
+    "topic exploration",
+    "critical thinking",
+    "adaptability"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244be"
+  },
+  "course_id": "ECE 402",
+  "skills": [
+    "music technology",
+    "sound synthesis",
+    "algorithm design"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244bf"
+  },
+  "course_id": "ECE 407",
+  "skills": [
+    "cryptography",
+    "security protocols",
+    "theoretical foundations"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244c0"
+  },
+  "course_id": "ECE 408",
+  "skills": [
+    "parallel programming",
+    "computational thinking",
+    "data structures"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244c1"
+  },
+  "course_id": "ECE 410",
+  "skills": [
+    "neural modeling",
+    "signal processing",
+    "system integration"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244c2"
+  },
+  "course_id": "ECE 411",
+  "skills": [
+    "computer architecture",
+    "system design",
+    "performance evaluation"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244c3"
+  },
+  "course_id": "ECE 414",
+  "skills": [
+    "biomedical engineering",
+    "instrumentation",
+    "data analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244c4"
+  },
+  "course_id": "ECE 415",
+  "skills": [
+    "lab techniques",
+    "experimental design",
+    "data collection"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244c5"
+  },
+  "course_id": "ECE 416",
+  "skills": [
+    "biosensor design",
+    "chemical principles",
+    "data characterization"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244c6"
+  },
+  "course_id": "ECE 418",
+  "skills": [
+    "image processing",
+    "video analysis",
+    "programming"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244c7"
+  },
+  "course_id": "ECE 420",
+  "skills": [
+    "DSP systems",
+    "real-time processing",
+    "project development"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244c8"
+  },
+  "course_id": "ECE 421",
+  "skills": [
+    "neural interfaces",
+    "brain mapping",
+    "data processing"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244c9"
+  },
+  "course_id": "ECE 422",
+  "skills": [
+    "computer security",
+    "risk assessment",
+    "system protection"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244ca"
+  },
+  "course_id": "ECE 424",
+  "skills": [
+    "advanced security",
+    "protocol analysis",
+    "system vulnerabilities"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244cb"
+  },
+  "course_id": "ECE 425",
+  "skills": [
+    "VLSI design",
+    "circuit layout",
+    "CAD tools"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244cc"
+  },
+  "course_id": "ECE 428",
+  "skills": [
+    "distributed systems",
+    "network protocols",
+    "system integration"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244cd"
+  },
+  "course_id": "ECE 431",
+  "skills": [
+    "power systems",
+    "machine dynamics",
+    "energy control"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244ce"
+  },
+  "course_id": "ECE 434",
+  "skills": [
+    "mobile computing",
+    "data analytics",
+    "system design"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244cf"
+  },
+  "course_id": "ECE 438",
+  "skills": [
+    "networking",
+    "protocols",
+    "data transmission",
+    "signal processing"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244d0"
+  },
+  "course_id": "ECE 441",
+  "skills": [
+    "semiconductor physics",
+    "device modeling",
+    "transistor design",
+    "characterization"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244d1"
+  },
+  "course_id": "ECE 443",
+  "skills": [
+    "semiconductor structures",
+    "energy conversion",
+    "quantum physics",
+    "numerical modeling"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244d2"
+  },
+  "course_id": "ECE 444",
+  "skills": [
+    "fabrication techniques",
+    "device design",
+    "semiconductor properties",
+    "characterization methods"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244d3"
+  },
+  "course_id": "ECE 445",
+  "skills": [
+    "teamwork",
+    "project management",
+    "hardware testing",
+    "report writing"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244d4"
+  },
+  "course_id": "ECE 448",
+  "skills": [
+    "AI concepts",
+    "machine learning",
+    "data analysis",
+    "algorithm design"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244d5"
+  },
+  "course_id": "ECE 449",
+  "skills": [
+    "machine learning",
+    "data modeling",
+    "statistical analysis",
+    "algorithm implementation"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244d6"
+  },
+  "course_id": "ECE 454",
+  "skills": [
+    "antenna design",
+    "electromagnetic theory",
+    "signal propagation",
+    "measurement techniques"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244d7"
+  },
+  "course_id": "ECE 457",
+  "skills": [
+    "microwave theory",
+    "circuit design",
+    "S-parameter analysis",
+    "transmission lines"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244d8"
+  },
+  "course_id": "ECE 461",
+  "skills": [
+    "digital communication",
+    "signal processing",
+    "data reliability",
+    "channel modeling"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244d9"
+  },
+  "course_id": "ECE 462",
+  "skills": [
+    "logic synthesis",
+    "combinational logic",
+    "state machines",
+    "test pattern generation"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244da"
+  },
+  "course_id": "ECE 467",
+  "skills": [
+    "biophotonics",
+    "imaging techniques",
+    "spectroscopy",
+    "therapeutic applications"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244db"
+  },
+  "course_id": "ECE 470",
+  "skills": [
+    "robotics fundamentals",
+    "kinematics",
+    "motion planning",
+    "control systems"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244dc"
+  },
+  "course_id": "ECE 472",
+  "skills": [
+    "ultrasonic imaging",
+    "medical diagnostics",
+    "image quality",
+    "system design"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244dd"
+  },
+  "course_id": "ECE 478",
+  "skills": [
+    "software development",
+    "formal methods",
+    "programming techniques",
+    "system design"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244de"
+  },
+  "course_id": "ECE 479",
+  "skills": [
+    "IoT concepts",
+    "cognitive computing",
+    "data analytics",
+    "system design"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244df"
+  },
+  "course_id": "ECE 481",
+  "skills": [
+    "nanotechnology",
+    "nanoscale systems",
+    "fabrication techniques",
+    "material properties"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244e0"
+  },
+  "course_id": "ECE 483",
+  "skills": [
+    "IC design",
+    "circuit techniques",
+    "operational amplifiers",
+    "noise analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244e1"
+  },
+  "course_id": "ECE 484",
+  "skills": [
+    "autonomous systems",
+    "safety analysis",
+    "motion planning",
+    "control algorithms"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244e2"
+  },
+  "course_id": "ECE 486",
+  "skills": [
+    "control systems",
+    "modeling techniques",
+    "design principles",
+    "laboratory techniques"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244e3"
+  },
+  "course_id": "ECE 489",
+  "skills": [
+    "robotics",
+    "dynamics",
+    "control systems",
+    "simulation"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244e4"
+  },
+  "course_id": "ECE 490",
+  "skills": [
+    "optimization",
+    "programming",
+    "linear programming",
+    "nonlinear programming"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244e5"
+  },
+  "course_id": "ECE 491",
+  "skills": [
+    "numerical methods",
+    "analysis",
+    "computational techniques"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244e6"
+  },
+  "course_id": "ECE 495",
+  "skills": [
+    "photonic devices",
+    "experimental techniques",
+    "optical characterization"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244e7"
+  },
+  "course_id": "ECE 496",
+  "skills": [
+    "research methods",
+    "proposal writing",
+    "data analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244e8"
+  },
+  "course_id": "ECE 498",
+  "skills": [
+    "special topics",
+    "emerging technologies",
+    "independent study"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244e9"
+  },
+  "course_id": "ECE 499",
+  "skills": [
+    "thesis writing",
+    "oral presentation",
+    "research completion"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244ea"
+  },
+  "course_id": "ECE 500",
+  "skills": [
+    "colloquium participation",
+    "academic discussions"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244eb"
+  },
+  "course_id": "ECE 511",
+  "skills": [
+    "computer architecture",
+    "system design",
+    "performance analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244ec"
+  },
+  "course_id": "ECE 513",
+  "skills": [
+    "signal processing",
+    "mathematical tools",
+    "vector spaces"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244ed"
+  },
+  "course_id": "ECE 515",
+  "skills": [
+    "control theory",
+    "system modeling",
+    "stability analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244ee"
+  },
+  "course_id": "ECE 528",
+  "skills": [
+    "nonlinear dynamics",
+    "control applications",
+    "stability theory"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244ef"
+  },
+  "course_id": "ECE 534",
+  "skills": [
+    "random processes",
+    "spectral analysis",
+    "filtering techniques"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244f0"
+  },
+  "course_id": "ECE 538",
+  "skills": [
+    "2D materials",
+    "device fabrication",
+    "nanoscale electronics"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244f1"
+  },
+  "course_id": "ECE 542",
+  "skills": [
+    "fault tolerance",
+    "system design",
+    "error detection"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244f2"
+  },
+  "course_id": "ECE 543",
+  "skills": [
+    "statistical learning",
+    "adaptive systems",
+    "decision theory"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244f3"
+  },
+  "course_id": "ECE 546",
+  "skills": [
+    "signal integrity",
+    "high-speed design",
+    "circuit modeling"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244f4"
+  },
+  "course_id": "ECE 549",
+  "skills": [
+    "computer vision",
+    "image processing",
+    "AI algorithms"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244f5"
+  },
+  "course_id": "ECE 553",
+  "skills": [
+    "optimal control",
+    "algorithm design",
+    "theoretical foundations"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244f6"
+  },
+  "course_id": "ECE 554",
+  "skills": [
+    "reliability analysis",
+    "system performance",
+    "design optimization"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244f7"
+  },
+  "course_id": "ECE 561",
+  "skills": [
+    "statistical theory",
+    "hypothesis testing",
+    "estimation",
+    "decision rules",
+    "performance analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244f8"
+  },
+  "course_id": "ECE 574",
+  "skills": [
+    "nanophotonics",
+    "plasmonics",
+    "metamaterials",
+    "light interaction",
+    "semiconductors"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244f9"
+  },
+  "course_id": "ECE 584",
+  "skills": [
+    "system verification",
+    "model checking",
+    "controller synthesis",
+    "safety analysis",
+    "robotics applications"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244fa"
+  },
+  "course_id": "ECE 585",
+  "skills": [
+    "device modeling",
+    "circuit simulation",
+    "short channel effects",
+    "silicon-on-insulator",
+    "reliability analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244fb"
+  },
+  "course_id": "ECE 590",
+  "skills": [
+    "research topics",
+    "literature review",
+    "discussion skills",
+    "presentation skills"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244fc"
+  },
+  "course_id": "ECE 596",
+  "skills": [
+    "project management",
+    "engineering analysis",
+    "design skills",
+    "team collaboration"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244fd"
+  },
+  "course_id": "ECE 597",
+  "skills": [
+    "independent research",
+    "project proposal",
+    "self-directed learning"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244fe"
+  },
+  "course_id": "ECE 598",
+  "skills": [
+    "emerging topics",
+    "curriculum augmentation",
+    "flexible learning"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf244ff"
+  },
+  "course_id": "ECE 599",
+  "skills": [
+    "thesis writing",
+    "research methodology",
+    "data analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24500"
+  },
+  "course_id": "ECE 217",
+  "skills": [
+    "solar vehicle design",
+    "multidisciplinary teamwork",
+    "hands-on engineering"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24501"
+  },
+  "course_id": "ECE 304",
+  "skills": [
+    "photonic devices",
+    "optical processes",
+    "semiconductor applications",
+    "waveguide theory"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24502"
+  },
+  "course_id": "ECE 364",
+  "skills": [
+    "machine learning",
+    "auto-differentiation",
+    "PyTorch",
+    "algorithm implementation"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24503"
+  },
+  "course_id": "ECE 380",
+  "skills": [
+    "imaging physics",
+    "medical imaging",
+    "data visualization",
+    "signal processing"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24504"
+  },
+  "course_id": "ECE 401",
+  "skills": [
+    "signal processing",
+    "Fourier analysis",
+    "filter design",
+    "image processing"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24505"
+  },
+  "course_id": "ECE 437",
+  "skills": [
+    "sensors technology",
+    "data collection",
+    "instrumentation techniques",
+    "hands-on practice"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24506"
+  },
+  "course_id": "ECE 439",
+  "skills": [
+    "wireless networks",
+    "network protocols",
+    "performance optimization",
+    "security mechanisms"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24507"
+  },
+  "course_id": "ECE 453",
+  "skills": [
+    "radio system design",
+    "modulation techniques",
+    "network analysis",
+    "receiver design"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24508"
+  },
+  "course_id": "ECE 455",
+  "skills": [
+    "optical electronics",
+    "laser characteristics",
+    "gain theory",
+    "device applications"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24509"
+  },
+  "course_id": "ECE 459",
+  "skills": [
+    "communication systems",
+    "signal representation",
+    "modulation schemes",
+    "noise analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2450a"
+  },
+  "course_id": "ECE 463",
+  "skills": [
+    "digital communication",
+    "system configuration",
+    "performance evaluation",
+    "hands-on skills"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2450b"
+  },
+  "course_id": "ECE 464",
+  "skills": [
+    "power converters",
+    "control methods",
+    "semiconductors",
+    "circuit design",
+    "PWM"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2450c"
+  },
+  "course_id": "ECE 469",
+  "skills": [
+    "circuit design",
+    "power systems",
+    "device testing",
+    "heat transfer",
+    "motor drives"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2450d"
+  },
+  "course_id": "ECE 482",
+  "skills": [
+    "VLSI design",
+    "transistor characteristics",
+    "circuit parameters",
+    "fabrication techniques",
+    "logic design"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2450e"
+  },
+  "course_id": "ECE 493",
+  "skills": [
+    "mathematical modeling",
+    "engineering mathematics",
+    "problem solving",
+    "theoretical analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2450f"
+  },
+  "course_id": "ECE 514",
+  "skills": [
+    "biosensors",
+    "data analysis",
+    "biological engineering",
+    "diagnostics",
+    "research methods"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24510"
+  },
+  "course_id": "ECE 518",
+  "skills": [
+    "nanotechnology",
+    "semiconductor devices",
+    "quantum effects",
+    "device applications",
+    "research literature"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24511"
+  },
+  "course_id": "ECE 520",
+  "skills": [
+    "electromagnetic theory",
+    "wave propagation",
+    "antenna design",
+    "boundary-value problems",
+    "scattering analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24512"
+  },
+  "course_id": "ECE 522",
+  "skills": [
+    "memory systems",
+    "hardware architecture",
+    "system software",
+    "project evaluation",
+    "hands-on experience"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24513"
+  },
+  "course_id": "ECE 523",
+  "skills": [
+    "plasma technology",
+    "gaseous electronics",
+    "theoretical analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24514"
+  },
+  "course_id": "ECE 526",
+  "skills": [
+    "distributed algorithms",
+    "performance analysis",
+    "formal proofs",
+    "fault tolerance",
+    "network algorithms"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24515"
+  },
+  "course_id": "ECE 529",
+  "skills": [
+    "light-matter interaction",
+    "optical properties",
+    "quantum mechanics",
+    "photonic materials",
+    "dispersion relations"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24516"
+  },
+  "course_id": "ECE 530",
+  "skills": [
+    "system analysis",
+    "nonlinear systems",
+    "dynamic analysis",
+    "structural characteristics"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24517"
+  },
+  "course_id": "ECE 537",
+  "skills": [
+    "speech processing",
+    "acoustic theory",
+    "signal processing",
+    "psychoacoustics",
+    "MATLAB programming"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24518"
+  },
+  "course_id": "ECE 551",
+  "skills": [
+    "digital signal processing",
+    "filter design",
+    "adaptive processing",
+    "DFT algorithms"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24519"
+  },
+  "course_id": "ECE 555",
+  "skills": [
+    "stochastic control",
+    "dynamic programming",
+    "Kalman filtering",
+    "control laws"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2451a"
+  },
+  "course_id": "ECE 562",
+  "skills": [
+    "digital communication",
+    "modulation techniques",
+    "signal processing",
+    "wireless systems"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2451b"
+  },
+  "course_id": "ECE 563",
+  "skills": [
+    "information theory",
+    "data compression",
+    "channel capacity",
+    "Shannon's theorems"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2451c"
+  },
+  "course_id": "ECE 566",
+  "skills": [
+    "machine learning",
+    "statistical inference",
+    "optimization",
+    "computational methods"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2451d"
+  },
+  "course_id": "ECE 579",
+  "skills": [
+    "computational complexity",
+    "theoretical computer science"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2451e"
+  },
+  "course_id": "ECE 580",
+  "skills": [
+    "optimization methods",
+    "vector spaces",
+    "mathematical programming",
+    "iterative methods"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2451f"
+  },
+  "course_id": "ECE 581",
+  "skills": [
+    "analog design",
+    "CMOS",
+    "circuit techniques",
+    "computer simulation"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24520"
+  },
+  "course_id": "ECE 305",
+  "skills": [
+    "quantum mechanics",
+    "qubits",
+    "quantum communication",
+    "quantum algorithms"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24521"
+  },
+  "course_id": "ECE 406",
+  "skills": [
+    "quantum optics",
+    "device physics",
+    "theoretical tools",
+    "literature review"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24522"
+  },
+  "course_id": "ECE 447",
+  "skills": [
+    "microwave design",
+    "amplifiers",
+    "oscillators",
+    "mixers"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24523"
+  },
+  "course_id": "ECE 450",
+  "skills": [
+    "fiber optics",
+    "optical design",
+    "noise analysis",
+    "link analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24524"
+  },
+  "course_id": "ECE 451",
+  "skills": [
+    "microwave measurements",
+    "laboratory analysis",
+    "circuit testing"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24525"
+  },
+  "course_id": "ECE 460",
+  "skills": [
+    "optical imaging",
+    "signal processing",
+    "microscopy",
+    "diffraction"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24526"
+  },
+  "course_id": "ECE 494",
+  "skills": [
+    "deep learning",
+    "computer vision",
+    "algorithm development"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24527"
+  },
+  "course_id": "ECE 524",
+  "skills": [
+    "computer security",
+    "risk assessment",
+    "vulnerability analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24528"
+  },
+  "course_id": "ECE 535",
+  "skills": [
+    "semiconductor theory",
+    "energy bands",
+    "transport theory"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24529"
+  },
+  "course_id": "ECE 540",
+  "skills": [
+    "numerical analysis",
+    "boundary-value problems",
+    "computer simulation"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2452a"
+  },
+  "course_id": "ECE 558",
+  "skills": [
+    "digital imaging",
+    "signal processing",
+    "filter design"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2452b"
+  },
+  "course_id": "ECE 568",
+  "skills": [
+    "electromechanical systems",
+    "control theory",
+    "robotics"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2452c"
+  },
+  "course_id": "ECE 572",
+  "skills": [
+    "quantum mechanics",
+    "atomic physics",
+    "maser theory"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2452d"
+  },
+  "course_id": "ECE 575",
+  "skills": [
+    "wireless communication",
+    "electromagnetic theory",
+    "signal processing"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2452e"
+  },
+  "course_id": "ECE 576",
+  "skills": [
+    "power systems",
+    "stability analysis",
+    "dynamic modeling"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2452f"
+  },
+  "course_id": "ECE 145",
+  "skills": [
+    "project design",
+    "team collaboration",
+    "prototyping"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24530"
+  },
+  "course_id": "ECE 365",
+  "skills": [
+    "data analysis",
+    "machine learning",
+    "project-based learning"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24531"
+  },
+  "course_id": "ECE 404",
+  "skills": [
+    "quantum computing",
+    "information theory",
+    "mathematical proofs"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24532"
+  },
+  "course_id": "ECE 405",
+  "skills": [
+    "quantum technology",
+    "network protocols",
+    "qubit interactions"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24533"
+  },
+  "course_id": "ECE 419",
+  "skills": [
+    "security",
+    "lab techniques",
+    "data analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24534"
+  },
+  "course_id": "ECE 427",
+  "skills": [
+    "VLSI design",
+    "teamwork",
+    "EDA tools",
+    "RTL modeling"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24535"
+  },
+  "course_id": "ECE 435",
+  "skills": [
+    "networking",
+    "lab skills",
+    "protocols"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24536"
+  },
+  "course_id": "ECE 446",
+  "skills": [
+    "experimental design",
+    "data analysis",
+    "scientific computing",
+    "presentation skills"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24537"
+  },
+  "course_id": "ECE 473",
+  "skills": [
+    "acoustics",
+    "vibration analysis",
+    "wave phenomena"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24538"
+  },
+  "course_id": "ECE 476",
+  "skills": [
+    "power systems",
+    "network analysis",
+    "fault analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24539"
+  },
+  "course_id": "ECE 508",
+  "skills": [
+    "parallel algorithms",
+    "problem decomposition",
+    "data locality"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2453a"
+  },
+  "course_id": "ECE 517",
+  "skills": [
+    "control systems",
+    "stability analysis",
+    "adaptive systems"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2453b"
+  },
+  "course_id": "ECE 527",
+  "skills": [
+    "SoC design",
+    "hardware/software co-design",
+    "design verification"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2453c"
+  },
+  "course_id": "ECE 544",
+  "skills": [
+    "signal processing",
+    "image processing",
+    "data analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2453d"
+  },
+  "course_id": "ECE 557",
+  "skills": [
+    "control theory",
+    "optimization",
+    "geometric methods"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2453e"
+  },
+  "course_id": "ECE 564",
+  "skills": [
+    "microscopy",
+    "optics",
+    "data analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2453f"
+  },
+  "course_id": "ECE 586",
+  "skills": [
+    "decision theory",
+    "control systems",
+    "system estimation"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24540"
+  },
+  "course_id": "ECE 592",
+  "skills": [
+    "teaching skills",
+    "leadership",
+    "communication"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24541"
+  },
+  "course_id": "MATH 103",
+  "skills": [
+    "arithmetic",
+    "problem solving",
+    "number theory"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24542"
+  },
+  "course_id": "MATH 112",
+  "skills": [
+    "algebra",
+    "functions",
+    "equations"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24543"
+  },
+  "course_id": "MATH 115",
+  "skills": [
+    "trigonometry",
+    "limits",
+    "derivatives"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24544"
+  },
+  "course_id": "MATH 117",
+  "skills": [
+    "geometry",
+    "probability",
+    "mathematical modeling"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24545"
+  },
+  "course_id": "MATH 124",
+  "skills": [
+    "logic",
+    "set theory",
+    "probability"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24546"
+  },
+  "course_id": "MATH 181",
+  "skills": [
+    "modeling",
+    "regression",
+    "game theory"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24547"
+  },
+  "course_id": "MATH 199",
+  "skills": [
+    "seminar skills",
+    "collaboration",
+    "presentation"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24548"
+  },
+  "course_id": "MATH 213",
+  "skills": [
+    "discrete math",
+    "set theory",
+    "algorithms",
+    "graphs",
+    "counting"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24549"
+  },
+  "course_id": "MATH 220",
+  "skills": [
+    "calculus",
+    "differentiation",
+    "integration",
+    "functions",
+    "geometry"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2454a"
+  },
+  "course_id": "MATH 225",
+  "skills": [
+    "matrix theory",
+    "linear equations",
+    "determinants",
+    "vector spaces"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2454b"
+  },
+  "course_id": "MATH 227",
+  "skills": [
+    "linear algebra",
+    "data analysis",
+    "Python",
+    "regression",
+    "PCA"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2454c"
+  },
+  "course_id": "MATH 231",
+  "skills": [
+    "integration",
+    "series",
+    "polar coordinates",
+    "conic sections"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2454d"
+  },
+  "course_id": "MATH 234",
+  "skills": [
+    "business calculus",
+    "functions",
+    "basic calculus concepts"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2454e"
+  },
+  "course_id": "MATH 241",
+  "skills": [
+    "vector calculus",
+    "partial derivatives",
+    "multiple integrals"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2454f"
+  },
+  "course_id": "MATH 257",
+  "skills": [
+    "computational algebra",
+    "linear transformations",
+    "real-world applications"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24550"
+  },
+  "course_id": "MATH 285",
+  "skills": [
+    "differential equations",
+    "Fourier series",
+    "boundary value problems"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24551"
+  },
+  "course_id": "MATH 347",
+  "skills": [
+    "proof techniques",
+    "mathematical reasoning",
+    "induction"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24552"
+  },
+  "course_id": "MATH 357",
+  "skills": [
+    "numerical methods",
+    "computational techniques"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24553"
+  },
+  "course_id": "MATH 362",
+  "skills": [
+    "probability",
+    "engineering applications",
+    "statistical analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24554"
+  },
+  "course_id": "MATH 390",
+  "skills": [
+    "independent study",
+    "research skills"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24555"
+  },
+  "course_id": "MATH 399",
+  "skills": [
+    "internship experience",
+    "professional skills",
+    "report writing"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24556"
+  },
+  "course_id": "MATH 402",
+  "skills": [
+    "non-Euclidean geometry",
+    "axiomatic reasoning",
+    "historical context"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24557"
+  },
+  "course_id": "MATH 403",
+  "skills": [
+    "Euclidean geometry",
+    "theorems",
+    "geometry applications"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24558"
+  },
+  "course_id": "MATH 412",
+  "skills": [
+    "graph theory",
+    "theoretical applications",
+    "connectivity"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24559"
+  },
+  "course_id": "MATH 413",
+  "skills": [
+    "combinatorics",
+    "counting techniques",
+    "generating functions"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2455a"
+  },
+  "course_id": "MATH 415",
+  "skills": [
+    "linear algebra",
+    "engineering applications",
+    "matrix operations"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2455b"
+  },
+  "course_id": "MATH 416",
+  "skills": [
+    "proofs",
+    "linear algebra",
+    "vector spaces",
+    "eigenvalues",
+    "matrices"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2455c"
+  },
+  "course_id": "MATH 417",
+  "skills": [
+    "group theory",
+    "rings",
+    "polynomials",
+    "homomorphisms",
+    "congruences"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2455d"
+  },
+  "course_id": "MATH 418",
+  "skills": [
+    "field theory",
+    "modules",
+    "unique factorization",
+    "error-correcting codes",
+    "finite fields"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2455e"
+  },
+  "course_id": "MATH 424",
+  "skills": [
+    "real analysis",
+    "metric spaces",
+    "continuity",
+    "integration",
+    "sequences"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2455f"
+  },
+  "course_id": "MATH 425",
+  "skills": [
+    "differential calculus",
+    "integral calculus",
+    "Green's theorem",
+    "submanifolds",
+    "differential forms"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24560"
+  },
+  "course_id": "MATH 432",
+  "skills": [
+    "set theory",
+    "topology",
+    "cardinal numbers",
+    "ordinal numbers",
+    "axiom of choice"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24561"
+  },
+  "course_id": "MATH 441",
+  "skills": [
+    "differential equations",
+    "solution uniqueness",
+    "linear theory",
+    "rigorous proofs"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24562"
+  },
+  "course_id": "MATH 442",
+  "skills": [
+    "partial differential equations",
+    "wave equations",
+    "Fourier series",
+    "transform methods"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24563"
+  },
+  "course_id": "MATH 444",
+  "skills": [
+    "real analysis",
+    "limits",
+    "continuity",
+    "Riemann integral",
+    "derivatives"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24564"
+  },
+  "course_id": "MATH 446",
+  "skills": [
+    "complex variables",
+    "residue integration",
+    "conformal maps",
+    "potential fields"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24565"
+  },
+  "course_id": "MATH 447",
+  "skills": [
+    "real analysis",
+    "topological properties",
+    "convergence",
+    "differentiation"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24566"
+  },
+  "course_id": "MATH 448",
+  "skills": [
+    "complex functions",
+    "Cauchy's theorem",
+    "residue theorem",
+    "Laurent series"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24567"
+  },
+  "course_id": "MATH 450",
+  "skills": [
+    "numerical methods",
+    "algorithm analysis",
+    "computational techniques"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24568"
+  },
+  "course_id": "MATH 453",
+  "skills": [
+    "number theory",
+    "divisibility",
+    "primes",
+    "congruences",
+    "quadratic residues"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24569"
+  },
+  "course_id": "MATH 461",
+  "skills": [
+    "probability theory",
+    "random variables",
+    "expectation",
+    "distribution functions"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2456a"
+  },
+  "course_id": "MATH 463",
+  "skills": [
+    "statistics",
+    "data analysis",
+    "probability models"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2456b"
+  },
+  "course_id": "MATH 464",
+  "skills": [
+    "advanced statistics",
+    "data interpretation",
+    "probability theory"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2456c"
+  },
+  "course_id": "MATH 466",
+  "skills": [
+    "Markov chains",
+    "stochastic processes",
+    "queuing theory",
+    "martingales"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2456d"
+  },
+  "course_id": "MATH 473",
+  "skills": [
+    "algorithms",
+    "computational theory",
+    "problem solving"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2456e"
+  },
+  "course_id": "MATH 481",
+  "skills": [
+    "differential geometry",
+    "tensor analysis",
+    "Riemannian metrics",
+    "integration on manifolds"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2456f"
+  },
+  "course_id": "MATH 482",
+  "skills": [
+    "optimization",
+    "linear programming",
+    "numerical methods",
+    "integer programming"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24570"
+  },
+  "course_id": "MATH 484",
+  "skills": [
+    "nonlinear programming",
+    "gradient methods",
+    "Lagrange multipliers",
+    "dual theory"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24571"
+  },
+  "course_id": "MATH 490",
+  "skills": [
+    "research skills",
+    "topic selection",
+    "mathematical applications"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24572"
+  },
+  "course_id": "MATH 492",
+  "skills": [
+    "research methods",
+    "project management",
+    "collaboration"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24573"
+  },
+  "course_id": "MATH 495",
+  "skills": [
+    "modeling",
+    "biological applications",
+    "mathematical analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24574"
+  },
+  "course_id": "MATH 499",
+  "skills": [
+    "seminar skills",
+    "research overview",
+    "academic networking"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24575"
+  },
+  "course_id": "MATH 500",
+  "skills": [
+    "group theory",
+    "field extensions",
+    "module theory"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24576"
+  },
+  "course_id": "MATH 503",
+  "skills": [
+    "geometric group theory",
+    "free groups",
+    "quasi-isometries"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24577"
+  },
+  "course_id": "MATH 506",
+  "skills": [
+    "representation theory",
+    "linear transformations",
+    "character theory"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24578"
+  },
+  "course_id": "MATH 511",
+  "skills": [
+    "algebraic geometry",
+    "polynomial equations",
+    "projective space"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24579"
+  },
+  "course_id": "MATH 519",
+  "skills": [
+    "manifold theory",
+    "curvature",
+    "connections"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2457a"
+  },
+  "course_id": "MATH 525",
+  "skills": [
+    "topology",
+    "homology",
+    "algebraic invariants"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2457b"
+  },
+  "course_id": "MATH 532",
+  "skills": [
+    "number theory",
+    "diophantine approximation",
+    "modular forms"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2457c"
+  },
+  "course_id": "MATH 540",
+  "skills": [
+    "real analysis",
+    "Lebesgue measure",
+    "integration techniques"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2457d"
+  },
+  "course_id": "MATH 541",
+  "skills": [
+    "functional analysis",
+    "spectral theory",
+    "operator theory"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2457e"
+  },
+  "course_id": "MATH 546",
+  "skills": [
+    "Hilbert spaces",
+    "operator algebras",
+    "spectral theorems"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2457f"
+  },
+  "course_id": "MATH 550",
+  "skills": [
+    "dynamical systems",
+    "differential equations",
+    "bifurcation theory"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24580"
+  },
+  "course_id": "MATH 552",
+  "skills": [
+    "numerical methods",
+    "PDEs",
+    "computational techniques"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24581"
+  },
+  "course_id": "MATH 553",
+  "skills": [
+    "partial differential equations",
+    "canonical forms",
+    "Fourier series"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24582"
+  },
+  "course_id": "MATH 561",
+  "skills": [
+    "probability theory",
+    "stochastic processes",
+    "random variables"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24583"
+  },
+  "course_id": "MATH 564",
+  "skills": [
+    "stochastic processes",
+    "Markov chains",
+    "filtering",
+    "prediction theory"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24584"
+  },
+  "course_id": "MATH 580",
+  "skills": [
+    "combinatorics",
+    "graph theory",
+    "optimization",
+    "probability"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24585"
+  },
+  "course_id": "MATH 593",
+  "skills": [
+    "mathematical practice",
+    "report writing",
+    "internship experience"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24586"
+  },
+  "course_id": "MATH 595",
+  "skills": [
+    "advanced mathematics",
+    "topic exploration",
+    "independent study"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24587"
+  },
+  "course_id": "MATH 597",
+  "skills": [
+    "independent research",
+    "self-directed learning",
+    "mathematical reading"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24588"
+  },
+  "course_id": "MATH 599",
+  "skills": [
+    "research skills",
+    "thesis writing",
+    "academic inquiry"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24589"
+  },
+  "course_id": "MATH 114",
+  "skills": [
+    "trigonometry",
+    "function analysis",
+    "equation solving"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2458a"
+  },
+  "course_id": "MATH 101",
+  "skills": [
+    "critical thinking",
+    "probability",
+    "modeling",
+    "statistics"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2458b"
+  },
+  "course_id": "MATH 119",
+  "skills": [
+    "geometric reasoning",
+    "mathematical thinking",
+    "plane geometry"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2458c"
+  },
+  "course_id": "MATH 221",
+  "skills": [
+    "calculus",
+    "differentiation",
+    "integration",
+    "curve sketching"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2458d"
+  },
+  "course_id": "MATH 299",
+  "skills": [
+    "topic exploration",
+    "mathematical consent",
+    "independent study"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2458e"
+  },
+  "course_id": "MATH 314",
+  "skills": [
+    "proof writing",
+    "mathematical reasoning",
+    "advanced topics"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2458f"
+  },
+  "course_id": "MATH 405",
+  "skills": [
+    "secondary education",
+    "curriculum connection",
+    "advanced topics"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24590"
+  },
+  "course_id": "MATH 423",
+  "skills": [
+    "differential geometry",
+    "vector fields",
+    "curvature analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24591"
+  },
+  "course_id": "MATH 427",
+  "skills": [
+    "group theory",
+    "abstract algebra",
+    "counting techniques"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24592"
+  },
+  "course_id": "MATH 475",
+  "skills": [
+    "computation models",
+    "theoretical computer science"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24593"
+  },
+  "course_id": "MATH 487",
+  "skills": [
+    "complex algebra",
+    "Fourier analysis",
+    "boundary value problems"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24594"
+  },
+  "course_id": "MATH 489",
+  "skills": [
+    "dynamical systems",
+    "differential equations",
+    "chaos theory"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24595"
+  },
+  "course_id": "MATH 502",
+  "skills": [
+    "commutative algebra",
+    "ring theory",
+    "module theory"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24596"
+  },
+  "course_id": "MATH 512",
+  "skills": [
+    "algebraic geometry",
+    "scheme theory",
+    "contemporary mathematics"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24597"
+  },
+  "course_id": "MATH 514",
+  "skills": [
+    "geometry",
+    "topology",
+    "Hodge theory",
+    "manifolds"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24598"
+  },
+  "course_id": "MATH 518",
+  "skills": [
+    "manifolds",
+    "vector fields",
+    "differential forms",
+    "integration"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24599"
+  },
+  "course_id": "MATH 526",
+  "skills": [
+    "homology",
+    "cohomology",
+    "topological spaces",
+    "CW-complexes"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2459a"
+  },
+  "course_id": "MATH 531",
+  "skills": [
+    "number theory",
+    "Dirichlet series",
+    "Riemann zeta",
+    "L-functions"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2459b"
+  },
+  "course_id": "MATH 535",
+  "skills": [
+    "topology",
+    "compactness",
+    "connectedness",
+    "function spaces"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2459c"
+  },
+  "course_id": "MATH 542",
+  "skills": [
+    "complex functions",
+    "Cauchy theory",
+    "harmonic functions",
+    "Riemann mapping"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2459d"
+  },
+  "course_id": "MATH 545",
+  "skills": [
+    "Fourier series",
+    "harmonic analysis",
+    "convergence",
+    "summability"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2459e"
+  },
+  "course_id": "MATH 554",
+  "skills": [
+    "linear analysis",
+    "PDEs",
+    "distribution theory",
+    "Fourier transforms"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2459f"
+  },
+  "course_id": "MATH 558",
+  "skills": [
+    "applied mathematics",
+    "asymptotics",
+    "differential equations",
+    "complex systems"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245a0"
+  },
+  "course_id": "MATH 562",
+  "skills": [
+    "probability",
+    "stochastic processes",
+    "statistical inference"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245a1"
+  },
+  "course_id": "MATH 563",
+  "skills": [
+    "risk modeling",
+    "quantitative analysis",
+    "dependencies",
+    "copulas"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245a2"
+  },
+  "course_id": "MATH 582",
+  "skills": [
+    "graph theory",
+    "degree sequences",
+    "Hamiltonian cycles",
+    "planar graphs"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245a3"
+  },
+  "course_id": "MATH 439",
+  "skills": [
+    "philosophy",
+    "mathematics",
+    "theoretical concepts"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245a4"
+  },
+  "course_id": "MATH 501",
+  "skills": [
+    "abstract algebra",
+    "modules",
+    "categories",
+    "functors"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245a5"
+  },
+  "course_id": "MATH 522",
+  "skills": [
+    "Lie groups",
+    "representation theory",
+    "matrix groups",
+    "algebras"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245a6"
+  },
+  "course_id": "MATH 527",
+  "skills": [
+    "homotopy",
+    "fibrations",
+    "obstruction theory",
+    "theorems"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245a7"
+  },
+  "course_id": "MATH 530",
+  "skills": [
+    "field theory",
+    "valuation theory",
+    "ideal theory",
+    "function fields"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245a8"
+  },
+  "course_id": "MATH 585",
+  "skills": [
+    "probabilistic methods",
+    "random graphs",
+    "connectivity",
+    "combinatorics"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245a9"
+  },
+  "course_id": "BADM 199",
+  "skills": [
+    "seminar skills",
+    "presentation",
+    "discussion"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245aa"
+  },
+  "course_id": "BADM 205",
+  "skills": [
+    "business decisions",
+    "location analysis",
+    "strategic planning"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245ab"
+  },
+  "course_id": "BADM 210",
+  "skills": [
+    "statistics",
+    "data visualization",
+    "hypothesis testing",
+    "regression",
+    "data summarization"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245ac"
+  },
+  "course_id": "BADM 211",
+  "skills": [
+    "data analysis",
+    "predictive modeling",
+    "data acquisition",
+    "data cleaning",
+    "data interpretation",
+    "clustering",
+    "text mining"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245ad"
+  },
+  "course_id": "BADM 275",
+  "skills": [
+    "operations management",
+    "decision making",
+    "supply chain",
+    "analytics",
+    "coordination"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245ae"
+  },
+  "course_id": "BADM 300",
+  "skills": [
+    "business law",
+    "contracts",
+    "litigation",
+    "intellectual property",
+    "employment law"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245af"
+  },
+  "course_id": "BADM 303",
+  "skills": [
+    "public policy",
+    "analysis",
+    "decision making"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245b0"
+  },
+  "course_id": "BADM 310",
+  "skills": [
+    "management theory",
+    "organizational behavior",
+    "leadership",
+    "communication",
+    "decision making"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245b1"
+  },
+  "course_id": "BADM 311",
+  "skills": [
+    "employee motivation",
+    "team dynamics",
+    "satisfaction analysis",
+    "management strategies"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245b2"
+  },
+  "course_id": "BADM 312",
+  "skills": [
+    "organizational design",
+    "coordination",
+    "change management"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245b3"
+  },
+  "course_id": "BADM 313",
+  "skills": [
+    "human resources",
+    "recruitment",
+    "training",
+    "case analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245b4"
+  },
+  "course_id": "BADM 314",
+  "skills": [
+    "negotiation",
+    "conflict resolution",
+    "agreement planning",
+    "analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245b5"
+  },
+  "course_id": "BADM 320",
+  "skills": [
+    "marketing strategy",
+    "planning",
+    "organization",
+    "decision making"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245b6"
+  },
+  "course_id": "BADM 322",
+  "skills": [
+    "marketing research",
+    "survey design",
+    "data analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245b7"
+  },
+  "course_id": "BADM 323",
+  "skills": [
+    "advertising",
+    "promotion management",
+    "event sponsorship"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245b8"
+  },
+  "course_id": "BADM 324",
+  "skills": [
+    "procurement",
+    "supply analysis",
+    "case studies"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245b9"
+  },
+  "course_id": "BADM 325",
+  "skills": [
+    "consumer behavior",
+    "market analysis",
+    "decision making"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245ba"
+  },
+  "course_id": "BADM 329",
+  "skills": [
+    "product development",
+    "market identification",
+    "customer benefits"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245bb"
+  },
+  "course_id": "BADM 330",
+  "skills": [
+    "brand management",
+    "consumer associations",
+    "strategy development"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245bc"
+  },
+  "course_id": "BADM 331",
+  "skills": [
+    "teamwork",
+    "design skills",
+    "manufacturing",
+    "marketing"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245bd"
+  },
+  "course_id": "BADM 335",
+  "skills": [
+    "supply chain basics",
+    "logistics",
+    "inventory management"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245be"
+  },
+  "course_id": "BADM 337",
+  "skills": [
+    "project management",
+    "case studies",
+    "team collaboration"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245bf"
+  },
+  "course_id": "BADM 338",
+  "skills": [
+    "supply chain",
+    "procurement",
+    "operations",
+    "transportation",
+    "finance",
+    "governance"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245c0"
+  },
+  "course_id": "BADM 340",
+  "skills": [
+    "ethics",
+    "decision making",
+    "moral reasoning"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245c1"
+  },
+  "course_id": "BADM 346",
+  "skills": [
+    "entrepreneurship",
+    "idea generation",
+    "resource acquisition",
+    "business models"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245c2"
+  },
+  "course_id": "BADM 350",
+  "skills": [
+    "IT management",
+    "data modeling",
+    "network architecture",
+    "e-commerce"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245c3"
+  },
+  "course_id": "BADM 351",
+  "skills": [
+    "social media",
+    "analytics",
+    "customer engagement",
+    "managerial decision making"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245c4"
+  },
+  "course_id": "BADM 352",
+  "skills": [
+    "database design",
+    "data management",
+    "data modeling",
+    "implementation"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245c5"
+  },
+  "course_id": "BADM 353",
+  "skills": [
+    "system analysis",
+    "design methodologies",
+    "project management"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245c6"
+  },
+  "course_id": "BADM 356",
+  "skills": [
+    "data analytics",
+    "statistical inference",
+    "data visualization",
+    "R programming"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245c7"
+  },
+  "course_id": "BADM 358",
+  "skills": [
+    "big data",
+    "data engineering",
+    "cloud platforms",
+    "data analytics"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245c8"
+  },
+  "course_id": "BADM 359",
+  "skills": [
+    "problem formulation",
+    "solution strategies",
+    "consulting skills"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245c9"
+  },
+  "course_id": "BADM 366",
+  "skills": [
+    "product development",
+    "project management",
+    "visual reasoning"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245ca"
+  },
+  "course_id": "BADM 370",
+  "skills": [
+    "information security",
+    "cybersecurity",
+    "threat management"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245cb"
+  },
+  "course_id": "BADM 371",
+  "skills": [
+    "user experience",
+    "design process",
+    "prototyping",
+    "human-centered design"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245cc"
+  },
+  "course_id": "BADM 374",
+  "skills": [
+    "operations research",
+    "quantitative analysis",
+    "linear programming"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245cd"
+  },
+  "course_id": "BADM 375",
+  "skills": [
+    "operations strategy",
+    "competitive advantage",
+    "business models"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245ce"
+  },
+  "course_id": "BADM 378",
+  "skills": [
+    "logistics",
+    "inventory management",
+    "transportation planning"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245cf"
+  },
+  "course_id": "BADM 379",
+  "skills": [
+    "process improvement",
+    "quality control",
+    "Six Sigma"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245d0"
+  },
+  "course_id": "BADM 380",
+  "skills": [
+    "international business",
+    "global management",
+    "financial practices"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245d1"
+  },
+  "course_id": "BADM 381",
+  "skills": [
+    "multinational management",
+    "global strategies",
+    "functional management"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245d2"
+  },
+  "course_id": "BADM 382",
+  "skills": [
+    "international marketing",
+    "global strategy",
+    "market coordination"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245d3"
+  },
+  "course_id": "BADM 383",
+  "skills": [
+    "global business",
+    "cross-cultural",
+    "mergers",
+    "economics",
+    "HR management"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245d4"
+  },
+  "course_id": "BADM 394",
+  "skills": [
+    "research",
+    "analysis",
+    "writing",
+    "critical thinking"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245d5"
+  },
+  "course_id": "BADM 395",
+  "skills": [
+    "topic exploration",
+    "research",
+    "presentation",
+    "discussion"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245d6"
+  },
+  "course_id": "BADM 403",
+  "skills": [
+    "corporate law",
+    "contracts",
+    "regulation",
+    "debtor-creditor"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245d7"
+  },
+  "course_id": "BADM 420",
+  "skills": [
+    "marketing strategy",
+    "data analysis",
+    "case studies",
+    "decision-making"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245d8"
+  },
+  "course_id": "BADM 445",
+  "skills": [
+    "consulting",
+    "problem-solving",
+    "teamwork",
+    "business methods"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245d9"
+  },
+  "course_id": "BADM 446",
+  "skills": [
+    "entrepreneurship",
+    "venture management",
+    "financial planning",
+    "risk assessment"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245da"
+  },
+  "course_id": "BADM 449",
+  "skills": [
+    "policy analysis",
+    "strategy formulation",
+    "integration",
+    "company roles"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245db"
+  },
+  "course_id": "BADM 453",
+  "skills": [
+    "data visualization",
+    "data mining",
+    "analytics",
+    "decision support"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245dc"
+  },
+  "course_id": "BADM 461",
+  "skills": [
+    "project management",
+    "team collaboration",
+    "problem-solving",
+    "communication"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245dd"
+  },
+  "course_id": "BADM 464",
+  "skills": [
+    "entrepreneurial skills",
+    "venture management",
+    "team dynamics",
+    "growth strategies"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245de"
+  },
+  "course_id": "BADM 508",
+  "skills": [
+    "leadership",
+    "team dynamics",
+    "organizational behavior",
+    "behavioral research"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245df"
+  },
+  "course_id": "BADM 509",
+  "skills": [
+    "organizational analysis",
+    "decision making",
+    "leadership",
+    "change management"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245e0"
+  },
+  "course_id": "BADM 512",
+  "skills": [
+    "HR strategy",
+    "management principles",
+    "organizational dynamics"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245e1"
+  },
+  "course_id": "BADM 519",
+  "skills": [
+    "organizational theory",
+    "behavioral research",
+    "seminar skills"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245e2"
+  },
+  "course_id": "BADM 520",
+  "skills": [
+    "marketing concepts",
+    "buyer behavior",
+    "decision-making"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245e3"
+  },
+  "course_id": "BADM 525",
+  "skills": [
+    "market analysis",
+    "product development",
+    "pricing strategy",
+    "branding"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245e4"
+  },
+  "course_id": "BADM 527",
+  "skills": [
+    "brand management",
+    "consumer behavior",
+    "strategic planning"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245e5"
+  },
+  "course_id": "BADM 537",
+  "skills": [
+    "marketing theory",
+    "data modeling",
+    "pricing strategies"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245e6"
+  },
+  "course_id": "BADM 543",
+  "skills": [
+    "technology strategy",
+    "innovation management",
+    "business models",
+    "strategic renewal"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245e7"
+  },
+  "course_id": "BADM 544",
+  "skills": [
+    "strategic thinking",
+    "decision making",
+    "policy analysis",
+    "leadership"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245e8"
+  },
+  "course_id": "BADM 545",
+  "skills": [
+    "theory development",
+    "research assessment",
+    "critical thinking"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245e9"
+  },
+  "course_id": "BADM 547",
+  "skills": [
+    "strategy formulation",
+    "implementation analysis",
+    "behavioral research"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245ea"
+  },
+  "course_id": "BADM 550",
+  "skills": [
+    "real-world application",
+    "problem solving",
+    "team collaboration"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245eb"
+  },
+  "course_id": "BADM 554",
+  "skills": [
+    "data modeling",
+    "database querying",
+    "requirement analysis",
+    "data warehousing"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245ec"
+  },
+  "course_id": "BADM 555",
+  "skills": [
+    "systems development",
+    "integration methods",
+    "project management"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245ed"
+  },
+  "course_id": "BADM 557",
+  "skills": [
+    "data mining",
+    "analytics methods",
+    "machine learning"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245ee"
+  },
+  "course_id": "BADM 558",
+  "skills": [
+    "data engineering",
+    "cloud platforms",
+    "data analytics"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245ef"
+  },
+  "course_id": "BADM 561",
+  "skills": [
+    "pricing strategy",
+    "profit maximization",
+    "case analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245f0"
+  },
+  "course_id": "BADM 566",
+  "skills": [
+    "supply chain management",
+    "performance measurement",
+    "cross-functional integration"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245f1"
+  },
+  "course_id": "BADM 567",
+  "skills": [
+    "operations design",
+    "inventory management",
+    "quality assurance"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245f2"
+  },
+  "course_id": "BADM 572",
+  "skills": [
+    "statistical analysis",
+    "decision making",
+    "data interpretation"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245f3"
+  },
+  "course_id": "BADM 573",
+  "skills": [
+    "analytical methods",
+    "quantitative skills",
+    "decision frameworks"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245f4"
+  },
+  "course_id": "BADM 575",
+  "skills": [
+    "data analytics",
+    "supply chain optimization",
+    "project-based learning"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245f5"
+  },
+  "course_id": "BADM 576",
+  "skills": [
+    "data visualization",
+    "statistical inference",
+    "managerial analytics"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245f6"
+  },
+  "course_id": "BADM 583",
+  "skills": [
+    "international management",
+    "global strategy",
+    "cross-border operations"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245f7"
+  },
+  "course_id": "BADM 584",
+  "skills": [
+    "global marketing",
+    "strategy coordination",
+    "export management"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245f8"
+  },
+  "course_id": "BADM 588",
+  "skills": [
+    "problem solving",
+    "project management",
+    "time management"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245f9"
+  },
+  "course_id": "BADM 589",
+  "skills": [
+    "project planning",
+    "risk management",
+    "team leadership"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245fa"
+  },
+  "course_id": "BADM 590",
+  "skills": [
+    "topic research",
+    "academic writing",
+    "presentation skills"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245fb"
+  },
+  "course_id": "BADM 591",
+  "skills": [
+    "business trends",
+    "research methods",
+    "presentation skills"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245fc"
+  },
+  "course_id": "BADM 593",
+  "skills": [
+    "research skills",
+    "data analysis",
+    "critical thinking"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245fd"
+  },
+  "course_id": "BADM 594",
+  "skills": [
+    "independent research",
+    "self-management",
+    "academic writing"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245fe"
+  },
+  "course_id": "BADM 599",
+  "skills": [
+    "dissertation writing",
+    "project management",
+    "academic discussion"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf245ff"
+  },
+  "course_id": "BADM 551",
+  "skills": [
+    "intellectual property",
+    "strategic thinking",
+    "legal knowledge"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24600"
+  },
+  "course_id": "BADM 261",
+  "skills": [
+    "industry insights",
+    "executive communication",
+    "dialogue skills"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24601"
+  },
+  "course_id": "BADM 336",
+  "skills": [
+    "supply chain modeling",
+    "optimization techniques",
+    "decision-making"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24602"
+  },
+  "course_id": "BADM 360",
+  "skills": [
+    "digital strategy",
+    "brand research",
+    "media evaluation"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24603"
+  },
+  "course_id": "BADM 365",
+  "skills": [
+    "product marketing",
+    "business decision-making",
+    "market analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24604"
+  },
+  "course_id": "BADM 367",
+  "skills": [
+    "technology management",
+    "innovation strategy",
+    "organizational change"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24605"
+  },
+  "course_id": "BADM 372",
+  "skills": [
+    "project application",
+    "client interaction",
+    "real-world experience"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24606"
+  },
+  "course_id": "BADM 377",
+  "skills": [
+    "project planning",
+    "team leadership",
+    "risk management"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24607"
+  },
+  "course_id": "BADM 460",
+  "skills": [
+    "process analysis",
+    "business modeling",
+    "design tools"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24608"
+  },
+  "course_id": "BADM 463",
+  "skills": [
+    "entrepreneurship",
+    "business modeling",
+    "team building"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24609"
+  },
+  "course_id": "BADM 502",
+  "skills": [
+    "data visualization",
+    "decision-making",
+    "statistical analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2460a"
+  },
+  "course_id": "BADM 503",
+  "skills": [
+    "theoretical foundations",
+    "literature analysis",
+    "research linkages"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2460b"
+  },
+  "course_id": "BADM 504",
+  "skills": [
+    "philosophy of science",
+    "theory validation",
+    "research applications"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2460c"
+  },
+  "course_id": "BADM 507",
+  "skills": [
+    "research methodology",
+    "data collection",
+    "factor analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2460d"
+  },
+  "course_id": "BADM 513",
+  "skills": [
+    "communication skills",
+    "interpersonal skills",
+    "emotional intelligence"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2460e"
+  },
+  "course_id": "BADM 514",
+  "skills": [
+    "innovation management",
+    "strategic planning",
+    "value creation"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2460f"
+  },
+  "course_id": "BADM 538",
+  "skills": [
+    "consumer behavior",
+    "theory development",
+    "critical analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24610"
+  },
+  "course_id": "BADM 549",
+  "skills": [
+    "strategic management",
+    "theoretical research",
+    "empirical analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24611"
+  },
+  "course_id": "BADM 562",
+  "skills": [
+    "social media",
+    "analytics",
+    "managerial decision-making"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24612"
+  },
+  "course_id": "BADM 595",
+  "skills": [
+    "marketing strategy",
+    "customer value",
+    "competitive analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24613"
+  },
+  "course_id": "BADM 326",
+  "skills": [
+    "pricing strategy",
+    "economic analysis",
+    "competitive response"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24614"
+  },
+  "course_id": "BADM 341",
+  "skills": [
+    "strategic decision-making",
+    "case analysis",
+    "theoretical frameworks"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24615"
+  },
+  "course_id": "BADM 362",
+  "skills": [
+    "data analysis",
+    "machine learning",
+    "predictive modeling"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24616"
+  },
+  "course_id": "BADM 510",
+  "skills": [
+    "organizational theory",
+    "empirical research",
+    "critical examination"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24617"
+  },
+  "course_id": "BADM 523",
+  "skills": [
+    "digital consumer behavior",
+    "AI impact",
+    "psychological frameworks"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24618"
+  },
+  "course_id": "BADM 524",
+  "skills": [
+    "pricing analytics",
+    "strategic evaluation",
+    "profit analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24619"
+  },
+  "course_id": "BADM 526",
+  "skills": [
+    "marketing models",
+    "consulting approach",
+    "software applications"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2461a"
+  },
+  "course_id": "BADM 539",
+  "skills": [
+    "model building",
+    "optimization",
+    "research project"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2461b"
+  },
+  "course_id": "BADM 541",
+  "skills": [
+    "strategic behavior",
+    "case studies",
+    "simulation games"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2461c"
+  },
+  "course_id": "BADM 546",
+  "skills": [
+    "strategy formulation",
+    "economic theories",
+    "research foundations"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2461d"
+  },
+  "course_id": "BADM 569",
+  "skills": [
+    "operations management",
+    "literature review",
+    "performance measures"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2461e"
+  },
+  "course_id": "BADM 582",
+  "skills": [
+    "global management",
+    "market entry",
+    "multinational strategy"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2461f"
+  },
+  "course_id": "RHET 102",
+  "skills": [
+    "argumentative writing",
+    "research skills",
+    "source evaluation"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24620"
+  },
+  "course_id": "RHET 105",
+  "skills": [
+    "academic writing",
+    "research-based arguments",
+    "source integration"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24621"
+  },
+  "course_id": "RHET 199",
+  "skills": [
+    "seminar participation",
+    "topic exploration"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24622"
+  },
+  "course_id": "RHET 233",
+  "skills": [
+    "research arguments",
+    "multimodal resources",
+    "complex writing"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24623"
+  },
+  "course_id": "RHET 101",
+  "skills": [
+    "writing",
+    "argumentation",
+    "thesis development",
+    "evidence use"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24624"
+  },
+  "course_id": "CMN 101",
+  "skills": [
+    "public speaking",
+    "speech organization",
+    "delivery techniques",
+    "persuasion"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24625"
+  },
+  "course_id": "CMN 102",
+  "skills": [
+    "communication theory",
+    "persuasion",
+    "group dynamics",
+    "research methods"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24626"
+  },
+  "course_id": "CMN 112",
+  "skills": [
+    "deliberation",
+    "public argument",
+    "communication fundamentals",
+    "writing skills"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24627"
+  },
+  "course_id": "CMN 204",
+  "skills": [
+    "teaching assistance",
+    "lecture preparation",
+    "student support",
+    "communication practice"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24628"
+  },
+  "course_id": "CMN 210",
+  "skills": [
+    "critical analysis",
+    "persuasion techniques",
+    "public discourse",
+    "rhetoric"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24629"
+  },
+  "course_id": "CMN 211",
+  "skills": [
+    "business writing",
+    "networking",
+    "interviewing",
+    "professional etiquette"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2462a"
+  },
+  "course_id": "CMN 212",
+  "skills": [
+    "organizational theory",
+    "communication strategies",
+    "research methods",
+    "group dynamics"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2462b"
+  },
+  "course_id": "CMN 213",
+  "skills": [
+    "team communication",
+    "group dynamics",
+    "theoretical application",
+    "effective communication"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2462c"
+  },
+  "course_id": "CMN 214",
+  "skills": [
+    "diversity awareness",
+    "organizational culture",
+    "communication strategies",
+    "socialization"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2462d"
+  },
+  "course_id": "CMN 215",
+  "skills": [
+    "interviewing techniques",
+    "questioning skills",
+    "critical observation",
+    "communication theory"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2462e"
+  },
+  "course_id": "CMN 220",
+  "skills": [
+    "policy analysis",
+    "message design",
+    "public speaking",
+    "advanced writing"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2462f"
+  },
+  "course_id": "CMN 230",
+  "skills": [
+    "interpersonal theory",
+    "conflict resolution",
+    "face-to-face interaction",
+    "communication skills"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24630"
+  },
+  "course_id": "CMN 232",
+  "skills": [
+    "intercultural theory",
+    "cultural awareness",
+    "communication strategies",
+    "critical thinking"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24631"
+  },
+  "course_id": "CMN 250",
+  "skills": [
+    "social movement strategies",
+    "message analysis",
+    "identity formation",
+    "social change"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24632"
+  },
+  "course_id": "CMN 260",
+  "skills": [
+    "health communication",
+    "media effects",
+    "interpersonal communication",
+    "theoretical application"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24633"
+  },
+  "course_id": "CMN 277",
+  "skills": [
+    "media analysis",
+    "social effects",
+    "historical context",
+    "cultural perceptions"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24634"
+  },
+  "course_id": "CMN 304",
+  "skills": [
+    "internship experience",
+    "professional skills",
+    "communication practice",
+    "field application"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24635"
+  },
+  "course_id": "CMN 321",
+  "skills": [
+    "persuasion analysis",
+    "public influence",
+    "communication strategies",
+    "critical thinking"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24636"
+  },
+  "course_id": "CMN 323",
+  "skills": [
+    "argument theory",
+    "evidence evaluation",
+    "debate skills",
+    "public discourse"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24637"
+  },
+  "course_id": "CMN 326",
+  "skills": [
+    "audience analysis",
+    "media literacy",
+    "message interpretation"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24638"
+  },
+  "course_id": "CMN 327",
+  "skills": [
+    "polling methods",
+    "opinion analysis",
+    "political communication"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24639"
+  },
+  "course_id": "CMN 328",
+  "skills": [
+    "social media strategy",
+    "political discourse",
+    "public engagement"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2463a"
+  },
+  "course_id": "CMN 336",
+  "skills": [
+    "family dynamics",
+    "communication patterns",
+    "relationship building"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2463b"
+  },
+  "course_id": "CMN 345",
+  "skills": [
+    "visual analysis",
+    "media effects",
+    "theoretical frameworks"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2463c"
+  },
+  "course_id": "CMN 361",
+  "skills": [
+    "storytelling techniques",
+    "oral presentation",
+    "narrative structure"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2463d"
+  },
+  "course_id": "CMN 368",
+  "skills": [
+    "sexual health communication",
+    "interpersonal skills",
+    "cultural sensitivity"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2463e"
+  },
+  "course_id": "CMN 375",
+  "skills": [
+    "media critique",
+    "cultural analysis",
+    "theory application"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2463f"
+  },
+  "course_id": "CMN 390",
+  "skills": [
+    "independent research",
+    "problem-solving",
+    "self-directed learning"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24640"
+  },
+  "course_id": "CMN 396",
+  "skills": [
+    "topic exploration",
+    "critical thinking",
+    "adaptability"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24641"
+  },
+  "course_id": "CMN 410",
+  "skills": [
+    "technology integration",
+    "organizational communication",
+    "case analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24642"
+  },
+  "course_id": "CMN 432",
+  "skills": [
+    "gender analysis",
+    "social context understanding",
+    "communication strategies"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24643"
+  },
+  "course_id": "CMN 462",
+  "skills": [
+    "health communication",
+    "patient interaction",
+    "relationship management"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24644"
+  },
+  "course_id": "CMN 465",
+  "skills": [
+    "campaign design",
+    "behavior change",
+    "community engagement"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24645"
+  },
+  "course_id": "CMN 467",
+  "skills": [
+    "health equity",
+    "communication strategies",
+    "social determinants"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24646"
+  },
+  "course_id": "CMN 491",
+  "skills": [
+    "independent study",
+    "research skills",
+    "academic writing"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24647"
+  },
+  "course_id": "CMN 493",
+  "skills": [
+    "thesis development",
+    "research methodology",
+    "academic rigor"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24648"
+  },
+  "course_id": "CMN 496",
+  "skills": [
+    "advanced research",
+    "topic specialization",
+    "analytical skills"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24649"
+  },
+  "course_id": "CMN 505",
+  "skills": [
+    "provider-patient dynamics",
+    "health identity",
+    "social interactions"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2464a"
+  },
+  "course_id": "CMN 508",
+  "skills": [
+    "health marketing",
+    "audience segmentation",
+    "campaign evaluation"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2464b"
+  },
+  "course_id": "CMN 529",
+  "skills": [
+    "communication theory",
+    "research methods",
+    "critical thinking",
+    "analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2464c"
+  },
+  "course_id": "CMN 538",
+  "skills": [
+    "rhetorical analysis",
+    "historical context",
+    "theory application"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2464d"
+  },
+  "course_id": "CMN 575",
+  "skills": [
+    "independent research",
+    "project management",
+    "health communication"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2464e"
+  },
+  "course_id": "CMN 595",
+  "skills": [
+    "project investigation",
+    "problem-solving",
+    "independent study"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2464f"
+  },
+  "course_id": "CMN 599",
+  "skills": [
+    "research skills",
+    "academic writing",
+    "project development"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24650"
+  },
+  "course_id": "CMN 199",
+  "skills": [
+    "seminar participation",
+    "communication skills"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24651"
+  },
+  "course_id": "CMN 340",
+  "skills": [
+    "visual analysis",
+    "cultural critique",
+    "political communication"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24652"
+  },
+  "course_id": "CMN 502",
+  "skills": [
+    "research methods",
+    "data collection",
+    "health communication"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24653"
+  },
+  "course_id": "CMN 503",
+  "skills": [
+    "qualitative analysis",
+    "quantitative analysis",
+    "data interpretation"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24654"
+  },
+  "course_id": "CMN 111",
+  "skills": [
+    "writing skills",
+    "speaking skills",
+    "critical thinking"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24655"
+  },
+  "course_id": "CMN 280",
+  "skills": [
+    "technology analysis",
+    "cultural impact",
+    "theoretical application"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24656"
+  },
+  "course_id": "CMN 314",
+  "skills": [
+    "organizational communication",
+    "community impact",
+    "advocacy strategies"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24657"
+  },
+  "course_id": "CMN 319",
+  "skills": [
+    "risk assessment",
+    "message design",
+    "effective communication"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24658"
+  },
+  "course_id": "CMN 338",
+  "skills": [
+    "relationship dynamics",
+    "technology impact",
+    "communication modes"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24659"
+  },
+  "course_id": "CMN 421",
+  "skills": [
+    "persuasion theories",
+    "research application",
+    "discourse analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2465a"
+  },
+  "course_id": "CMN 425",
+  "skills": [
+    "media analysis",
+    "political communication",
+    "entertainment studies"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2465b"
+  },
+  "course_id": "CMN 435",
+  "skills": [
+    "interpersonal skills",
+    "self-assessment",
+    "relationship improvement"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2465c"
+  },
+  "course_id": "CMN 464",
+  "skills": [
+    "campaign design",
+    "message evaluation",
+    "theoretical principles"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2465d"
+  },
+  "course_id": "CMN 501",
+  "skills": [
+    "health communication",
+    "message impact",
+    "theoretical foundations"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2465e"
+  },
+  "course_id": "CMN 507",
+  "skills": [
+    "organizational analysis",
+    "health policy",
+    "communication exchange"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2465f"
+  },
+  "course_id": "CMN 574",
+  "skills": [
+    "research methods",
+    "data analysis",
+    "qualitative analysis",
+    "quantitative analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24660"
+  },
+  "course_id": "CMN 450",
+  "skills": [
+    "public speaking",
+    "rhetorical analysis",
+    "critical thinking"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24661"
+  },
+  "course_id": "CMN 274",
+  "skills": [
+    "media analysis",
+    "cultural critique",
+    "social change"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24662"
+  },
+  "course_id": "CMN 312",
+  "skills": [
+    "innovation",
+    "team communication",
+    "decision-making"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24663"
+  },
+  "course_id": "CMN 315",
+  "skills": [
+    "data visualization",
+    "network analysis",
+    "computational skills"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24664"
+  },
+  "course_id": "CMN 325",
+  "skills": [
+    "media studies",
+    "political communication",
+    "critical analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24665"
+  },
+  "course_id": "CMN 433",
+  "skills": [
+    "cultural studies",
+    "identity analysis",
+    "communication theory"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24666"
+  },
+  "course_id": "HIST 100",
+  "skills": [
+    "historical analysis",
+    "global perspective",
+    "critical thinking"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24667"
+  },
+  "course_id": "HIST 104",
+  "skills": [
+    "music analysis",
+    "cultural history",
+    "critical listening"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24668"
+  },
+  "course_id": "HIST 105",
+  "skills": [
+    "historical survey",
+    "cultural context",
+    "critical thinking"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24669"
+  },
+  "course_id": "HIST 120",
+  "skills": [
+    "historical survey",
+    "cultural understanding",
+    "critical analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2466a"
+  },
+  "course_id": "HIST 142",
+  "skills": [
+    "historical interpretation",
+    "cultural history",
+    "critical thinking"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2466b"
+  },
+  "course_id": "HIST 143",
+  "skills": [
+    "writing skills",
+    "historical analysis",
+    "critical thinking"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2466c"
+  },
+  "course_id": "HIST 168",
+  "skills": [
+    "historical analysis",
+    "cultural studies",
+    "critical thinking"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2466d"
+  },
+  "course_id": "HIST 170",
+  "skills": [
+    "historical analysis",
+    "writing skills",
+    "critical thinking"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2466e"
+  },
+  "course_id": "HIST 171",
+  "skills": [
+    "historical analysis",
+    "cultural context",
+    "critical thinking"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2466f"
+  },
+  "course_id": "HIST 172",
+  "skills": [
+    "historical survey",
+    "critical analysis",
+    "cultural understanding"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24670"
+  },
+  "course_id": "HIST 173",
+  "skills": [
+    "writing skills",
+    "historical interpretation",
+    "critical thinking"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24671"
+  },
+  "course_id": "HIST 199",
+  "skills": [
+    "research skills",
+    "collaboration",
+    "flexibility"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24672"
+  },
+  "course_id": "HIST 200",
+  "skills": [
+    "historical interpretation",
+    "research skills",
+    "writing practices"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24673"
+  },
+  "course_id": "HIST 202",
+  "skills": [
+    "historical analysis",
+    "environmental awareness",
+    "cultural understanding"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24674"
+  },
+  "course_id": "HIST 203",
+  "skills": [
+    "role-playing",
+    "critical thinking",
+    "historical empathy"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24675"
+  },
+  "course_id": "HIST 205",
+  "skills": [
+    "textual analysis",
+    "historical inquiry",
+    "cultural perspectives"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24676"
+  },
+  "course_id": "HIST 219",
+  "skills": [
+    "historical context",
+    "social justice",
+    "critical analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24677"
+  },
+  "course_id": "HIST 236",
+  "skills": [
+    "social sciences",
+    "historical context",
+    "cultural analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24678"
+  },
+  "course_id": "HIST 241",
+  "skills": [
+    "political history",
+    "cultural understanding",
+    "analytical skills"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24679"
+  },
+  "course_id": "HIST 251",
+  "skills": [
+    "military history",
+    "social integration",
+    "technological impact"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2467a"
+  },
+  "course_id": "HIST 252",
+  "skills": [
+    "historical perspective",
+    "cultural sensitivity",
+    "critical thinking"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2467b"
+  },
+  "course_id": "HIST 263",
+  "skills": [
+    "public health",
+    "historical context",
+    "social categories"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2467c"
+  },
+  "course_id": "HIST 264",
+  "skills": [
+    "technological impact",
+    "cultural analysis",
+    "historical perspective"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2467d"
+  },
+  "course_id": "HIST 269",
+  "skills": [
+    "cultural history",
+    "social dynamics",
+    "historical analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2467e"
+  },
+  "course_id": "HIST 273",
+  "skills": [
+    "local history",
+    "cultural diversity",
+    "political analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2467f"
+  },
+  "course_id": "HIST 276",
+  "skills": [
+    "civil rights",
+    "historical context",
+    "social movements"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24680"
+  },
+  "course_id": "HIST 279",
+  "skills": [
+    "cultural history",
+    "social dynamics",
+    "historical analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24681"
+  },
+  "course_id": "HIST 280",
+  "skills": [
+    "migration studies",
+    "cultural impact",
+    "community formation"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24682"
+  },
+  "course_id": "HIST 283",
+  "skills": [
+    "migration history",
+    "cultural impact",
+    "community building"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24683"
+  },
+  "course_id": "HIST 285",
+  "skills": [
+    "gender studies",
+    "historical context",
+    "social analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24684"
+  },
+  "course_id": "HIST 293",
+  "skills": [
+    "political history",
+    "presidential analysis",
+    "media influence"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24685"
+  },
+  "course_id": "HIST 300",
+  "skills": [
+    "film analysis",
+    "historical commentary",
+    "cultural critique"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24686"
+  },
+  "course_id": "HIST 312",
+  "skills": [
+    "immigration history",
+    "cultural diversity",
+    "political activism"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24687"
+  },
+  "course_id": "HIST 337",
+  "skills": [
+    "political analysis",
+    "economic history",
+    "cultural studies"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24688"
+  },
+  "course_id": "HIST 345",
+  "skills": [
+    "art history",
+    "philosophy",
+    "political theory"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24689"
+  },
+  "course_id": "HIST 350",
+  "skills": [
+    "cultural analysis",
+    "political history",
+    "imagination"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2468a"
+  },
+  "course_id": "HIST 352",
+  "skills": [
+    "colonial studies",
+    "comparative history",
+    "cultural exchange"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2468b"
+  },
+  "course_id": "HIST 354",
+  "skills": [
+    "cultural history",
+    "social upheaval",
+    "political change"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2468c"
+  },
+  "course_id": "HIST 365",
+  "skills": [
+    "literary analysis",
+    "cultural studies",
+    "historical context"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2468d"
+  },
+  "course_id": "HIST 379",
+  "skills": [
+    "urban studies",
+    "cultural identity",
+    "sociology"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2468e"
+  },
+  "course_id": "HIST 381",
+  "skills": [
+    "urban history",
+    "migration studies",
+    "social networks"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2468f"
+  },
+  "course_id": "HIST 389",
+  "skills": [
+    "race studies",
+    "revolutionary history",
+    "social movements"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24690"
+  },
+  "course_id": "HIST 390",
+  "skills": [
+    "sports history",
+    "cultural impact",
+    "societal analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24691"
+  },
+  "course_id": "HIST 398",
+  "skills": [
+    "research skills",
+    "professional development",
+    "internship experience"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24692"
+  },
+  "course_id": "HIST 399",
+  "skills": [
+    "independent research",
+    "writing skills",
+    "critical thinking"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24693"
+  },
+  "course_id": "HIST 425",
+  "skills": [
+    "philosophical analysis",
+    "cultural context",
+    "historical thought"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24694"
+  },
+  "course_id": "HIST 468",
+  "skills": [
+    "queer studies",
+    "cultural analysis",
+    "historical context"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24695"
+  },
+  "course_id": "HIST 488",
+  "skills": [
+    "political theory",
+    "historical analysis",
+    "debate skills"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24696"
+  },
+  "course_id": "HIST 490",
+  "skills": [
+    "independent research",
+    "writing skills",
+    "critical analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24697"
+  },
+  "course_id": "HIST 491",
+  "skills": [
+    "digital history",
+    "project management",
+    "research skills"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24698"
+  },
+  "course_id": "HIST 492",
+  "skills": [
+    "historiography",
+    "research methods",
+    "proposal writing"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24699"
+  },
+  "course_id": "HIST 493",
+  "skills": [
+    "independent research",
+    "writing skills",
+    "project management"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2469a"
+  },
+  "course_id": "HIST 498",
+  "skills": [
+    "original research",
+    "scholarship",
+    "historical methodology"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2469b"
+  },
+  "course_id": "HIST 499",
+  "skills": [
+    "research",
+    "critique",
+    "methodology",
+    "collaboration"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2469c"
+  },
+  "course_id": "HIST 502",
+  "skills": [
+    "comparative analysis",
+    "methodology",
+    "historiography",
+    "interdisciplinary"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2469d"
+  },
+  "course_id": "HIST 504",
+  "skills": [
+    "research",
+    "analysis",
+    "topic exploration",
+    "critical thinking"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2469e"
+  },
+  "course_id": "HIST 521",
+  "skills": [
+    "research skills",
+    "source analysis",
+    "language proficiency",
+    "historical context"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2469f"
+  },
+  "course_id": "HIST 535",
+  "skills": [
+    "literature review",
+    "historical analysis",
+    "topic variation",
+    "in-depth study"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246a0"
+  },
+  "course_id": "HIST 572",
+  "skills": [
+    "topic exploration",
+    "historical analysis",
+    "literature review",
+    "critical thinking"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246a1"
+  },
+  "course_id": "HIST 591",
+  "skills": [
+    "theoretical application",
+    "field inquiry",
+    "demographic analysis",
+    "prosopography"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246a2"
+  },
+  "course_id": "HIST 594",
+  "skills": [
+    "writing skills",
+    "argument development",
+    "source exploration",
+    "research strategy"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246a3"
+  },
+  "course_id": "HIST 596",
+  "skills": [
+    "directed research",
+    "topic exploration",
+    "independent study",
+    "self-management"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246a4"
+  },
+  "course_id": "HIST 597",
+  "skills": [
+    "directed reading",
+    "preparation",
+    "field knowledge",
+    "self-study"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246a5"
+  },
+  "course_id": "HIST 598",
+  "skills": [
+    "teaching skills",
+    "curriculum development",
+    "academic writing",
+    "presentation skills"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246a6"
+  },
+  "course_id": "HIST 599",
+  "skills": [
+    "research guidance",
+    "thesis writing",
+    "individual study",
+    "academic support"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246a7"
+  },
+  "course_id": "HIST 257",
+  "skills": [
+    "historical analysis",
+    "political understanding",
+    "psychological insight",
+    "contextual awareness"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246a8"
+  },
+  "course_id": "HIST 103",
+  "skills": [
+    "big history",
+    "contextual analysis",
+    "interdisciplinary approach",
+    "thematic exploration"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246a9"
+  },
+  "course_id": "HIST 106",
+  "skills": [
+    "historical knowledge",
+    "cultural understanding",
+    "regional focus",
+    "critical analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246aa"
+  },
+  "course_id": "HIST 111",
+  "skills": [
+    "historical analysis",
+    "geographical knowledge",
+    "source analysis",
+    "cultural awareness"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246ab"
+  },
+  "course_id": "HIST 130",
+  "skills": [
+    "multidisciplinary approach",
+    "cultural negotiation",
+    "historical context",
+    "colonial interactions"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246ac"
+  },
+  "course_id": "HIST 174",
+  "skills": [
+    "historical analysis",
+    "cultural understanding",
+    "social context",
+    "critical thinking"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246ad"
+  },
+  "course_id": "HIST 212",
+  "skills": [
+    "historical understanding",
+    "colonial impact",
+    "political analysis",
+    "economic trajectories"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246ae"
+  },
+  "course_id": "HIST 222",
+  "skills": [
+    "cultural understanding",
+    "historical context",
+    "philosophical insight",
+    "comparative analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246af"
+  },
+  "course_id": "HIST 255",
+  "skills": [
+    "historical analysis",
+    "cultural awareness",
+    "critical thinking"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246b0"
+  },
+  "course_id": "HIST 258",
+  "skills": [
+    "global perspective",
+    "historical context",
+    "social analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246b1"
+  },
+  "course_id": "HIST 268",
+  "skills": [
+    "scientific literacy",
+    "cultural context",
+    "historical impact"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246b2"
+  },
+  "course_id": "HIST 274",
+  "skills": [
+    "political analysis",
+    "historical context",
+    "global awareness"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246b3"
+  },
+  "course_id": "HIST 277",
+  "skills": [
+    "cultural understanding",
+    "historical events",
+    "social dynamics"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246b4"
+  },
+  "course_id": "HIST 281",
+  "skills": [
+    "race studies",
+    "cultural analysis",
+    "historical context"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246b5"
+  },
+  "course_id": "HIST 288",
+  "skills": [
+    "cultural history",
+    "regional studies",
+    "historical awareness"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246b6"
+  },
+  "course_id": "HIST 307",
+  "skills": [
+    "historical analysis",
+    "cultural context",
+    "political history"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246b7"
+  },
+  "course_id": "HIST 325",
+  "skills": [
+    "regional history",
+    "cultural awareness",
+    "historical context"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246b8"
+  },
+  "course_id": "HIST 335",
+  "skills": [
+    "political analysis",
+    "cultural history",
+    "historical context"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246b9"
+  },
+  "course_id": "HIST 338",
+  "skills": [
+    "political history",
+    "cultural analysis",
+    "historical context"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246ba"
+  },
+  "course_id": "HIST 346",
+  "skills": [
+    "cultural history",
+    "art history",
+    "historical context"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246bb"
+  },
+  "course_id": "HIST 353",
+  "skills": [
+    "historical analysis",
+    "political context",
+    "social trends"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246bc"
+  },
+  "course_id": "HIST 374",
+  "skills": [
+    "historical analysis",
+    "political context",
+    "social dynamics"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246bd"
+  },
+  "course_id": "HIST 391",
+  "skills": [
+    "oral history",
+    "research methods",
+    "ethical analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246be"
+  },
+  "course_id": "HIST 392",
+  "skills": [
+    "historical analysis",
+    "critical thinking",
+    "social context"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246bf"
+  },
+  "course_id": "HIST 400",
+  "skills": [
+    "topic analysis",
+    "critical thinking",
+    "research skills"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246c0"
+  },
+  "course_id": "HIST 411",
+  "skills": [
+    "intellectual history",
+    "cultural analysis",
+    "political thought"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246c1"
+  },
+  "course_id": "HIST 433",
+  "skills": [
+    "cultural history",
+    "historical analysis",
+    "community studies"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246c2"
+  },
+  "course_id": "HIST 459",
+  "skills": [
+    "cultural studies",
+    "critical theory",
+    "social analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246c3"
+  },
+  "course_id": "HIST 476",
+  "skills": [
+    "historical analysis",
+    "critical thinking",
+    "research methods"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246c4"
+  },
+  "course_id": "HIST 482",
+  "skills": [
+    "historical interpretation",
+    "critical analysis",
+    "research skills"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246c5"
+  },
+  "course_id": "HIST 574",
+  "skills": [
+    "historiography",
+    "analytical writing",
+    "source evaluation"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246c6"
+  },
+  "course_id": "HIST 593",
+  "skills": [
+    "methodology",
+    "problem identification",
+    "primary source analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246c7"
+  },
+  "course_id": "HIST 135",
+  "skills": [
+    "historical context",
+    "cultural analysis",
+    "critical thinking"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246c8"
+  },
+  "course_id": "HIST 164",
+  "skills": [
+    "interdisciplinary analysis",
+    "cultural critique",
+    "historical context"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246c9"
+  },
+  "course_id": "HIST 209",
+  "skills": [
+    "source analysis",
+    "argument development",
+    "historical context"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246ca"
+  },
+  "course_id": "HIST 220",
+  "skills": [
+    "historical overview",
+    "cultural understanding",
+    "critical thinking"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246cb"
+  },
+  "course_id": "HIST 253",
+  "skills": [
+    "intellectual history",
+    "cultural analysis",
+    "historical context"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246cc"
+  },
+  "course_id": "HIST 259",
+  "skills": [
+    "historical trends",
+    "cultural critique",
+    "analytical skills"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246cd"
+  },
+  "course_id": "HIST 262",
+  "skills": [
+    "historical interpretation",
+    "political analysis",
+    "critical thinking"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246ce"
+  },
+  "course_id": "HIST 278",
+  "skills": [
+    "cultural analysis",
+    "historical narrative",
+    "critical thinking"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246cf"
+  },
+  "course_id": "HIST 317",
+  "skills": [
+    "historical analysis",
+    "cultural critique",
+    "political context"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246d0"
+  },
+  "course_id": "HIST 361",
+  "skills": [
+    "thought analysis",
+    "historical context",
+    "critical thinking"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246d1"
+  },
+  "course_id": "HIST 386",
+  "skills": [
+    "public communication",
+    "historical presentation",
+    "critical analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246d2"
+  },
+  "course_id": "HIST 387",
+  "skills": [
+    "historical analysis",
+    "cultural critique",
+    "critical thinking"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246d3"
+  },
+  "course_id": "HIST 394",
+  "skills": [
+    "political analysis",
+    "historical narrative",
+    "critical thinking"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246d4"
+  },
+  "course_id": "HIST 405",
+  "skills": [
+    "historical context",
+    "cultural analysis",
+    "critical thinking"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246d5"
+  },
+  "course_id": "HIST 420",
+  "skills": [
+    "historical overview",
+    "cultural critique",
+    "political analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246d6"
+  },
+  "course_id": "HIST 443",
+  "skills": [
+    "historical analysis",
+    "cultural understanding",
+    "critical thinking"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246d7"
+  },
+  "course_id": "HIST 461",
+  "skills": [
+    "historical analysis",
+    "cultural understanding",
+    "political context",
+    "social dynamics"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246d8"
+  },
+  "course_id": "HIST 462",
+  "skills": [
+    "political history",
+    "social change",
+    "economic development",
+    "historical interpretation"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246d9"
+  },
+  "course_id": "HIST 140",
+  "skills": [
+    "writing skills",
+    "historical context",
+    "cultural exchange",
+    "critical thinking"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246da"
+  },
+  "course_id": "HIST 141",
+  "skills": [
+    "historical analysis",
+    "cultural studies",
+    "political history",
+    "critical thinking"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246db"
+  },
+  "course_id": "HIST 207",
+  "skills": [
+    "digital publishing",
+    "historical research",
+    "content development",
+    "project management"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246dc"
+  },
+  "course_id": "HIST 227",
+  "skills": [
+    "historical analysis",
+    "cultural understanding",
+    "political context",
+    "economic history"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246dd"
+  },
+  "course_id": "HIST 247",
+  "skills": [
+    "historical context",
+    "cultural studies",
+    "social structures",
+    "political institutions"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246de"
+  },
+  "course_id": "HIST 311",
+  "skills": [
+    "intelligence analysis",
+    "historical context",
+    "political history",
+    "information evaluation"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246df"
+  },
+  "course_id": "HIST 355",
+  "skills": [
+    "cultural analysis",
+    "historical research",
+    "primary sources",
+    "social history"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246e0"
+  },
+  "course_id": "HIST 357",
+  "skills": [
+    "cultural studies",
+    "historical context",
+    "social phenomena",
+    "political history"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246e1"
+  },
+  "course_id": "HIST 371",
+  "skills": [
+    "primary source analysis",
+    "historical context",
+    "political history",
+    "critical thinking"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246e2"
+  },
+  "course_id": "HIST 373",
+  "skills": [
+    "social analysis",
+    "historical context",
+    "cultural understanding",
+    "political history"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246e3"
+  },
+  "course_id": "HIST 383",
+  "skills": [
+    "activism studies",
+    "historical context",
+    "social movements",
+    "cultural analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246e4"
+  },
+  "course_id": "HIST 410",
+  "skills": [
+    "colonial studies",
+    "political analysis",
+    "social movements",
+    "historical context"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246e5"
+  },
+  "course_id": "HIST 439",
+  "skills": [
+    "cultural studies",
+    "historical context",
+    "political history",
+    "economic analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246e6"
+  },
+  "course_id": "HIST 478",
+  "skills": [
+    "activism studies",
+    "historical context",
+    "social movements",
+    "cultural analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246e7"
+  },
+  "course_id": "HIST 503",
+  "skills": [
+    "historiography",
+    "thematic analysis",
+    "critical thinking",
+    "historical context"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246e8"
+  },
+  "course_id": "HIST 510",
+  "skills": [
+    "thematic analysis",
+    "historical context",
+    "critical thinking",
+    "research skills"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246e9"
+  },
+  "course_id": "HIST 542",
+  "skills": [
+    "thematic analysis",
+    "historical context",
+    "critical thinking",
+    "research skills"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246ea"
+  },
+  "course_id": "PHIL 100",
+  "skills": [
+    "philosophical analysis",
+    "critical thinking",
+    "argumentation",
+    "ethical reasoning"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246eb"
+  },
+  "course_id": "PHIL 101",
+  "skills": [
+    "critical thinking",
+    "argument analysis",
+    "philosophical concepts"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246ec"
+  },
+  "course_id": "PHIL 102",
+  "skills": [
+    "logic",
+    "reasoning",
+    "argument evaluation"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246ed"
+  },
+  "course_id": "PHIL 103",
+  "skills": [
+    "logical reasoning",
+    "argument critique",
+    "coherence assessment"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246ee"
+  },
+  "course_id": "PHIL 104",
+  "skills": [
+    "ethical theories",
+    "moral reasoning",
+    "problem analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246ef"
+  },
+  "course_id": "PHIL 105",
+  "skills": [
+    "ethical concepts",
+    "moral philosophy",
+    "critical discussion"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246f0"
+  },
+  "course_id": "PHIL 106",
+  "skills": [
+    "social ethics",
+    "policy analysis",
+    "moral evaluation"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246f1"
+  },
+  "course_id": "PHIL 109",
+  "skills": [
+    "cultural analysis",
+    "religious studies",
+    "social context"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246f2"
+  },
+  "course_id": "PHIL 110",
+  "skills": [
+    "comparative religion",
+    "cultural understanding",
+    "philosophical inquiry"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246f3"
+  },
+  "course_id": "PHIL 201",
+  "skills": [
+    "literary analysis",
+    "philosophical themes",
+    "historical context"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246f4"
+  },
+  "course_id": "PHIL 202",
+  "skills": [
+    "formal logic",
+    "quantification",
+    "critical reasoning"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246f5"
+  },
+  "course_id": "PHIL 203",
+  "skills": [
+    "ancient philosophy",
+    "metaphysics",
+    "ethical theories"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246f6"
+  },
+  "course_id": "PHIL 206",
+  "skills": [
+    "modern philosophy",
+    "metaphysical concepts",
+    "ethical analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246f7"
+  },
+  "course_id": "PHIL 222",
+  "skills": [
+    "computer ethics",
+    "philosophical inquiry",
+    "foundational concepts"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246f8"
+  },
+  "course_id": "PHIL 223",
+  "skills": [
+    "mind theory",
+    "machine ethics",
+    "societal implications"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246f9"
+  },
+  "course_id": "PHIL 231",
+  "skills": [
+    "religion analysis",
+    "philosophical discourse",
+    "cultural context"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246fa"
+  },
+  "course_id": "PHIL 250",
+  "skills": [
+    "human nature",
+    "historical comparison",
+    "philosophical concepts"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246fb"
+  },
+  "course_id": "PHIL 307",
+  "skills": [
+    "semantics",
+    "pragmatics",
+    "linguistic analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246fc"
+  },
+  "course_id": "PHIL 316",
+  "skills": [
+    "engineering ethics",
+    "ethical frameworks",
+    "problem-solving"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246fd"
+  },
+  "course_id": "PHIL 380",
+  "skills": [
+    "current issues",
+    "philosophical debate",
+    "critical analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246fe"
+  },
+  "course_id": "PHIL 390",
+  "skills": [
+    "reading",
+    "analysis",
+    "writing"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf246ff"
+  },
+  "course_id": "PHIL 411",
+  "skills": [
+    "critical thinking",
+    "historical context",
+    "philosophical analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24700"
+  },
+  "course_id": "PHIL 414",
+  "skills": [
+    "philosophical inquiry",
+    "textual analysis",
+    "argumentation"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24701"
+  },
+  "course_id": "PHIL 419",
+  "skills": [
+    "scientific reasoning",
+    "philosophical concepts",
+    "interdisciplinary thinking"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24702"
+  },
+  "course_id": "PHIL 420",
+  "skills": [
+    "conceptual analysis",
+    "philosophical reasoning",
+    "critical evaluation"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24703"
+  },
+  "course_id": "PHIL 421",
+  "skills": [
+    "ethical reasoning",
+    "historical analysis",
+    "argument construction"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24704"
+  },
+  "course_id": "PHIL 422",
+  "skills": [
+    "ethical analysis",
+    "contemporary issues",
+    "critical thinking"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24705"
+  },
+  "course_id": "PHIL 424",
+  "skills": [
+    "religious philosophy",
+    "critical analysis",
+    "argumentation"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24706"
+  },
+  "course_id": "PHIL 426",
+  "skills": [
+    "metaphysical inquiry",
+    "conceptual analysis",
+    "philosophical reasoning"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24707"
+  },
+  "course_id": "PHIL 430",
+  "skills": [
+    "epistemology",
+    "critical thinking",
+    "conceptual analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24708"
+  },
+  "course_id": "PHIL 443",
+  "skills": [
+    "phenomenological analysis",
+    "historical context",
+    "critical evaluation"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24709"
+  },
+  "course_id": "PHIL 454",
+  "skills": [
+    "formal logic",
+    "proof techniques",
+    "theoretical analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2470a"
+  },
+  "course_id": "PHIL 471",
+  "skills": [
+    "philosophy of science",
+    "critical analysis",
+    "theoretical evaluation"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2470b"
+  },
+  "course_id": "PHIL 492",
+  "skills": [
+    "research skills",
+    "writing",
+    "philosophical inquiry"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2470c"
+  },
+  "course_id": "PHIL 499",
+  "skills": [
+    "research",
+    "writing",
+    "critical thinking"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2470d"
+  },
+  "course_id": "PHIL 511",
+  "skills": [
+    "ethical theory",
+    "critical analysis",
+    "argumentation"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2470e"
+  },
+  "course_id": "PHIL 513",
+  "skills": [
+    "logical theory",
+    "critical thinking",
+    "analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2470f"
+  },
+  "course_id": "PHIL 547",
+  "skills": [
+    "semantic analysis",
+    "theoretical evaluation",
+    "critical thinking"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24710"
+  },
+  "course_id": "PHIL 583",
+  "skills": [
+    "independent research",
+    "writing",
+    "oral presentation"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24711"
+  },
+  "course_id": "PHIL 590",
+  "skills": [
+    "research skills",
+    "writing",
+    "philosophical inquiry"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24712"
+  },
+  "course_id": "PHIL 599",
+  "skills": [
+    "research",
+    "writing",
+    "analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24713"
+  },
+  "course_id": "PHIL 107",
+  "skills": [
+    "critical thinking",
+    "political theory",
+    "debate"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24714"
+  },
+  "course_id": "PHIL 108",
+  "skills": [
+    "cultural analysis",
+    "historical context",
+    "discussion"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24715"
+  },
+  "course_id": "PHIL 214",
+  "skills": [
+    "ethical reasoning",
+    "moral analysis",
+    "healthcare ethics"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24716"
+  },
+  "course_id": "PHIL 425",
+  "skills": [
+    "philosophical inquiry",
+    "mind-body relation",
+    "identity exploration"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24717"
+  },
+  "course_id": "PHIL 433",
+  "skills": [
+    "neuroscience concepts",
+    "evolutionary theory",
+    "critical analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24718"
+  },
+  "course_id": "PHIL 436",
+  "skills": [
+    "legal philosophy",
+    "justice theory",
+    "moral reasoning"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24719"
+  },
+  "course_id": "PHIL 440",
+  "skills": [
+    "AI ethics",
+    "societal impact",
+    "critical discussion"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2471a"
+  },
+  "course_id": "PHIL 441",
+  "skills": [
+    "existential analysis",
+    "philosophical texts",
+    "critical thinking"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2471b"
+  },
+  "course_id": "PHIL 442",
+  "skills": [
+    "AI implications",
+    "ethical analysis",
+    "conceptual thinking"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2471c"
+  },
+  "course_id": "PHIL 458",
+  "skills": [
+    "cognitive science",
+    "brain studies",
+    "critical thinking"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2471d"
+  },
+  "course_id": "PHIL 477",
+  "skills": [
+    "psychological theories",
+    "mind behavior",
+    "philosophical analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2471e"
+  },
+  "course_id": "PHIL 507",
+  "skills": [
+    "formal semantics",
+    "linguistic analysis",
+    "critical reasoning"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf2471f"
+  },
+  "course_id": "PHIL 514",
+  "skills": [
+    "cognitive science",
+    "interdisciplinary study",
+    "research skills"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24720"
+  },
+  "course_id": "PHIL 517",
+  "skills": [
+    "scientific philosophy",
+    "problem-solving",
+    "analytical skills"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24721"
+  },
+  "course_id": "PHIL 521",
+  "skills": [
+    "contemporary issues",
+    "intensive study",
+    "critical analysis"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24722"
+  },
+  "course_id": "PHIL 219",
+  "skills": [
+    "intersectionality",
+    "social analysis",
+    "philosophical discussion"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24723"
+  },
+  "course_id": "PHIL 410",
+  "skills": [
+    "historical analysis",
+    "philosophical texts",
+    "critical thinking"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24724"
+  },
+  "course_id": "PHIL 412",
+  "skills": [
+    "modern philosophy",
+    "critical analysis",
+    "historical context"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24725"
+  },
+  "course_id": "PHIL 439",
+  "skills": [
+    "mathematical philosophy",
+    "conceptual analysis",
+    "critical thinking"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24726"
+  },
+  "course_id": "PHIL 460",
+  "skills": [
+    "statistics",
+    "probability",
+    "ethics",
+    "logic",
+    "modeling"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24727"
+  },
+  "course_id": "PHIL 501",
+  "skills": [
+    "philosophy",
+    "analysis",
+    "history",
+    "critical thinking"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69310fd6baa73c918bf24728"
+  },
+  "course_id": "PHIL 551",
+  "skills": [
+    "linguistics",
+    "pragmatics",
+    "analysis",
+    "communication"
+  ]
+}]
