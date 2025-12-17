@@ -4,6 +4,9 @@ import { auth } from "../firebase";
 import {
   signInWithEmailAndPassword,
   createUserWithEmailAndPassword,
+  signInWithPopup,
+  GoogleAuthProvider,
+  GithubAuthProvider,
 } from "firebase/auth";
 import { FirebaseError } from "firebase/app";
 
@@ -23,6 +26,12 @@ const getAuthErrorMessage = (error: unknown): string => {
       return "Invalid email or password.";
     case "auth/email-already-in-use":
       return "An account already exists for this email.";
+    case "auth/popup-closed-by-user":
+      return "Sign-in popup was closed before completing.";
+    case "auth/cancelled-popup-request":
+      return "Another sign-in attempt is in progress. Please try again.";
+    case "auth/account-exists-with-different-credential":
+      return "Account exists with a different sign-in method. Try another option.";
     case "auth/too-many-requests":
       return "Too many attempts. Please wait a moment and try again.";
     default:
@@ -39,8 +48,7 @@ const Login = () => {
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
 
-  const validateIllinoisEmail = (value: string) =>
-    value.toLowerCase().endsWith(ILLINOIS_DOMAIN);
+  const validateIllinoisEmail = (value: string) => value.toLowerCase().endsWith(ILLINOIS_DOMAIN);
 
   const finishAuth = () => {
     navigate("/planner");
@@ -84,6 +92,38 @@ const Login = () => {
     }
   };
 
+  // OAuth: Google
+  const handleGoogleLogin = async () => {
+    setError(null);
+    try {
+      setLoading(true);
+      const provider = new GoogleAuthProvider();
+      // Optionally hint Google to use Illinois accounts
+      provider.setCustomParameters({ hd: "illinois.edu" });
+      await signInWithPopup(auth, provider);
+      finishAuth();
+    } catch (err: unknown) {
+      setError(getAuthErrorMessage(err));
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  // OAuth: GitHub
+  const handleGithubLogin = async () => {
+    setError(null);
+    try {
+      setLoading(true);
+      const provider = new GithubAuthProvider();
+      await signInWithPopup(auth, provider);
+      finishAuth();
+    } catch (err: unknown) {
+      setError(getAuthErrorMessage(err));
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
     <div className="login-page">
       {/* Background circles */}
@@ -91,10 +131,8 @@ const Login = () => {
       <div className="login-circle login-circle--right" />
 
       <div className="login-card">
-        <h1 className="login-title">Sign in with your Illinois email</h1>
-        <p className="login-subtitle">
-          Enter your Illinois email and password to continue.
-        </p>
+        <h1 className="login-title">Sign in to UIUC Semester Planner</h1>
+        <p className="login-subtitle">Use your Illinois email or a provider below.</p>
 
         {/* Email */}
         <div className="login-field-group">
@@ -125,21 +163,36 @@ const Login = () => {
 
         {/* Buttons */}
         <div className="login-email-buttons">
+          <button type="button" className="login-secondary-button" onClick={handleEmailLogin} disabled={loading}>
+            {loading ? "Signing in..." : "Login"}
+          </button>
+          <button type="button" className="login-outline-button" onClick={handleEmailSignUp} disabled={loading}>
+            Create Account
+          </button>
+        </div>
+
+        {/* Divider */}
+        <div className="login-divider" />
+
+        {/* OAuth Buttons */}
+        <div className="login-email-buttons">
           <button
             type="button"
-            className="login-secondary-button"
-            onClick={handleEmailLogin}
+            className="login-outline-button"
+            onClick={handleGoogleLogin}
             disabled={loading}
+            aria-label="Continue with Google"
           >
-            {loading ? "Signing in..." : "Login"}
+            Continue with Google
           </button>
           <button
             type="button"
             className="login-outline-button"
-            onClick={handleEmailSignUp}
+            onClick={handleGithubLogin}
             disabled={loading}
+            aria-label="Continue with GitHub"
           >
-            Create Account
+            Continue with GitHub
           </button>
         </div>
       </div>
@@ -148,6 +201,3 @@ const Login = () => {
 };
 
 export default Login;
-
-
-
