@@ -125,75 +125,97 @@ const Login = () => {
   };
 
   return (
-    <div className="login-page">
-      {/* Background circles */}
-      <div className="login-circle login-circle--left" />
-      <div className="login-circle login-circle--right" />
-
-      <div className="login-card">
-        <h1 className="login-title">Sign in to UIUC Semester Planner</h1>
-        <p className="login-subtitle">Use your Illinois email or a provider below.</p>
-
-        {/* Email */}
-        <div className="login-field-group">
-          <label className="login-label">Illinois Email</label>
-          <input
-            type="email"
-            placeholder=" netid@illinois.edu"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            className="login-input"
-          />
+    <div className="min-h-screen gradient-hero flex items-center justify-center px-4">
+      <div className="w-full max-w-md">
+        <div className="mb-6 flex items-center justify-center gap-3">
+          <div className="h-11 w-11 rounded-xl bg-brand-500 flex items-center justify-center shadow-sm">
+            <img src="/uiuc-planner-icon.svg" alt="UIUC Icon" className="h-6 w-6" />
+          </div>
+          <div className="text-slate-700 font-semibold">UIUC Semester Planner</div>
         </div>
 
-        {/* Password */}
-        <div className="login-field-group">
-          <label className="login-label">Password</label>
-          <input
-            type="password"
-            placeholder=" Enter your password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            className="login-input"
-          />
-        </div>
+        <div className="rounded-2xl bg-white/90 backdrop-blur-md shadow-xl ring-1 ring-black/5 p-6">
+          <h1 className="text-xl font-semibold text-slate-900">Sign in</h1>
+          <p className="mt-1 text-sm text-slate-600">Use your Illinois email or a provider below.</p>
 
-        {/* Error Message */}
-        {error && <p className="login-error">{error}</p>}
+          <div className="mt-6 space-y-4">
+            <div>
+              <label className="block text-sm font-medium text-slate-700">Illinois Email</label>
+              <input
+                type="email"
+                placeholder="netid@illinois.edu"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                className="mt-1 w-full rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm outline-none focus:ring-4 focus:ring-brand-500/20 focus:border-brand-500"
+              />
+            </div>
 
-        {/* Buttons */}
-        <div className="login-email-buttons">
-          <button type="button" className="login-secondary-button" onClick={handleEmailLogin} disabled={loading}>
-            {loading ? "Signing in..." : "Login"}
-          </button>
-          <button type="button" className="login-outline-button" onClick={handleEmailSignUp} disabled={loading}>
-            Create Account
-          </button>
-        </div>
+            <div>
+              <label className="block text-sm font-medium text-slate-700">Password</label>
+              <input
+                type="password"
+                placeholder="Enter your password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                className="mt-1 w-full rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm outline-none focus:ring-4 focus:ring-brand-500/20 focus:border-brand-500"
+              />
+            </div>
 
-        {/* Divider */}
-        <div className="login-divider" />
+            {error && (
+              <p className="text-sm text-red-600 bg-red-50 border border-red-100 rounded-lg px-3 py-2">{error}</p>
+            )}
 
-        {/* OAuth Buttons */}
-        <div className="login-email-buttons">
-          <button
-            type="button"
-            className="login-outline-button"
-            onClick={handleGoogleLogin}
-            disabled={loading}
-            aria-label="Continue with Google"
-          >
-            Continue with Google
-          </button>
-          <button
-            type="button"
-            className="login-outline-button"
-            onClick={handleGithubLogin}
-            disabled={loading}
-            aria-label="Continue with GitHub"
-          >
-            Continue with GitHub
-          </button>
+            <div className="flex gap-2">
+              <button
+                type="button"
+                className="flex-1 inline-flex items-center justify-center rounded-lg bg-brand-500 px-4 py-2.5 text-white font-semibold shadow-sm hover:bg-brand-600 transition disabled:opacity-50"
+                onClick={handleEmailLogin}
+                disabled={loading}
+              >
+                {loading ? "Signing in..." : "Login"}
+              </button>
+              <button
+                type="button"
+                className="flex-1 inline-flex items-center justify-center rounded-lg bg-white px-4 py-2.5 text-slate-900 font-semibold ring-1 ring-slate-200 hover:bg-slate-50 transition disabled:opacity-50"
+                onClick={handleEmailSignUp}
+                disabled={loading}
+              >
+                Create Account
+              </button>
+            </div>
+
+            <div className="relative my-2">
+              <div className="absolute inset-0 flex items-center" aria-hidden="true">
+                <div className="w-full border-t border-slate-200" />
+              </div>
+              <div className="relative flex justify-center text-xs">
+                <span className="bg-white px-2 text-slate-500">or continue with</span>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-2 gap-2">
+              <button
+                type="button"
+                className="inline-flex items-center justify-center gap-2 rounded-lg bg-white px-4 py-2.5 text-slate-900 font-semibold ring-1 ring-slate-200 hover:bg-slate-50 transition disabled:opacity-50"
+                onClick={handleGoogleLogin}
+                disabled={loading}
+                aria-label="Continue with Google"
+              >
+                <img src="https://www.google.com/favicon.ico" alt="Google" className="h-4 w-4" />
+                Google
+              </button>
+              <button
+                type="button"
+                className="inline-flex items-center justify-center gap-2 rounded-lg bg-white px-4 py-2.5 text-slate-900 font-semibold ring-1 ring-slate-200 hover:bg-slate-50 transition disabled:opacity-50"
+                onClick={handleGithubLogin}
+                disabled={loading}
+                aria-label="Continue with GitHub"
+              >
+                <img src="https://github.githubassets.com/favicons/favicon.png" alt="GitHub" className="h-4 w-4" />
+                GitHub
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
