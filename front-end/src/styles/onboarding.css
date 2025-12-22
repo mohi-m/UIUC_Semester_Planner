@@ -48,7 +48,7 @@
 }
 
 .wizard-step--completed {
-  background: #111827;     /* dark circle for completed steps */
+  background: #111827; /* dark circle for completed steps */
   border-color: #111827;
   color: #ffffff;
 }
@@ -126,18 +126,55 @@
   margin-bottom: 40px;
 }
 
+/* Loading state for Step 2 */
+.wizard-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+  gap: 12px;
+}
+
+.wizard-spinner {
+  width: 36px;
+  height: 36px;
+  border-radius: 999px;
+  border: 3px solid #e5e7eb;
+  border-top-color: #f97316;
+  animation: wizard-spin 0.9s linear infinite;
+}
+
+.wizard-loading-text {
+  font-size: 14px;
+  color: #374151;
+  font-weight: 600;
+}
+
+.wizard-loading-hint {
+  font-size: 13px;
+  color: #6b7280;
+  max-width: 540px;
+  text-align: center;
+}
+
+@keyframes wizard-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .wizard-select-wrapper {
   position: relative;
   max-width: 420px;
   margin: 0;
 }
 
-wizard-select-wrapper.wizard-select-wrapper--left {
+.wizard-select-wrapper.wizard-select-wrapper--left {
   margin-left: 0;
   margin-right: 0;
 }
 .wizard-select-wrapper::after {
-  content: "▾";
   position: absolute;
   right: 16px;
   top: 50%;
@@ -153,7 +190,7 @@ wizard-select-wrapper.wizard-select-wrapper--left {
   border: 1px solid #e5e7eb;
   background: #eef0f2;
   padding: 12px 16px;
-  padding-right: 40px;
+  padding-right: 12px;
   font-size: 15px;
   color: #111827;
   appearance: none;
@@ -224,8 +261,7 @@ wizard-select-wrapper.wizard-select-wrapper--left {
   gap: 6px;
   cursor: pointer;
   box-shadow: 0 10px 25px rgba(248, 113, 113, 0.35);
-  transition: background 0.15s ease, transform 0.15s ease,
-    box-shadow 0.15s ease;
+  transition: background 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
 }
 
 .wizard-next-button:hover:enabled {
@@ -273,10 +309,7 @@ wizard-select-wrapper.wizard-select-wrapper--left {
   justify-content: center;
   gap: 12px;
   cursor: pointer;
-  transition: border-color 0.15s ease,
-              box-shadow 0.15s ease,
-              transform 0.15s ease,
-              background 0.15s ease;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease, background 0.15s ease;
 }
 
 .wizard-career-card:hover {
@@ -326,7 +359,6 @@ wizard-select-wrapper.wizard-select-wrapper--left {
   color: #ffffff;
 }
 
-
 /* ====== Step 3 helpers (current semester + courses) ====== */
 
 .wizard-field-optional {
@@ -340,12 +372,11 @@ wizard-select-wrapper.wizard-select-wrapper--left {
 
 .wizard-field-label {
   display: block;
-  font-size: 16px;       
-  font-weight: 600;     
+  font-size: 16px;
+  font-weight: 600;
   color: #111827;
   margin-bottom: 8px;
 }
-
 
 .wizard-helper-text {
   font-size: 13px;
@@ -363,9 +394,9 @@ wizard-select-wrapper.wizard-select-wrapper--left {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 10px 40px;
   margin-top: 8px;
-  max-height: 320px;      
-  overflow-y: auto;       
-  padding-right: 8px;    
+  max-height: 320px;
+  overflow-y: auto;
+  padding-right: 8px;
 }
 
 .wizard-course-item {
@@ -427,7 +458,6 @@ wizard-select-wrapper.wizard-select-wrapper--left {
   box-shadow: 0 0 0 1px rgba(241, 89, 42, 0.25);
 }
 
-
 /* Selected Courses Chips */
 .wizard-selected-courses {
   margin-bottom: 12px;
@@ -473,4 +503,26 @@ wizard-select-wrapper.wizard-select-wrapper--left {
 
 .wizard-chip:hover .wizard-chip-remove {
   color: #64748b;
+}
+
+/* Small circular add button used in Step 3 search results */
+.btn-add-mini {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 1px solid #d1d5db;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6b7280;
+  font-size: 20px;
+  line-height: 1;
+  transition: all 0.2s;
+}
+
+.btn-add-mini:hover {
+  background: #f97316;
+  border-color: #f97316;
+  color: #ffffff;
 }

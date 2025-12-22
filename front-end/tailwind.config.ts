@@ -1,4 +1,5 @@
 import type { Config } from 'tailwindcss'
+import animate from 'tailwindcss-animate'
 
 export default {
   content: [
@@ -23,9 +24,11 @@ export default {
         }
       },
       fontFamily: {
-        sans: ['Inter', 'system-ui', 'Segoe UI', 'Arial', 'sans-serif']
+        // Set Google Sans as the default sans and Fira Code as monospace
+        sans: ['"Google Sans"', 'system-ui', 'Segoe UI', 'Arial', 'sans-serif'],
+        mono: ['"Fira Code"', 'ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', '"Liberation Mono"', 'monospace']
       }
     }
   },
-  plugins: []
+  plugins: [animate]
 } satisfies Config

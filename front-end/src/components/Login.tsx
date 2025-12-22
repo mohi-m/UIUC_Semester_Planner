@@ -9,7 +9,7 @@ import {
   GithubAuthProvider,
 } from "firebase/auth";
 import { FirebaseError } from "firebase/app";
-import { Mail, Lock, AlertCircle, Github, ArrowRight, UserPlus, LogIn } from "lucide-react";
+import { Mail, Lock, AlertCircle, Github, UserPlus, LogIn } from "lucide-react";
 
 const GoogleIcon = () => (
   <svg className="w-4 h-4" viewBox="0 0 24 24">

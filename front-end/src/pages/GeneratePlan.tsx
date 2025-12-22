@@ -30,6 +30,8 @@ interface DashboardState {
   selectedCourses: Course[];
   completedPrevCourses?: Course[];
   currentTermCourses?: Course[];
+  // Map of finished terms -> courses (excluding current term)
+  previousTermCourses?: Record<string, Course[]>;
   startingSemester?: string;
   currentSemester: string;
 }
@@ -81,6 +83,10 @@ const GeneratePlan: React.FC = () => {
   const [searchResults, setSearchResults] = useState<Course[]>([]);
   const [isSearching, setIsSearching] = useState(false);
   const [isProfileOpen, setIsProfileOpen] = useState(false);
+  // Collapsible state: term name -> collapsed
+  const [collapsed, setCollapsed] = useState<Record<string, boolean>>({});
+  // Editable current semester courses
+  const [currentCourses, setCurrentCourses] = useState<Course[]>(state?.currentTermCourses ?? []);
 
   // Helpers for terms
   // Upcoming major semester (skip Summer)
@@ -108,12 +114,75 @@ const GeneratePlan: React.FC = () => {
     return sem;
   };
 
-  const prevCourses: Course[] = state?.completedPrevCourses ?? state?.selectedCourses ?? [];
-  const currCourses: Course[] = state?.currentTermCourses ?? [];
+  // Build previous-term map. If not provided (back-compat), distribute aggregated
+  // courses across all past terms using a 20-credit cap per term.
+  const listTermsInclusive = (start: string, end: string): string[] | null => {
+    if (!start || !end) return null;
+    const out: string[] = [];
+    const guard = 20;
+    let cur = start;
+    for (let i = 0; i < guard; i++) {
+      out.push(cur);
+      if (cur === end) return out;
+      const nxt = nextSemester(cur);
+      if (!nxt) return null;
+      cur = nxt;
+    }
+    return null;
+  };
+
+  const rawPrevMap: Record<string, Course[]> | undefined = state?.previousTermCourses;
+  const prevCoursesAgg: Course[] = state?.completedPrevCourses ?? state?.selectedCourses ?? [];
+  const currCourses: Course[] = currentCourses;
+
+  const prevTermMap: Record<string, Course[]> = React.useMemo(() => {
+    // If provided by PlannerHome, use it directly
+    if (rawPrevMap && Object.keys(rawPrevMap).length > 0) return rawPrevMap;
+    // Otherwise, attempt to distribute aggregated previous courses across all past terms
+    const result: Record<string, Course[]> = {};
+    if (!state?.startingSemester || !state?.currentSemester) {
+      // Unknown range; put everything into the immediate previous term for back-compat
+      const prev = previousSemester(state?.currentSemester || "");
+      if (prev) result[prev] = prevCoursesAgg;
+      return result;
+    }
+    const terms = listTermsInclusive(state.startingSemester, state.currentSemester) || [];
+    // Exclude the current term
+    const finishedTerms = terms.slice(0, Math.max(terms.length - 1, 0));
+    // Distribute by 20-credit max per term, earliest to latest
+    const MAX = 20;
+    const credits = (c: Course) => getNumericCredits(c.credit_hours);
+    let i = 0;
+    let termCredits = 0;
+    const copy = [...prevCoursesAgg];
+    for (const t of finishedTerms) result[t] = [];
+    for (const course of copy) {
+      // Move to next term if needed
+      while (i < finishedTerms.length && termCredits + credits(course) > MAX) {
+        i++;
+        termCredits = 0;
+      }
+      if (i >= finishedTerms.length) {
+        // Put excess into the last finished term
+        if (finishedTerms.length) {
+          const last = finishedTerms[finishedTerms.length - 1];
+          result[last].push(course);
+        }
+        continue;
+      }
+      const t = finishedTerms[i];
+      result[t].push(course);
+      termCredits += credits(course);
+    }
+    return result;
+  }, [rawPrevMap, prevCoursesAgg, state?.startingSemester, state?.currentSemester]);
+
+  // Flattened previous courses for progress and filtering
+  const prevCoursesAll: Course[] = Object.values(prevTermMap).flat();
 
   // Derived state for progress: count finished credits only
   const completedCredits =
-    prevCourses.reduce((sum, c) => {
+    prevCoursesAll.reduce((sum, c) => {
       return sum + getNumericCredits(c.credit_hours);
     }, 0) || 0;
 
@@ -142,10 +211,17 @@ const GeneratePlan: React.FC = () => {
       setIsLoading(true);
       try {
         // 1. Generate Schedule
+        // Compute how many future semesters we are allowed to render (cap to 8 total)
+        const terms = listTermsInclusive(state.startingSemester || state.currentSemester, state.currentSemester) || [];
+        const finishedCount = Math.max(terms.length - 1, 0);
+        const TOTAL_CAP = 8;
+        const remainingSlots = Math.max(TOTAL_CAP - (finishedCount + 1), 0); // subtract finished + current
+
         const result = await generateAcademicPlan(
           nextSemester(state.currentSemester),
-          currentCareerPathId, // Use local state
-          [...prevCourses, ...currCourses]
+          currentCareerPathId,
+          [...prevCoursesAll, ...currCourses],
+          remainingSlots
         );
 
         const newSchedule: SemesterPlan[] = Object.entries(result.schedule).map(([semName, courses]) => ({
@@ -156,20 +232,47 @@ const GeneratePlan: React.FC = () => {
 
         setSchedule(newSchedule);
 
-        // 2. Fetch Recommendations (Core Courses from Pathway)
-        const pathway = await fetchPathwayDetails(currentCareerPathId); // Use local state
-        if (pathway && pathway.core_courses) {
-          // Take top 4-5 core courses
-          const topCourses = pathway.core_courses.slice(0, 5);
-          console.log("Fetching recs for:", topCourses);
-
-          const courseDetailsPromises = topCourses.map((id) => fetchCourseDetails(id));
-          const courses = await Promise.all(courseDetailsPromises);
-
-          const validCourses = courses.filter((c): c is Course => c !== null);
-          console.log("Fetched recs data:", validCourses);
-
-          setRecommendations(validCourses);
+        // 2. Fetch Recommendations
+        const pathway = await fetchPathwayDetails(currentCareerPathId);
+        if (pathway) {
+          const allIds = Array.from(
+            new Set([
+              ...(pathway.core_courses || []),
+              ...(pathway.recommended_courses || []),
+              ...(pathway.optional_courses || []),
+            ])
+          );
+          const plannedIds = new Set(
+            [...prevCoursesAll, ...currCourses, ...Object.values(result.schedule).flat()].map((c) =>
+              c.course_id.replace(/\s+/g, "").toUpperCase()
+            )
+          );
+          const details = await Promise.all(
+            allIds.slice(0, 30).map(async (id) => {
+              const d = await fetchCourseDetails(id);
+              if (d) return d;
+              // Fallback placeholder so recommendations never empty
+              return {
+                course_id: id,
+                title: "Suggested Course",
+                department: id.split(" ")[0] || "UNK",
+                credit_hours: 3,
+              } as Course;
+            })
+          );
+          const level = (id: string) => {
+            const m = id.match(/(\d{2,3})/);
+            return m ? parseInt(m[1], 10) : 999;
+          };
+          let list = details
+            .filter((c): c is Course => !!c)
+            .filter((c) => !plannedIds.has(c.course_id.replace(/\s+/g, "").toUpperCase()))
+            .sort((a, b) => level(a.course_id) - level(b.course_id));
+          // Fallback if we filtered all out
+          if (list.length === 0) {
+            list = details.sort((a, b) => level(a.course_id) - level(b.course_id));
+          }
+          setRecommendations(list.slice(0, 8));
         }
       } catch (error) {
         console.error("Failed to load data:", error);
@@ -180,6 +283,23 @@ const GeneratePlan: React.FC = () => {
 
     loadData();
   }, [state, currentCareerPathId]); // Run when career path changes
+
+  // Initialize default collapsed state whenever terms change
+  useEffect(() => {
+    const map: Record<string, boolean> = {};
+    if (state?.startingSemester && state?.currentSemester) {
+      const terms = listTermsInclusive(state.startingSemester, state.currentSemester) || [];
+      const finished = terms.slice(0, Math.max(terms.length - 1, 0));
+      finished.forEach((t) => (map[t] = true)); // finished collapsed by default
+      map[state.currentSemester] = false; // current open
+    }
+    schedule.forEach((s) => (map[s.name] = false)); // future open
+    setCollapsed(map);
+  }, [state?.startingSemester, state?.currentSemester, schedule, prevTermMap]);
+
+  const toggleCollapse = (term: string) => {
+    setCollapsed((prev) => ({ ...prev, [term]: !prev[term] }));
+  };
 
   const handleCareerChange = (path: CareerPath) => {
     if (path.id === currentCareerPathId) {
@@ -288,6 +408,24 @@ const GeneratePlan: React.FC = () => {
   const addCourseToSemester = (course: Course) => {
     if (activeSemesterIndex === null) return;
 
+    // Handle adding to current semester when index is -1
+    if (activeSemesterIndex === -1) {
+      // Prevent duplicates
+      if (currentCourses.some((c) => c.course_id === course.course_id)) {
+        alert("This course is already in the current semester!");
+        return;
+      }
+      const creditsToAdd = getNumericCredits(course.credit_hours);
+      const currentCredits = currentCourses.reduce((s, c) => s + getNumericCredits(c.credit_hours), 0);
+      if (currentCredits + creditsToAdd > 20) {
+        alert("Cannot add course. Semester limit is 20 credits.");
+        return;
+      }
+      setCurrentCourses((prev) => [...prev, course]);
+      setActiveSemesterIndex(null);
+      return;
+    }
+
     setSchedule((prev) => {
       const newSchedule = [...prev];
       const targetSem = { ...newSchedule[activeSemesterIndex] };
@@ -298,10 +436,10 @@ const GeneratePlan: React.FC = () => {
         return prev;
       }
 
-      // Check 15 credit limit
+      // Check 20 credit limit
       const additionalButtons = getNumericCredits(course.credit_hours);
-      if (targetSem.totalCredits + additionalButtons > 15) {
-        alert("Cannot add course. Semester limit is 15 credits.");
+      if (targetSem.totalCredits + additionalButtons > 20) {
+        alert("Cannot add course. Semester limit is 20 credits.");
         return prev;
       }
 
@@ -350,49 +488,102 @@ const GeneratePlan: React.FC = () => {
     const fromIndex = parseInt(fromIndexStr, 10);
     if (fromIndex === toIndex) return;
 
-    // Logic Check: Max 15 Credits for Drag and Drop
-    const sourceSemTest = schedule[fromIndex];
-    const destSemTest = schedule[toIndex];
-    const courseToMove = sourceSemTest.courses.find((c) => c.course_id === courseId);
+    // Helper to sum credits
+    const calcCredits = (courses: Course[]) => courses.reduce((sum, c) => sum + getNumericCredits(c.credit_hours), 0);
 
-    if (courseToMove) {
-      const courseCredits = getNumericCredits(courseToMove.credit_hours);
-      if (destSemTest.totalCredits + courseCredits > 15) {
-        alert("A semester cannot exceed 15 credits.");
+    // Find the course object from the appropriate source
+    let movingCourse: Course | undefined;
+    if (fromIndex === -1) {
+      movingCourse = currentCourses.find((c) => c.course_id === courseId);
+    } else {
+      const src = schedule[fromIndex];
+      movingCourse = src?.courses.find((c) => c.course_id === courseId);
+    }
+    if (!movingCourse) return;
+
+    const movingCredits = getNumericCredits(movingCourse.credit_hours);
+
+    // Validate destination credit cap
+    if (toIndex === -1) {
+      const curCredits = calcCredits(currentCourses);
+      if (curCredits + movingCredits > 20) {
+        alert("A semester cannot exceed 20 credits.");
+        return;
+      }
+    } else {
+      const destSemTest = schedule[toIndex];
+      if (destSemTest && destSemTest.totalCredits + movingCredits > 20) {
+        alert("A semester cannot exceed 20 credits.");
         return;
       }
     }
 
-    setSchedule((prev) => {
-      const newSchedule = [...prev];
-      const sourceSem = { ...newSchedule[fromIndex] };
-      const destSem = { ...newSchedule[toIndex] };
+    // Apply move
+    if (toIndex === -1) {
+      // Move into current semester
+      if (fromIndex === -1) return; // nothing to do
+      setSchedule((prev) => {
+        const newSchedule = [...prev];
+        const sourceSem = { ...newSchedule[fromIndex] };
+        sourceSem.courses = [...sourceSem.courses];
+        const idx = sourceSem.courses.findIndex((c) => c.course_id === courseId);
+        if (idx === -1) return prev;
+        sourceSem.courses.splice(idx, 1);
+        sourceSem.totalCredits = calcCredits(sourceSem.courses);
+        newSchedule[fromIndex] = sourceSem;
+        return newSchedule;
+      });
+      // Add to current with duplicate guard (idempotent)
+      setCurrentCourses((prevCur) =>
+        prevCur.some((c) => c.course_id === courseId) ? prevCur : [...prevCur, movingCourse as Course]
+      );
+    } else {
+      // Move into a future semester (from current or another future)
+      setSchedule((prev) => {
+        const newSchedule = [...prev];
+        const destSem = { ...newSchedule[toIndex] };
+        destSem.courses = [...destSem.courses];
 
-      sourceSem.courses = [...sourceSem.courses];
-      destSem.courses = [...destSem.courses];
+        if (fromIndex === -1) {
+          // from current -> future
+          const idx = currentCourses.findIndex((c) => c.course_id === courseId);
+          if (idx === -1) return prev;
+          const moved = currentCourses[idx];
+          // prevent duplicate push
+          if (!destSem.courses.some((c) => c.course_id === moved.course_id)) {
+            destSem.courses.push(moved);
+          }
+          destSem.totalCredits = calcCredits(destSem.courses);
+          newSchedule[toIndex] = destSem;
+          // remove from current outside to avoid StrictMode double side-effect
+          return newSchedule;
+        }
 
-      const courseIndex = sourceSem.courses.findIndex((c) => c.course_id === courseId);
-      if (courseIndex === -1) return prev;
+        // from one future -> another future
+        const sourceSem = { ...newSchedule[fromIndex] };
+        sourceSem.courses = [...sourceSem.courses];
+        const idx = sourceSem.courses.findIndex((c) => c.course_id === courseId);
+        if (idx === -1) return prev;
+        const [moved] = sourceSem.courses.splice(idx, 1);
+        if (!destSem.courses.some((c) => c.course_id === moved.course_id)) {
+          destSem.courses.push(moved);
+        }
 
-      const [movedCourse] = sourceSem.courses.splice(courseIndex, 1);
-      destSem.courses.push(movedCourse);
+        sourceSem.totalCredits = calcCredits(sourceSem.courses);
+        destSem.totalCredits = calcCredits(destSem.courses);
 
-      const calcCredits = (courses: Course[]) =>
-        courses.reduce((sum, c) => {
-          return sum + getNumericCredits(c.credit_hours);
-        }, 0);
-
-      sourceSem.totalCredits = calcCredits(sourceSem.courses);
-      destSem.totalCredits = calcCredits(destSem.courses);
-
-      newSchedule[fromIndex] = sourceSem;
-      newSchedule[toIndex] = destSem;
-
-      return newSchedule;
-    });
+        newSchedule[fromIndex] = sourceSem;
+        newSchedule[toIndex] = destSem;
+        return newSchedule;
+      });
+      if (fromIndex === -1) {
+        // remove from current with guard
+        setCurrentCourses((prevCur) => prevCur.filter((c) => c.course_id !== courseId));
+      }
+    }
   };
 
-  // Add a selected course into the earliest semester that has room (<= 15 credits)
+  // Add a selected course into the earliest semester that has room (<= 20 credits)
   const addCourseToAnySemester = (course: Course) => {
     const courseCredits = getNumericCredits(course.credit_hours);
 
@@ -405,7 +596,7 @@ const GeneratePlan: React.FC = () => {
       // Find earliest semester with enough remaining credits
       for (let i = 0; i < prev.length; i++) {
         const sem = prev[i];
-        if (sem.totalCredits + courseCredits <= 15) {
+        if (sem.totalCredits + courseCredits <= 20) {
           const newSchedule = [...prev];
           const updatedSem: SemesterPlan = {
             ...sem,
@@ -417,7 +608,7 @@ const GeneratePlan: React.FC = () => {
         }
       }
 
-      alert("No semester has room under 15 credits. Remove a course or use '+ Add Elective' to rearrange.");
+      alert("No semester has room under 20 credits. Remove a course or use '+ Add Elective' to rearrange.");
       return prev;
     });
   };
@@ -437,9 +628,11 @@ const GeneratePlan: React.FC = () => {
         major: state.major,
         careerPathId: currentCareerPathId,
         careerPathName: currentCareerPathName,
-        selectedCourses: state.selectedCourses,
-        completedPrevCourses: prevCourses,
-        currentTermCourses: currCourses,
+        selectedCourses: [...prevCoursesAll, ...currentCourses],
+        completedPrevCourses: prevCoursesAll,
+        currentTermCourses: currentCourses,
+        previousTermCourses: prevTermMap,
+        startingSemester: state.startingSemester,
         currentSemester: state.currentSemester,
       },
     });
@@ -458,7 +651,11 @@ const GeneratePlan: React.FC = () => {
                 <XMarkIcon className="w-6 h-6" style={{ width: "24px" }} />
               </button>
               <div className="modal-header-content">
-                <h2 className="modal-course-id">Add Course to {schedule[activeSemesterIndex].name}</h2>
+                <h2 className="modal-course-id">
+                  {activeSemesterIndex === -1
+                    ? `Add Course to Current — ${state.currentSemester}`
+                    : `Add Course to ${schedule[activeSemesterIndex].name}`}
+                </h2>
               </div>
             </div>
 
@@ -587,11 +784,13 @@ const GeneratePlan: React.FC = () => {
               <button className="btn-secondary" onClick={() => setSelectedCourse(null)}>
                 Close
               </button>
-              {/* Check if course is in plan to show Remove, otherwise show Add (or nothing) */}
-              {schedule.some((sem) => sem.courses.some((c) => c.course_id === selectedCourse.course_id)) ? (
+              {/* Check if course is in plan to show Remove, otherwise show Add */}
+              {schedule.some((sem) => sem.courses.some((c) => c.course_id === selectedCourse.course_id)) ||
+              currentCourses.some((c) => c.course_id === selectedCourse.course_id) ? (
                 <button
                   className="btn-danger"
                   onClick={() => {
+                    // Remove from future schedule if present
                     setSchedule((prev) => {
                       const newSchedule = [...prev];
                       for (let i = 0; i < newSchedule.length; i++) {
@@ -607,6 +806,8 @@ const GeneratePlan: React.FC = () => {
                       }
                       return newSchedule;
                     });
+                    // Remove from current semester if present
+                    setCurrentCourses((prev) => prev.filter((c) => c.course_id !== selectedCourse.course_id));
                     setSelectedCourse(null);
                   }}
                 >
@@ -617,6 +818,7 @@ const GeneratePlan: React.FC = () => {
                   className="btn-primary"
                   onClick={() => {
                     if (selectedCourse) {
+                      // By default add to earliest available future semester
                       addCourseToAnySemester(selectedCourse);
                     }
                     setSelectedCourse(null);
@@ -635,7 +837,7 @@ const GeneratePlan: React.FC = () => {
         <div className="dashboard-nav-content">
           <div className="dashboard-logo" onClick={handleLogoClick} style={{ cursor: "pointer" }}>
             <div className="dashboard-logo-icon">
-              <img src="/uiuc-planner-icon.svg" alt="Icon" />
+              <img src="/UIUC_logo.png" alt="Icon" className="rounded-sm" />
             </div>
             <span>UIUC Semester Planner</span>
           </div>
@@ -709,11 +911,11 @@ const GeneratePlan: React.FC = () => {
                   strokeDasharray={`${progressPercentage}, 100`}
                   d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
                 />
-                <text x="18" y="20.35" className="percentage">
+                <text x="19" y="18" className="percentage">
                   {progressPercentage}%
                 </text>
-                <text x="18" y="25" className="lbl">
-                  Complete
+                <text x="19" y="25" className="lbl">
+                  Completed
                 </text>
               </svg>
             </div>
@@ -745,7 +947,7 @@ const GeneratePlan: React.FC = () => {
               <p>Drag and drop courses to reorganize your schedule</p>
             </div>
             {(state.startingSemester || state.currentSemester) && (
-              <div style={{ textAlign: "right", color: "#6b7280" }}>
+              <div style={{ textAlign: "right", color: "#6b7280", paddingBottom: "8px" }}>
                 <div>
                   <strong>Start:</strong> {state.startingSemester || "—"}
                 </div>
@@ -760,82 +962,133 @@ const GeneratePlan: React.FC = () => {
           </div>
 
           {isLoading ? (
-            <div className="loading-state">Generating your perfect plan...</div>
+            <div className="loading-state" style={{ textAlign: "center", color: "#6b7280" }}>
+              <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 10, padding: 20 }}>
+                <div
+                  aria-label="Loading"
+                  style={{
+                    width: 32,
+                    height: 32,
+                    borderRadius: 999,
+                    border: "3px solid #e5e7eb",
+                    borderTopColor: "#f97316",
+                    animation: "wizard-spin 0.9s linear infinite",
+                  }}
+                />
+                <div style={{ fontWeight: 600, color: "#374151" }}>Generating your perfect plan…</div>
+                <div style={{ fontSize: 13 }}>
+                  Note: The servers are hosted on free resources and might take ~30s to cold start.
+                </div>
+              </div>
+            </div>
           ) : (
             <div className="timeline-container">
-              {/* Finished Semester */}
-              {prevCourses.length > 0 && (
-                <div className="semester-card">
-                  <div className="semester-header">
-                    <div className="semester-icon">
-                      <CalendarDaysIcon className="w-6 h-6 text-white" style={{ width: "24px", height: "24px" }} />
-                    </div>
-                    <div className="semester-info">
-                      <h4>
-                        Finished —{" "}
-                        {state.startingSemester && state.startingSemester === state.currentSemester
-                          ? state.currentSemester
-                          : previousSemester(state.currentSemester)}
-                      </h4>
-                      <p>
-                        {prevCourses.reduce((sum, c) => sum + getNumericCredits(c.credit_hours), 0)} credits •{" "}
-                        {prevCourses.length} courses
-                      </p>
-                    </div>
-                    <div className="semester-difficulty">Completed</div>
-                  </div>
-                  <div className="semester-courses">
-                    {prevCourses.map((course) => {
-                      const displayCredits = formatCredits(course.credit_hours);
-                      const gpa = course.course_avg_gpa;
-                      const hasValidGpa = gpa !== undefined && gpa !== null && Number(gpa) > 0;
-                      let difficultyLabel = "Unknown";
-                      let badgeClass = "badge-medium";
-                      const diff = course.course_avg_difficulty;
-                      if (diff !== undefined && diff !== null) {
-                        if (diff <= 2.5) {
-                          difficultyLabel = "Easy";
-                          badgeClass = "badge-easy";
-                        } else if (diff <= 3.5) {
-                          difficultyLabel = "Medium";
-                          badgeClass = "badge-medium";
-                        } else {
-                          difficultyLabel = "Hard";
-                          badgeClass = "badge-hard";
-                        }
-                      }
+              {/* Finished Semesters */}
+              {state.startingSemester && state.currentSemester && (
+                <>
+                  {(listTermsInclusive(state.startingSemester, state.currentSemester) || [])
+                    .slice(0, -1)
+                    .map((term) => {
+                      const termCourses = prevTermMap[term] || [];
+                      if (termCourses.length === 0) return null;
                       return (
-                        <div
-                          key={course.course_id}
-                          className="plan-course-card"
-                          onClick={() => setSelectedCourse(course)}
-                          style={{ cursor: "pointer" }}
-                        >
-                          <div className="course-card-top">
-                            <span className="course-id">{course.course_id}</span>
-                            {hasValidGpa ? (
-                              <span className="gpa-badge">{Number(gpa).toFixed(2)} GPA</span>
-                            ) : (
-                              <span className="gpa-badge" style={{ background: "#9ca3af" }}>
-                                Unknown GPA
-                              </span>
-                            )}
+                        <div key={term} className="semester-card">
+                          <div className="semester-header">
+                            <div className="semester-icon">
+                              <CalendarDaysIcon
+                                className="w-6 h-6 text-white"
+                                style={{ width: "24px", height: "24px" }}
+                              />
+                            </div>
+                            <div className="semester-info">
+                              <h4>Finished — {term}</h4>
+                              <p>
+                                {termCourses.reduce((s, c) => s + getNumericCredits(c.credit_hours), 0)} credits •{" "}
+                                {termCourses.length} courses
+                              </p>
+                            </div>
+                            <div
+                              className="semester-difficulty"
+                              style={{ display: "flex", alignItems: "center", gap: 8 }}
+                            >
+                              <span>Completed</span>
+                              <button
+                                aria-label="Toggle semester"
+                                onClick={() => toggleCollapse(term)}
+                                style={{
+                                  background: "transparent",
+                                  border: "none",
+                                  color: "white",
+                                  cursor: "pointer",
+                                  transform: collapsed[term] ? "rotate(-90deg)" : "rotate(0deg)",
+                                  transition: "transform 0.15s",
+                                }}
+                              >
+                                <ChevronDownIcon style={{ width: 16, height: 16 }} />
+                              </button>
+                            </div>
                           </div>
-                          <h5 className="course-title">{course.title}</h5>
-                          <div className="course-card-bottom">
-                            <span className={`badge ${badgeClass}`}>{difficultyLabel}</span>
-                            <span className="credits">{displayCredits} credits</span>
-                          </div>
+                          {!collapsed[term] && (
+                            <div className="semester-courses">
+                              {termCourses.map((course) => {
+                                const displayCredits = formatCredits(course.credit_hours);
+                                const gpa = course.course_avg_gpa;
+                                const hasValidGpa = gpa !== undefined && gpa !== null && Number(gpa) > 0;
+                                let difficultyLabel = "Unknown";
+                                let badgeClass = "badge-medium";
+                                const diff = course.course_avg_difficulty;
+                                if (diff !== undefined && diff !== null) {
+                                  if (diff <= 2.5) {
+                                    difficultyLabel = "Easy";
+                                    badgeClass = "badge-easy";
+                                  } else if (diff <= 3.5) {
+                                    difficultyLabel = "Medium";
+                                    badgeClass = "badge-medium";
+                                  } else {
+                                    difficultyLabel = "Hard";
+                                    badgeClass = "badge-hard";
+                                  }
+                                }
+                                return (
+                                  <div
+                                    key={course.course_id}
+                                    className="plan-course-card"
+                                    onClick={() => setSelectedCourse(course)}
+                                    style={{ cursor: "pointer" }}
+                                  >
+                                    <div className="course-card-top">
+                                      <span className="course-id">{course.course_id}</span>
+                                      {hasValidGpa ? (
+                                        <span className="gpa-badge">{Number(gpa).toFixed(2)} GPA</span>
+                                      ) : (
+                                        <span className="gpa-badge" style={{ background: "#9ca3af" }}>
+                                          Unknown GPA
+                                        </span>
+                                      )}
+                                    </div>
+                                    <h5 className="course-title">{course.title}</h5>
+                                    <div className="course-card-bottom">
+                                      <span className={`badge ${badgeClass}`}>{difficultyLabel}</span>
+                                      <span className="credits">{displayCredits} credits</span>
+                                    </div>
+                                  </div>
+                                );
+                              })}
+                            </div>
+                          )}
                         </div>
                       );
                     })}
-                  </div>
-                </div>
+                </>
               )}
 
               {/* Current Semester */}
               {currCourses.length > 0 && (
-                <div className="semester-card">
+                <div
+                  className={`semester-card ${dragOverIndex === -1 ? "drag-active" : ""}`}
+                  onDragOver={(e) => handleDragOver(e, -1)}
+                  onDrop={(e) => handleDrop(e, -1)}
+                >
                   <div className="semester-header">
                     <div className="semester-icon">
                       <CalendarDaysIcon className="w-6 h-6 text-white" style={{ width: "24px", height: "24px" }} />
@@ -847,54 +1100,83 @@ const GeneratePlan: React.FC = () => {
                         {currCourses.length} courses
                       </p>
                     </div>
-                    <div className="semester-difficulty">In progress</div>
+                    <div className="semester-difficulty" style={{ display: "flex", alignItems: "center", gap: 8 }}>
+                      <span>In progress</span>
+                      <button
+                        aria-label="Toggle semester"
+                        onClick={() => toggleCollapse(state.currentSemester)}
+                        style={{
+                          background: "transparent",
+                          border: "none",
+                          color: "white",
+                          cursor: "pointer",
+                          transform: collapsed[state.currentSemester] ? "rotate(-90deg)" : "rotate(0deg)",
+                          transition: "transform 0.15s",
+                        }}
+                      >
+                        <ChevronDownIcon style={{ width: 16, height: 16 }} />
+                      </button>
+                    </div>
                   </div>
-                  <div className="semester-courses">
-                    {currCourses.map((course) => {
-                      const displayCredits = formatCredits(course.credit_hours);
-                      const gpa = course.course_avg_gpa;
-                      const hasValidGpa = gpa !== undefined && gpa !== null && Number(gpa) > 0;
-                      let difficultyLabel = "Unknown";
-                      let badgeClass = "badge-medium";
-                      const diff = course.course_avg_difficulty;
-                      if (diff !== undefined && diff !== null) {
-                        if (diff <= 2.5) {
-                          difficultyLabel = "Easy";
-                          badgeClass = "badge-easy";
-                        } else if (diff <= 3.5) {
-                          difficultyLabel = "Medium";
-                          badgeClass = "badge-medium";
-                        } else {
-                          difficultyLabel = "Hard";
-                          badgeClass = "badge-hard";
+                  {!collapsed[state.currentSemester] && (
+                    <div className="semester-courses">
+                      {currCourses.map((course) => {
+                        const displayCredits = formatCredits(course.credit_hours);
+                        const gpa = course.course_avg_gpa;
+                        const hasValidGpa = gpa !== undefined && gpa !== null && Number(gpa) > 0;
+                        let difficultyLabel = "Unknown";
+                        let badgeClass = "badge-medium";
+                        const diff = course.course_avg_difficulty;
+                        if (diff !== undefined && diff !== null) {
+                          if (diff <= 2.5) {
+                            difficultyLabel = "Easy";
+                            badgeClass = "badge-easy";
+                          } else if (diff <= 3.5) {
+                            difficultyLabel = "Medium";
+                            badgeClass = "badge-medium";
+                          } else {
+                            difficultyLabel = "Hard";
+                            badgeClass = "badge-hard";
+                          }
                         }
-                      }
-                      return (
-                        <div
-                          key={course.course_id}
-                          className="plan-course-card"
-                          onClick={() => setSelectedCourse(course)}
-                          style={{ cursor: "pointer" }}
-                        >
-                          <div className="course-card-top">
-                            <span className="course-id">{course.course_id}</span>
-                            {hasValidGpa ? (
-                              <span className="gpa-badge">{Number(gpa).toFixed(2)} GPA</span>
-                            ) : (
-                              <span className="gpa-badge" style={{ background: "#9ca3af" }}>
-                                Unknown GPA
-                              </span>
-                            )}
+                        return (
+                          <div
+                            key={course.course_id}
+                            className="plan-course-card"
+                            onClick={() => setSelectedCourse(course)}
+                            draggable={true}
+                            onDragStart={(e) => handleDragStart(e, course, -1)}
+                            onDragEnd={handleDragEnd}
+                            style={{ cursor: "grab" }}
+                          >
+                            <div className="course-card-top">
+                              <span className="course-id">{course.course_id}</span>
+                              {hasValidGpa ? (
+                                <span className="gpa-badge">{Number(gpa).toFixed(2)} GPA</span>
+                              ) : (
+                                <span className="gpa-badge" style={{ background: "#9ca3af" }}>
+                                  Unknown GPA
+                                </span>
+                              )}
+                            </div>
+                            <h5 className="course-title">{course.title}</h5>
+                            <div className="course-card-bottom">
+                              <span className={`badge ${badgeClass}`}>{difficultyLabel}</span>
+                              <span className="credits">{displayCredits} credits</span>
+                            </div>
                           </div>
-                          <h5 className="course-title">{course.title}</h5>
-                          <div className="course-card-bottom">
-                            <span className={`badge ${badgeClass}`}>{difficultyLabel}</span>
-                            <span className="credits">{displayCredits} credits</span>
-                          </div>
-                        </div>
-                      );
-                    })}
-                  </div>
+                        );
+                      })}
+                      {/* Empty slot placeholder to add to current */}
+                      <div
+                        className="plan-course-card empty-slot"
+                        onClick={() => handleAddElectiveClick(-1)}
+                        style={{ cursor: "pointer" }}
+                      >
+                        <span>+ Add Elective</span>
+                      </div>
+                    </div>
+                  )}
                 </div>
               )}
 
@@ -919,69 +1201,86 @@ const GeneratePlan: React.FC = () => {
                           {sem.totalCredits} credits • {sem.courses.length} courses
                         </p>
                       </div>
-                      <div className="semester-difficulty">
-                        Avg Difficulty <span className={diffClass}>{avgDiff}</span>
+                      <div className="semester-difficulty" style={{ display: "flex", alignItems: "center", gap: 8 }}>
+                        <span>
+                          Avg Difficulty <span className={diffClass}>{avgDiff}</span>
+                        </span>
+                        <button
+                          aria-label="Toggle semester"
+                          onClick={() => toggleCollapse(sem.name)}
+                          style={{
+                            background: "transparent",
+                            border: "none",
+                            color: "white",
+                            cursor: "pointer",
+                            transform: collapsed[sem.name] ? "rotate(-90deg)" : "rotate(0deg)",
+                            transition: "transform 0.15s",
+                          }}
+                        >
+                          <ChevronDownIcon style={{ width: 16, height: 16 }} />
+                        </button>
                       </div>
                     </div>
-
-                    <div className="semester-courses">
-                      {sem.courses.map((course) => {
-                        const displayCredits = formatCredits(course.credit_hours);
-                        const gpa = course.course_avg_gpa;
-                        const hasValidGpa = gpa !== undefined && gpa !== null && Number(gpa) > 0;
-                        let difficultyLabel = "Unknown";
-                        let badgeClass = "badge-medium";
-                        const diff = course.course_avg_difficulty;
-                        if (diff !== undefined && diff !== null) {
-                          if (diff <= 2.5) {
-                            difficultyLabel = "Easy";
-                            badgeClass = "badge-easy";
-                          } else if (diff <= 3.5) {
-                            difficultyLabel = "Medium";
-                            badgeClass = "badge-medium";
-                          } else {
-                            difficultyLabel = "Hard";
-                            badgeClass = "badge-hard";
+                    {!collapsed[sem.name] && (
+                      <div className="semester-courses">
+                        {sem.courses.map((course) => {
+                          const displayCredits = formatCredits(course.credit_hours);
+                          const gpa = course.course_avg_gpa;
+                          const hasValidGpa = gpa !== undefined && gpa !== null && Number(gpa) > 0;
+                          let difficultyLabel = "Unknown";
+                          let badgeClass = "badge-medium";
+                          const diff = course.course_avg_difficulty;
+                          if (diff !== undefined && diff !== null) {
+                            if (diff <= 2.5) {
+                              difficultyLabel = "Easy";
+                              badgeClass = "badge-easy";
+                            } else if (diff <= 3.5) {
+                              difficultyLabel = "Medium";
+                              badgeClass = "badge-medium";
+                            } else {
+                              difficultyLabel = "Hard";
+                              badgeClass = "badge-hard";
+                            }
                           }
-                        }
 
-                        return (
-                          <div
-                            key={course.course_id}
-                            className="plan-course-card"
-                            onClick={() => setSelectedCourse(course)}
-                            draggable={true}
-                            onDragStart={(e) => handleDragStart(e, course, idx)}
-                            onDragEnd={handleDragEnd}
-                            style={{ cursor: "grab" }}
-                          >
-                            <div className="course-card-top">
-                              <span className="course-id">{course.course_id}</span>
-                              {hasValidGpa ? (
-                                <span className="gpa-badge">{Number(gpa).toFixed(2)} GPA</span>
-                              ) : (
-                                <span className="gpa-badge" style={{ background: "#9ca3af" }}>
-                                  Unknown GPA
-                                </span>
-                              )}
+                          return (
+                            <div
+                              key={course.course_id}
+                              className="plan-course-card"
+                              onClick={() => setSelectedCourse(course)}
+                              draggable={true}
+                              onDragStart={(e) => handleDragStart(e, course, idx)}
+                              onDragEnd={handleDragEnd}
+                              style={{ cursor: "grab" }}
+                            >
+                              <div className="course-card-top">
+                                <span className="course-id">{course.course_id}</span>
+                                {hasValidGpa ? (
+                                  <span className="gpa-badge">{Number(gpa).toFixed(2)} GPA</span>
+                                ) : (
+                                  <span className="gpa-badge" style={{ background: "#9ca3af" }}>
+                                    Unknown GPA
+                                  </span>
+                                )}
+                              </div>
+                              <h5 className="course-title">{course.title}</h5>
+                              <div className="course-card-bottom">
+                                <span className={`badge ${badgeClass}`}>{difficultyLabel}</span>
+                                <span className="credits">{displayCredits} credits</span>
+                              </div>
                             </div>
-                            <h5 className="course-title">{course.title}</h5>
-                            <div className="course-card-bottom">
-                              <span className={`badge ${badgeClass}`}>{difficultyLabel}</span>
-                              <span className="credits">{displayCredits} credits</span>
-                            </div>
-                          </div>
-                        );
-                      })}
-                      {/* Empty slot placeholder */}
-                      <div
-                        className="plan-course-card empty-slot"
-                        onClick={() => handleAddElectiveClick(idx)}
-                        style={{ cursor: "pointer" }}
-                      >
-                        <span>+ Add Elective</span>
+                          );
+                        })}
+                        {/* Empty slot placeholder */}
+                        <div
+                          className="plan-course-card empty-slot"
+                          onClick={() => handleAddElectiveClick(idx)}
+                          style={{ cursor: "pointer" }}
+                        >
+                          <span>+ Add Elective</span>
+                        </div>
                       </div>
-                    </div>
+                    )}
                   </div>
                 );
               })}

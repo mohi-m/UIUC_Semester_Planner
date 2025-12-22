@@ -11,7 +11,8 @@ export interface PlanResult {
 export const generateAcademicPlan = async (
     currentSemester: string,
     careerPathId: string,
-    completedCourses: Course[]
+    completedCourses: Course[],
+    maxFutureSemesters?: number
 ): Promise<PlanResult> => {
     // 1. Fetch pathway details to get required courses
     const pathway = await fetchPathwayDetails(careerPathId);
@@ -52,8 +53,15 @@ export const generateAcademicPlan = async (
 
     const remainingCourses = await Promise.all(coursePromises);
 
+    // Prefer lower-level courses earlier by sorting by numeric course level (e.g., 100 < 200 < 300 < 400)
+    const courseLevel = (id: string) => {
+        const m = id.match(/(\d{2,3})/);
+        return m ? parseInt(m[1], 10) : 999; // unknowns sink to end
+    };
+    remainingCourses.sort((a, b) => courseLevel(a.course_id) - courseLevel(b.course_id));
+
     // 4. Distribute into semesters
-    const schedule: Record<string, Course[]> = {};
+    let schedule: Record<string, Course[]> = {};
     const MAX_CREDITS_PER_SEMESTER = 15;
 
     let currentTerm = currentSemester;
@@ -126,11 +134,24 @@ export const generateAcademicPlan = async (
         simTerm = currentSemester;
     }
 
-    while (Object.keys(schedule).length < remainingSemesters) {
+    const padTarget = Math.min(remainingSemesters, maxFutureSemesters ?? remainingSemesters);
+    while (Object.keys(schedule).length < padTarget) {
         if (!schedule[simTerm]) {
             schedule[simTerm] = [];
         }
         simTerm = nextSemester(simTerm);
+    }
+
+    // Trim to maxFutureSemesters if schedule has overflowed
+    if (maxFutureSemesters !== undefined) {
+        const keys = Object.keys(schedule);
+        if (keys.length > maxFutureSemesters) {
+            const trimmed: Record<string, Course[]> = {};
+            for (const k of keys.slice(0, maxFutureSemesters)) {
+                trimmed[k] = schedule[k];
+            }
+            schedule = trimmed;
+        }
     }
 
     // -------------------------

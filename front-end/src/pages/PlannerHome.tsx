@@ -1,9 +1,10 @@
 // src/pages/PlannerHome.tsx
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 
 import { fetchPathways, type CareerPath } from "../services/pathwayService";
 import { searchCourses, type Course } from "../services/courseService";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 
 // ----- Types -----
 type Step = 1 | 2 | 3;
@@ -35,29 +36,75 @@ const PlannerHome: React.FC = () => {
   // ----- Step 2 state -----
   const [selectedCareer, setSelectedCareer] = useState<string | null>(incomingState?.careerPathId || null);
   const [pathways, setPathways] = useState<CareerPath[]>([]);
+  const [isLoadingPathways, setIsLoadingPathways] = useState<boolean>(false);
+  const coldStartTimer = useRef<number | null>(null);
+  const [showColdStartHint, setShowColdStartHint] = useState<boolean>(false);
 
   // Fetch pathways when step becomes 2 (or on mount if you prefer, but let's do lazy load or on mount)
   useEffect(() => {
     // Only fetch if we haven't already
     if (pathways.length === 0) {
-      fetchPathways().then((data) => {
-        setPathways(data);
-      });
+      setIsLoadingPathways(true);
+      // After a short delay, show a hint about potential cold start
+      coldStartTimer.current = window.setTimeout(() => setShowColdStartHint(true), 1200);
+      fetchPathways()
+        .then((data) => {
+          setPathways(data);
+        })
+        .catch((err) => {
+          console.error("Failed to load pathways:", err);
+        })
+        .finally(() => {
+          setIsLoadingPathways(false);
+          if (coldStartTimer.current) {
+            clearTimeout(coldStartTimer.current);
+            coldStartTimer.current = null;
+          }
+        });
     }
   }, []);
 
   // ----- Step 3 state -----
   const [startingSemester, setStartingSemester] = useState(incomingState?.startingSemester || "");
   const [currentSemester, setCurrentSemester] = useState(incomingState?.currentSemester || "");
-  // Separate previous and current term course selections
-  const [prevSelectedCourses, setPrevSelectedCourses] = useState<Course[]>(incomingState?.completedPrevCourses || []);
-  const [currSelectedCourses, setCurrSelectedCourses] = useState<Course[]>(incomingState?.currentTermCourses || []);
-  const [addTarget, setAddTarget] = useState<"previous" | "current">("current");
+  // Map of term -> courses for that term (enables multiple previous semesters)
+  const [selectedByTerm, setSelectedByTerm] = useState<Record<string, Course[]>>({});
+  // Which term to add new courses to
+  const [addTargetTerm, setAddTargetTerm] = useState<string>("");
 
   // Search state
   const [courseSearch, setCourseSearch] = useState("");
   const [searchResults, setSearchResults] = useState<Course[]>([]);
   const [isSearching, setIsSearching] = useState(false);
+
+  // Seed term map from incoming state (back-compat with previous design)
+  useEffect(() => {
+    const map: Record<string, Course[]> = {};
+    if (incomingState?.currentSemester) {
+      map[incomingState.currentSemester] = incomingState?.currentTermCourses || [];
+      const prev = previousSemester(incomingState.currentSemester);
+      if (prev) {
+        map[prev] = incomingState?.completedPrevCourses || [];
+      }
+    }
+    setSelectedByTerm(map);
+  }, []);
+
+  // Keep addTargetTerm in sync with chosen current semester
+  useEffect(() => {
+    if (currentSemester) setAddTargetTerm(currentSemester);
+  }, [currentSemester]);
+
+  // Ensure we have keys for all terms between start and current
+  useEffect(() => {
+    if (!startingSemester || !currentSemester) return;
+    const terms = listTermsInclusive(startingSemester, currentSemester) || [];
+    setSelectedByTerm((prev) => {
+      const next: Record<string, Course[]> = { ...prev };
+      for (const t of terms) if (!next[t]) next[t] = [];
+      return next;
+    });
+  }, [startingSemester, currentSemester]);
 
   // Search Effect
   useEffect(() => {
@@ -100,43 +147,48 @@ const PlannerHome: React.FC = () => {
   };
 
   const addCourse = (course: Course) => {
-    // Prevent duplicates across both buckets
-    const inPrev = prevSelectedCourses.some((c) => c.course_id === course.course_id);
-    const inCurr = currSelectedCourses.some((c) => c.course_id === course.course_id);
-    if (inPrev || inCurr) {
-      setCourseSearch("");
-      setSearchResults([]);
+    if (!addTargetTerm) return;
+    // Avoid duplicates across all terms
+    const exists = Object.values(selectedByTerm).some((arr) => arr.some((c) => c.course_id === course.course_id));
+    if (exists) {
       return;
     }
-
-    if (addTarget === "previous") {
-      setPrevSelectedCourses((prev) => [...prev, course]);
-    } else {
-      setCurrSelectedCourses((prev) => [...prev, course]);
-    }
-    setCourseSearch("");
-    setSearchResults([]);
+    setSelectedByTerm((prev) => {
+      const next: Record<string, Course[]> = { ...prev };
+      next[addTargetTerm] = [...(next[addTargetTerm] || []), course];
+      return next;
+    });
   };
 
-  const removeCourse = (courseId: string, bucket: "previous" | "current") => {
-    if (bucket === "previous") {
-      setPrevSelectedCourses((prev) => prev.filter((c) => c.course_id !== courseId));
-    } else {
-      setCurrSelectedCourses((prev) => prev.filter((c) => c.course_id !== courseId));
-    }
+  const removeCourse = (courseId: string, term: string) => {
+    setSelectedByTerm((prev) => {
+      const next = { ...prev } as Record<string, Course[]>;
+      if (next[term]) next[term] = next[term].filter((c) => c.course_id !== courseId);
+      return next;
+    });
   };
 
   const handleGeneratePlan = () => {
     const selectedPath = pathways.find((p) => p.id === selectedCareer);
+    const currentCourses = currentSemester ? selectedByTerm[currentSemester] || [] : [];
+    const prevCourses = Object.entries(selectedByTerm)
+      .filter(([term]) => term !== currentSemester)
+      .flatMap(([, courses]) => courses);
+
+    // Build a map of finished terms -> courses (exclude current term)
+    const previousTermCourses: Record<string, Course[]> = Object.fromEntries(
+      Object.entries(selectedByTerm).filter(([term]) => term !== currentSemester)
+    );
     navigate("/generate-plan", {
       state: {
         major: selectedMajor,
         careerPathId: selectedCareer,
         careerPathName: selectedPath ? selectedPath.label : "Career Path",
-        // Back-compat aggregate (was previously just completed courses)
-        selectedCourses: [...prevSelectedCourses, ...currSelectedCourses],
-        completedPrevCourses: prevSelectedCourses,
-        currentTermCourses: currSelectedCourses,
+        // Back-compat aggregate (previous design kept two buckets)
+        selectedCourses: [...prevCourses, ...currentCourses],
+        completedPrevCourses: prevCourses,
+        currentTermCourses: currentCourses,
+        previousTermCourses,
         startingSemester: startingSemester,
         currentSemester: currentSemester,
       },
@@ -181,16 +233,18 @@ const PlannerHome: React.FC = () => {
 
       <div className="wizard-body">
         <div className="wizard-select-wrapper">
-          <select className="wizard-select" value={selectedMajor} onChange={(e) => setSelectedMajor(e.target.value)}>
-            <option value="" disabled>
-              Choose your major...
-            </option>
-            {majors.map((major) => (
-              <option key={major} value={major}>
-                {major}
-              </option>
-            ))}
-          </select>
+          <Select value={selectedMajor} onValueChange={(v) => setSelectedMajor(v)}>
+            <SelectTrigger className="wizard-select">
+              <SelectValue placeholder="Choose your major..." />
+            </SelectTrigger>
+            <SelectContent>
+              {majors.map((major) => (
+                <SelectItem key={major} value={major}>
+                  {major}
+                </SelectItem>
+              ))}
+            </SelectContent>
+          </Select>
         </div>
       </div>
 
@@ -218,24 +272,36 @@ const PlannerHome: React.FC = () => {
       </div>
 
       <div className="wizard-body">
-        <div className="wizard-career-grid">
-          {pathways.map((path) => {
-            const isSelected = selectedCareer === path.id;
-            return (
-              <button
-                key={path.id}
-                type="button"
-                className={"wizard-career-card" + (isSelected ? " wizard-career-card--selected" : "")}
-                onClick={() => setSelectedCareer(path.id)}
-              >
-                <div className="wizard-career-icon" style={{ backgroundColor: path.color }}>
-                  <path.icon className="wizard-career-icon-img" />
-                </div>
-                <span className="wizard-career-label">{path.label}</span>
-              </button>
-            );
-          })}
-        </div>
+        {isLoadingPathways ? (
+          <div className="wizard-loading">
+            <div className="wizard-spinner" aria-label="Loading career paths" />
+            <div className="wizard-loading-text">Loading career paths…</div>
+            {showColdStartHint && (
+              <div className="wizard-loading-hint">
+                Note: The servers are hosted on free resources and might take ~30s to cold start.
+              </div>
+            )}
+          </div>
+        ) : (
+          <div className="wizard-career-grid">
+            {pathways.map((path) => {
+              const isSelected = selectedCareer === path.id;
+              return (
+                <button
+                  key={path.id}
+                  type="button"
+                  className={"wizard-career-card" + (isSelected ? " wizard-career-card--selected" : "")}
+                  onClick={() => setSelectedCareer(path.id)}
+                >
+                  <div className="wizard-career-icon" style={{ backgroundColor: path.color }}>
+                    <path.icon className="wizard-career-icon-img" />
+                  </div>
+                  <span className="wizard-career-label">{path.label}</span>
+                </button>
+              );
+            })}
+          </div>
+        )}
       </div>
 
       <div className="wizard-footer">
@@ -250,10 +316,7 @@ const PlannerHome: React.FC = () => {
   );
 
   const renderStep3 = () => {
-    const finishedLabel =
-      startingSemester && startingSemester === currentSemester
-        ? currentSemester
-        : previousSemester(currentSemester) || "Previous Semester";
+    const termList = startingSemester && currentSemester ? listTermsInclusive(startingSemester, currentSemester) : [];
     return (
       <>
         <div className="wizard-card-header">
@@ -271,20 +334,18 @@ const PlannerHome: React.FC = () => {
           <div className="wizard-field-group">
             <label className="wizard-field-label">Program Start Semester</label>
             <div className="wizard-select-wrapper wizard-select-wrapper--left">
-              <select
-                className="wizard-select"
-                value={startingSemester}
-                onChange={(e) => setStartingSemester(e.target.value)}
-              >
-                <option value="" disabled>
-                  Select starting semester...
-                </option>
-                {semesters.map((sem) => (
-                  <option key={sem} value={sem}>
-                    {sem}
-                  </option>
-                ))}
-              </select>
+              <Select value={startingSemester} onValueChange={(v) => setStartingSemester(v)}>
+                <SelectTrigger className="wizard-select">
+                  <SelectValue placeholder="Select starting semester..." />
+                </SelectTrigger>
+                <SelectContent>
+                  {semesters.map((sem) => (
+                    <SelectItem key={sem} value={sem}>
+                      {sem}
+                    </SelectItem>
+                  ))}
+                </SelectContent>
+              </Select>
             </div>
           </div>
 
@@ -292,20 +353,18 @@ const PlannerHome: React.FC = () => {
           <div className="wizard-field-group">
             <label className="wizard-field-label">Current Semester</label>
             <div className="wizard-select-wrapper wizard-select-wrapper--left">
-              <select
-                className="wizard-select"
-                value={currentSemester}
-                onChange={(e) => setCurrentSemester(e.target.value)}
-              >
-                <option value="" disabled>
-                  Select current semester...
-                </option>
-                {semesters.map((sem) => (
-                  <option key={sem} value={sem}>
-                    {sem}
-                  </option>
-                ))}
-              </select>
+              <Select value={currentSemester} onValueChange={(v) => setCurrentSemester(v)}>
+                <SelectTrigger className="wizard-select">
+                  <SelectValue placeholder="Select current semester..." />
+                </SelectTrigger>
+                <SelectContent>
+                  {semesters.map((sem) => (
+                    <SelectItem key={sem} value={sem}>
+                      {sem}
+                    </SelectItem>
+                  ))}
+                </SelectContent>
+              </Select>
             </div>
           </div>
 
@@ -337,51 +396,48 @@ const PlannerHome: React.FC = () => {
             </div>
           )}
 
-          {/* Completed and Current courses */}
+          {/* Terms and Courses */}
           <div className="wizard-field-group">
             <label className="wizard-field-label">Add Your Courses</label>
 
-            {/* Previous semester chips */}
-            <div className="wizard-selected-courses" style={{ marginBottom: "1rem" }}>
-              <p className="wizard-selected-label">Finished – {finishedLabel}</p>
-              <div className="wizard-chips">
-                {prevSelectedCourses.length === 0 && (
-                  <span style={{ color: "#6b7280", fontSize: "0.9rem" }}>No courses added</span>
-                )}
-                {prevSelectedCourses.map((course) => (
-                  <button
-                    key={course.course_id}
-                    type="button"
-                    className="wizard-chip"
-                    onClick={() => removeCourse(course.course_id, "previous")}
-                  >
-                    {course.course_id}
-                    <span className="wizard-chip-remove">×</span>
-                  </button>
-                ))}
-              </div>
-            </div>
+            {(!startingSemester || !currentSemester) && (
+              <p style={{ color: "#6b7280", marginBottom: 12 }}>
+                Select your start and current semester to organize courses by term.
+              </p>
+            )}
 
-            {/* Current semester chips */}
-            <div className="wizard-selected-courses" style={{ marginBottom: "1.5rem" }}>
-              <p className="wizard-selected-label">Current – {currentSemester || "Select current semester"}</p>
-              <div className="wizard-chips">
-                {currSelectedCourses.length === 0 && (
-                  <span style={{ color: "#6b7280", fontSize: "0.9rem" }}>No courses added</span>
-                )}
-                {currSelectedCourses.map((course) => (
-                  <button
-                    key={course.course_id}
-                    type="button"
-                    className="wizard-chip"
-                    onClick={() => removeCourse(course.course_id, "current")}
-                  >
-                    {course.course_id}
-                    <span className="wizard-chip-remove">×</span>
-                  </button>
-                ))}
+            {termList && termList.length > 0 && (
+              <div style={{ display: "grid", gap: 16 }}>
+                {termList.map((term) => {
+                  const list = selectedByTerm[term] || [];
+                  const isCurrent = term === currentSemester;
+                  return (
+                    <div key={term} className="wizard-selected-courses">
+                      <p className="wizard-selected-label">
+                        {isCurrent ? "Current – " : "Finished – "}
+                        {term}
+                      </p>
+                      <div className="wizard-chips">
+                        {list.length === 0 && (
+                          <span style={{ color: "#6b7280", fontSize: "0.9rem" }}>No courses added</span>
+                        )}
+                        {list.map((course) => (
+                          <button
+                            key={course.course_id}
+                            type="button"
+                            className="wizard-chip"
+                            onClick={() => removeCourse(course.course_id, term)}
+                          >
+                            {course.course_id}
+                            <span className="wizard-chip-remove">×</span>
+                          </button>
+                        ))}
+                      </div>
+                    </div>
+                  );
+                })}
               </div>
-            </div>
+            )}
 
             {/* Search Input */}
             <div className="wizard-course-search-wrapper" style={{ position: "relative" }}>
@@ -390,15 +446,18 @@ const PlannerHome: React.FC = () => {
                 <label className="wizard-field-label" style={{ margin: 0 }}>
                   Add to
                 </label>
-                <select
-                  className="wizard-select"
-                  value={addTarget}
-                  onChange={(e) => setAddTarget(e.target.value as "previous" | "current")}
-                  style={{ width: "auto", padding: "6px 8px" }}
-                >
-                  <option value="previous">Finished</option>
-                  <option value="current">Current</option>
-                </select>
+                <Select value={addTargetTerm} onValueChange={(v) => setAddTargetTerm(v)}>
+                  <SelectTrigger className="w-[220px]">
+                    <SelectValue placeholder="Select term..." />
+                  </SelectTrigger>
+                  <SelectContent>
+                    {termList?.map((t) => (
+                      <SelectItem key={t} value={t}>
+                        {t}
+                      </SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
                 {currentSemester && (
                   <span style={{ color: "#6b7280", fontSize: "0.9rem" }}>
                     Upcoming: {nextSemester(currentSemester) || "—"}
@@ -433,9 +492,9 @@ const PlannerHome: React.FC = () => {
             {courseSearch.length >= 2 && !isSearching && searchResults.length > 0 && (
               <div className="wizard-search-results">
                 {searchResults.map((course) => {
-                  const isAdded =
-                    prevSelectedCourses.some((c) => c.course_id === course.course_id) ||
-                    currSelectedCourses.some((c) => c.course_id === course.course_id);
+                  const isAdded = Object.values(selectedByTerm).some((arr) =>
+                    arr.some((c) => c.course_id === course.course_id)
+                  );
                   return (
                     <div
                       key={course.course_id}
@@ -459,7 +518,7 @@ const PlannerHome: React.FC = () => {
                         <span style={{ color: "#6b7280", fontSize: "0.9em" }}>{course.title}</span>
                       </div>
                       {!isAdded && (
-                        <button className="btn-add-mini" style={{ padding: "2px 8px" }}>
+                        <button className="btn-add-mini" aria-label="Add course">
                           +
                         </button>
                       )}
@@ -532,5 +591,23 @@ function nextSemester(sem: string): string | null {
   if (season === "Spring") return `Fall ${year}`;
   if (season === "Summer") return `Fall ${year}`; // Summer -> Fall of same year
   if (season === "Fall") return `Spring ${year + 1}`;
+  return null;
+}
+
+// Inclusive list of major semesters from start -> end. Returns [] if invalid order.
+function listTermsInclusive(start: string, end: string): string[] | null {
+  if (!start || !end) return null;
+  // Prevent infinite loop on bad data
+  const guard = 20; // covers 10 academic years
+  const out: string[] = [];
+  let current = start;
+  for (let i = 0; i < guard; i++) {
+    out.push(current);
+    if (current === end) return out;
+    const nxt = nextSemester(current);
+    if (!nxt) return null;
+    current = nxt;
+  }
+  // If we exhausted the guard without reaching end, the input order is invalid
   return null;
 }

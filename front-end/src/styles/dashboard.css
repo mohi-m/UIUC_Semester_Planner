@@ -4,7 +4,8 @@
     width: 100vw;
     background-color: #ffffff !important;
     /* Force white background */
-    font-family: 'Inter', system-ui, sans-serif;
+    /* Inherit the app's default sans font (Google Sans via Tailwind config) */
+    font-family: inherit;
     color: #1f2937 !important;
     /* Force dark text */
     margin: 0;
@@ -87,8 +88,8 @@
 }
 
 .dashboard-logo-icon img {
-    width: 28px;
-    height: 28px;
+    width: 40px;
+    height: 40px;
 }
 
 .dashboard-search-wrapper {
@@ -253,7 +254,7 @@
 
 .percentage {
     fill: #111827;
-    font-family: sans-serif;
+    font-family: inherit;
     font-weight: bold;
     font-size: 0.5em;
     /* relative to viewBox */
@@ -263,7 +264,7 @@
 
 .lbl {
     fill: #6b7280;
-    font-family: sans-serif;
+    font-family: inherit;
     font-size: 0.2em;
     /* relative to viewBox */
     text-anchor: middle;
