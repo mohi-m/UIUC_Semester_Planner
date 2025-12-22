@@ -2,6 +2,10 @@
 
 This app is an academic semester planner for UIUC that generates personalized, feasible semester‑by‑semester course plans by reconciling degree requirements, prerequisites, completed coursework, and student constraints; typical use cases include students exploring degree progress and what‑if scenarios, advisors streamlining planning conversations and verifying plan feasibility, and career services mapping skills to course pathways to recommend targeted coursework for specific career outcomes.
 
+<strong>Website:</strong> https://uiuc-semester-planner.onrender.com/
+
+<strong>API:</strong> https://uiucsemesterplanner.onrender.com/docs
+
 ## Tech Stack
 
 ### Backend
